@@ -1,0 +1,193 @@
+@import url(../common_resource/base_kit.css);
+body {
+  background-color: var(--back_ground-color);
+}
+
+.content__body {
+  z-index: 99;
+}
+.content__body .padding-space-top {
+  height: 80px;
+}
+.content__body .img-containter {
+  aspect-ratio: 1/1;
+  min-width: 5em;
+  width: 90%;
+  max-width: 10em;
+  box-shadow: 0 0 2em -1em black;
+  border-radius: var(--bor_rad);
+  margin: 0 auto;
+}
+.content__body .img-containter img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--bor_rad);
+}
+.content__body h1 {
+  margin-top: 40px;
+  font-size: 2em;
+  color: black;
+}
+.content__body ul {
+  margin-top: 2.5em;
+}
+.content__body ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.5em auto;
+  align-self: center;
+  padding: 0;
+}
+.content__body ul li a {
+  height: 4em;
+  width: 100%;
+}
+.content__body ul li a #portfolio_button {
+  background-color: var(--accent-color) !important;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a #snap_button {
+  background-color: #CCC000;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a #insta_button {
+  background-color: #DD2A7B !important;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a #facebook_button {
+  background-color: #3B5998 !important;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a #linkedin_button {
+  background-color: #0077B5 !important;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a #apple-music_button {
+  background-color: #FC3C44 !important;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a #behance_button {
+  background-color: #000000 !important;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a #discord_button {
+  background-color: #5865F2 !important;
+  border-color: var(--back_ground-color) !important;
+}
+.content__body ul li a button {
+  box-shadow: 0 0 2em -1em black;
+  min-width: 250px;
+  width: 80vw;
+  max-width: 400px;
+  height: 4em;
+  margin-top: 0em;
+  cursor: pointer;
+  overflow: hidden;
+}
+.content__body ul li a button .button_content {
+  margin: 0 auto;
+  align-self: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+.content__body ul li a button .button_content img {
+  float: left;
+  aspect-ratio: 1/1;
+  height: 2em;
+  margin: 0.75em 0;
+}
+.content__body ul li a button .button_content .text_big {
+  color: var(--back_ground-color);
+}
+.content__body ul li a button .button_content .text_small {
+  color: var(--back_ground-color);
+  display: none;
+}
+.content__body ul li a button .button_content p {
+  float: right;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.25em 1em;
+  font-size: 1em;
+  text-transform: none;
+  font-weight: bold;
+}
+.content__body .padding-space-bottom {
+  height: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+  .content__body ul li a button .button_content .text_big {
+    display: none;
+  }
+  .content__body ul li a button .button_content .text_small {
+    display: block;
+  }
+}
+@media only screen and (min-width: 501px) {
+  /*
+   * this makes it so that the webpages become a stand out over a background
+   * and the the titles do not crash into the page and become unreadable since
+   * since both the title and the background is white 
+   */
+  .space {
+    min-height: 0px;
+    height: calc(0.2 * (100vw - 500px));
+    max-height: 40px;
+    margin: 1px 0px;
+  }
+  .content__body {
+    min-width: 500px;
+    width: 90vw;
+    max-width: 600px;
+    /* these are not necessary */
+    /*min-width: 2500px;
+    max-width: 2500px;*/
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    background-color: var(--back_ground-color);
+    box-shadow: 0 0 2em -1em black;
+    border-radius: var(--bor_rad);
+    border: solid 1px var(--back_ground-color3_dark);
+  }
+  body {
+    background-color: var(--back_ground-color2);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .content__body {
+    background-color: var(--back_ground-color_dark);
+    border-color: var(--back_ground-color3);
+    box-shadow: 0 0 2em -1em var(--back_ground-color3);
+  }
+  .content__body .img-containter {
+    box-shadow: 0 0 2em -1em var(--back_ground-color3);
+  }
+  .content__body .img-containter img {
+    box-shadow: 0 0 2em -1em var(--back_ground-color3);
+  }
+  .content__body h1 {
+    color: var(--back_ground-color);
+  }
+  .content__body ul li a button {
+    box-shadow: 0 0 2em -1em var(--back_ground-color3);
+  }
+}
+@media only screen and (min-width: 501px) and (prefers-color-scheme: dark) {
+  body {
+    background-color: #141414;
+  }
+}
+@media only screen and (max-width: 500px) and (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--back_ground-color_dark);
+  }
+  .content__body {
+    border: none;
+    box-shadow: none;
+  }
+}/*# sourceMappingURL=style.css.map */

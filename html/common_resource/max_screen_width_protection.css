@@ -1,0 +1,29 @@
+@media only screen and (min-width: 2560px) {
+  /*
+   * this makes it so that the webpages become a stand out over a background
+   * and the the titles do not crash into the page and become unreadable since
+   * since both the title and the background is white 
+   */
+  .content__body {
+    width: 2560px;
+    /* these are not necessary */
+    /*min-width: 2500px;
+    max-width: 2500px;*/
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    background-color: var(--back_ground-color);
+    box-shadow: 0 0 2em -1em black;
+  }
+  body {
+    background-color: var(--back_ground-color2);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .content__body {
+    background-color: #14181B;
+  }
+  body {
+    background-color: #141414 !important;
+  }
+}/*# sourceMappingURL=max_screen_width_protection.css.map */

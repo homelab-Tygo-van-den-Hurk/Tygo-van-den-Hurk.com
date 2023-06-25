@@ -1,0 +1,180 @@
+
+/*
+ *
+ * navbar
+ *
+ */ /*
+.navbar{
+    height: 5em;
+    width: 100%;
+
+}.navbar__content{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+
+}.navbar__logo{
+    height: 1em;
+    float: left;
+    margin: 2em 0em;
+    color: white;
+
+}.navbar__logo_a{
+    height: 1em;
+    float: left;
+    margin: 2em 0em;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-weight: normal;
+
+}.navbar__logo_a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+
+}.navbar__links{
+    height: 100%;
+    float: right;
+    position: relative;
+
+}.navbar__links_button{
+    height: 1em;
+    font-size: 2em;
+    color: white;
+    text-align: right;
+    float: right;
+    display: block;
+    height: 100%;
+    width: auto;
+    padding: 0em 0em;
+    text-align: center;
+    height: 2em;
+    text-decoration: none;
+    border-radius: 0;
+    text-transform: none;
+    padding-top: 0.6em;
+    text-transform: lowercase;
+
+}.navbar__links_button:focus{
+    outline: none !important;
+
+}.navbar__links_ul{
+    position: absolute;
+    top: 5em;
+    left: -7em;
+    width: 10em;
+    background-color: #fafafa;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 5px rgba(72, 72, 72, 0.579);
+
+}.navbar__links_li{
+    padding: 0.5em 2em;
+    float: right;
+    display: block;
+    margin-left: auto;
+
+}.navbar__links_a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+}
+
+<!--<div class="navbar">
+                    <div class="navbar__content">
+                        <p style="color: transparent; color: black;">. test</p>
+                        <div class="navbar__logo">
+                            null / portofolio /&nbsp;
+                        </div>
+                        <a href="index.html" class="navbar__logo_a"> 
+                            home
+                        </a>
+                        <div class="navbar__links">
+                            <button class="navbar__links_button" id="nav__button">
+                                ≡
+                            </button>
+                            <ul class="navbar__links_ul show_and_hide" id="nav__list">
+                                <li class="navbar__links_li">
+                                    <a href="#projects_I_have_done" class="navbar__links_a" id="Projects">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li class="navbar__links_li">
+                                    <a href="blog.html" class="navbar__links_a" id="blog">
+                                        blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>-->
+
+    /*
+     *
+     * - - - - - this section is for the navbar  - - - - - 
+     *
+     
+
+    let open = false; // is the navbar menu open?
+
+    //things that we will influence with the action listeners
+    const nav__list = document.getElementById("nav__list");
+
+    // buttons:
+    const nav_button_0 = document.getElementById("nav__button");
+    const nav_button_1 = document.getElementById("Projects");
+    const nav_button_2 = document.getElementById("blog");
+
+
+    // event listeners:
+    nav_button_0.addEventListener("click", () => {
+        if(!open){
+            console.log("\n");
+            show_nav_list();
+        } else{
+            console.log("\n");
+            hide_nav_list();
+        }
+    });
+    nav_button_1.addEventListener("click", () => {
+        console.log("\n");
+        hide_nav_list();
+    });
+    nav_button_2.addEventListener("click", () => {
+        console.log("\n");
+        hide_nav_list();
+    });
+
+    // show contact me forum function:
+    function show_nav_list() {
+        // lets the user know that the button click was registerd
+        console.log("nav bar button pushed:               confirmed");
+
+        // lets the user know that the function will exicu
+        console.log("now executing function:              show_nav_list_forum();");
+
+        // shows forum, hides scrolbar in body
+        nav__list.classList.toggle("show_and_hide");
+        nav_button_0.innerHTML = "x";
+        open = true;
+
+
+        // lets the user know that the function has been executed without errors
+        console.log("done executing function:             show_nav_list_forum();");
+    }
+
+    // hides contact me forum function:
+    function hide_nav_list() {
+        // lets the user know that the button click was registerd
+        console.log("nav bar button pushed:               confirmed");
+
+        // lets the user know that the function will exicu
+        console.log("now executing function:              hide_nav_list_forum();");
+
+        // shows forum, hides scrolbar in body
+        nav__list.classList.toggle("show_and_hide");
+        nav_button_0.innerHTML = "≡";
+        open = false;
+
+
+        // lets the user know that the function has been executed without errors
+        console.log("done executing function:             hide_nav_list_forum();");
+    }*/
