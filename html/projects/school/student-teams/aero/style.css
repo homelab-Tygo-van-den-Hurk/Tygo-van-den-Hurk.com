@@ -1,0 +1,48 @@
+@import url(./../../../../assets/code/max_screen_width_protection.css);
+@import url(./../../../../assets/code/base_kit.css);
+:root {
+  --accent-color: #FF2020 !important;
+  --back_ground-top: url(./../../../../assets/images/baners/landing_page_top_no_image.svg) !important;
+  --back_ground-top_dark: url(./../../../../assets/images/baners/landing_page_top_no_image_dark.svg) !important;
+  --back_ground-bottom: url(./../../../../assets/images/baners/landing_page_bottom_no_image.svg) !important;
+  --back_ground-bottom_dark: url(./../../../../assets/images/baners/landing_page_bottom_no_image_dark.svg) !important;
+}
+
+#picture_title_and_more-section {
+  background-image: url(./aero-eagle-image.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.picture_title_and_more__background {
+  background-image: var(--back_ground-top);
+}
+
+h1 {
+  color: var(--accent-color);
+}
+
+.sub_h1 {
+  color: var(--accent-color);
+}
+
+#Interessed_in_working_with_me {
+  background-image: url(./aero-eagle-image.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.Interessed {
+  background-image: var(--back_ground-bottom);
+}
+
+@media (prefers-color-scheme: dark) {
+  .picture_title_and_more__background {
+    background-image: var(--back_ground-top_dark);
+  }
+  .Interessed {
+    background-image: var(--back_ground-bottom_dark);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-@import url(../common_resource/base_kit.css);
+@import url(../assets/code/base_kit.css);
 body {
   background-color: var(--back_ground-color);
 }
