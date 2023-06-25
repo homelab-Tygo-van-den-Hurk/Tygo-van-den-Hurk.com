@@ -116,46 +116,40 @@ window.onload = function() {// this makes it so that the java scribt only loads 
         hide_contact_me_form();
 
         console.log("\n");
-    });/*
-    form_submit_button.addEventListener("click", () => {
+    });
 
-        // lets the user know that the button click was registerd
-        console.log("contact form submit button pushed:  confirmed   (debug log);");
-        console.log("\n");
-    });*/
-
-    const post_contact_me_form = function(event){
-
-        // lets the user know that the function will exicute
-        console.log("now executing function:              post_contact_me_form();");
-
-        event.preventDefault();
-
-        // submits data        
-        let data = {
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value
-        }
-
-        fetch("https://www.tygo-van-den-hurk.com/contact-form", {
-            method: PUT,
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log("succuess", data)
-        })
-        .catch((error) => {
-            console.log("Error: ", error)
-        });
-
-
-        // lets the user know that the function has been executed
-        console.log("done executing function:             post_contact_me_form();");
-    }
+    // const post_contact_me_form = function(event){
+    //
+    //     // lets the user know that the function will exicute
+    //     console.log("now executing function:              post_contact_me_form();");
+    //
+    //     event.preventDefault();
+    //
+    //     // submits data        
+    //     let data = {
+    //         email: document.getElementById("email").value,
+    //         message: document.getElementById("message").value
+    //     }
+    //
+    //     fetch("https://www.tygo-van-den-hurk.com/contact-form", {
+    //         method: PUT,
+    //         headers: {
+    //             "Content-Type": "application/json"
+    //         },
+    //         body: JSON.stringify(data),
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log("succuess", data)
+    //     })
+    //     .catch((error) => {
+    //         console.log("Error: ", error)
+    //     });
+    //
+    //
+    //     // lets the user know that the function has been executed
+    //     console.log("done executing function:             post_contact_me_form();");
+    // }
 
     // shows on the console that the java script loaded correctly
     console.log("Status loading Java Script:          loaded correctly");

@@ -1,0 +1,24 @@
+@import url(./../common_resource/max_screen_width_protection.css);
+@import url(./../common_resource/base_kit.css);
+
+.picture_title_and_more__background { // @Override: Background-image
+    background: none; // TODO change to a new background picture for it not to become to repeditive.
+    min-height: 200px;
+    
+    padding-top: 0 !important;
+    margin: 0;
+
+    height: calc(60vh - (60vh - 405px) / 2);
+    padding-top: calc( (100vh - 405px) / 2);
+}
+.Interessed { // @Override: Background-image
+    background: none; // TODO change to a new background picture for it not to become to repeditive.
+}
+
+@media only screen and (min-width: var(--MAX_SCREEN_RESOLUTION)) {
+
+    .picture_title_and_more__background { // @Override: Background-image
+        background-color: red !important;
+        padding: $MAX_SCREEN_RESOLUTION;
+    }
+}

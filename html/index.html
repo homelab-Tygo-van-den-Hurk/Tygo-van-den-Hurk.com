@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- TODO-->
         <title>
             Tygo van den Hurk - Home
         </title>
@@ -12,7 +11,7 @@
             content="Tygo, van den Hurk, Tygo van den Hurk">
         <meta
             name="description"
-            content="Hi! I&rsquo;m Tygo, I am a student at the TU&#47;e. This is my personal-site, please take a look around and don&rsquo;t be affraid to contact me!">
+            content="Hi! I&rsquo;m Tygo van den Hurk, I am a student at the TU&#47;e. This is my personal-site, please take a look around and don&rsquo;t be affraid to contact me!">
         <meta 
             name="viewport" 
             content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -20,7 +19,7 @@
         <!--
             icon comes from: https://storyset.com/illustration/personal-site/bro#FF0F06FF&hide=&hide=complete
         -->
-        <link rel="icon" href="Assets/Images/placeholder/blue_and_yellow_blur.jpg"><!-- please update this-->
+        <link rel="icon" href="Assets/Images/me/head-shot (Small).jpg">
         <link rel="stylesheet" href="style.css"> 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +37,7 @@
                             x
                         </div>
                     </button>
-                    <form class="contact_me__form" action="">
+                    <form class="contact_me__form" action="" id="form">
                         <label for="email" class="contact_me__form__email_label">
                             Email adress:
                         </label>
@@ -48,7 +47,12 @@
                         <label for="message" class="contact_me__form__message_label">
                             Message:
                         </label>
-                        <textarea name="message" id="contact_me__" class="contact_me__form__message_input" placeholder="this is still a work in progress and it does not work yet."></textarea>
+                        <textarea 
+                            name="message"
+                            id="contact_me__"
+                            class="contact_me__form__message_input" 
+                            placeholder="Hey there I wanted to contact you cause..."
+                            >This is still a work in progress and it does not work yet. When you click submit your message will disappear in the void.</textarea>
                         <div class="submit__button_container">
                             <div class="Button_container">
                                 <button class="" id="form_submit">
@@ -114,13 +118,11 @@
                                     Here you can see my portfolio, everything from a brief discribtion, facts about me, what I have made, what I am good at, projects I have done and much more.
                                 </p>
                                 <div class="card__button_container">
-                                    <div class="Button_container">
-                                        <a href="portfolio/" class="card__see_more_button_link">
-                                            <button type="button" class="card__see_more_button">
-                                                See Portfolio
-                                            </button>
-                                        </a>
-                                    </div>
+                                    <a href="portfolio/" class="card__see_more_button_link">
+                                        <button type="button" class="card__see_more_button"> 
+                                            See Portfolio
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -128,9 +130,12 @@
                 </div>
                 <!-- card 2 -->
                 <div class="card__border">
-                    <div class="card" id="card__index1" >
+                    <div class="card" id="card__index1">
                         <div class="card__picture_box__even">
-                            <img class="card__picture_even" src="Assets/Images/tab-icons/all-projects.svg" alt="guy showing off his projects">
+                            <img
+                                class="card__picture_even"
+                                src="Assets/Images/tab-icons/all-projects.svg"
+                                alt="picture of a project I did">
                         </div>
                         <div class="card__text_box_even">
                             <div class="card__text_box_container">
@@ -141,14 +146,16 @@
                                 <p class="card__text">
                                     Here I will show you my best projects. My 3 most recent Master-Pieces. If you would like to see even more of my work that is possible too. You can find those at the button below.
                                 </p>
-                                <div class="link__button_container">
-                                    <div class="Button_container">
-                                        <a href="portfolio/#projects_I_have_done" class="card__see_more_button_link">
-                                            <button type="button" class="card__see_more_button">
-                                                See Projects
-                                            </button>
-                                        </a>
-                                    </div>
+                                <div class="card__button_container">
+                                    <a 
+                                        href="./portfolio/#projects_I_have_done" 
+                                        class="card__see_more_button_link">
+                                        <button 
+                                            type="button" 
+                                            class="card__see_more_button"> 
+                                            See Projects
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

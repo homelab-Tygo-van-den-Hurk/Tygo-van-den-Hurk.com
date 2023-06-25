@@ -159,8 +159,6 @@
     }
 }
 
-
-
 /*
  *
  * My_latest_works section
@@ -176,21 +174,19 @@
     padding-bottom: 1em;
 }
 
-
 /*
  *
  * MAKE IT LOOK GOOD ON ANY SCREEN
  *
  */
-
-@media only screen and (min-width: 400px){
+@media only screen and (min-width: 400px) { // applies iff screen width is greater or equal to 400px
     
     .summary{ /* 300px wasn't enough to display it */
         display: block;
     }
 }
 
-@media only screen and (min-width: 600px) and (prefers-color-scheme: light){
+@media only screen and (min-width: 600px) and (prefers-color-scheme: light) { // applies iff screen width is greater or equal to 400px
     /*  there have to be two of these to make sure that it works for both light and dark mode*/
     
     .My_skills__h3{
@@ -205,34 +201,35 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (prefers-color-scheme: dark){
+@media only screen and (min-width: 600px) and (prefers-color-scheme: dark) {
     
-    .My_skills__h3{
+    .My_skills__h3 {
         color: white !important;
-    }.My_skills__grid{
+
+    } .My_skills__grid {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }
-    .My_skills__text{
+
+    } .My_skills__text {
         display: block;
     }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) { // applies iff screen width is greater or equal to 900px
 
-    .My_skills__grid{
+    .My_skills__grid {
         grid-template-columns: 33% 33% 33%; /* change to 33% 34% 33% when resolution is high enough */
     }
 }
 
+@media (prefers-color-scheme: dark) {
 
-@media (prefers-color-scheme: dark){
-
-    .My_skills__h3{
+    .My_skills__h3 {
         color: --back_ground-color3;
     }
-    .Who_am_I__img{
+
+    .Who_am_I__img {
         box-shadow: 0 0 2em -1em var(--back_ground-color3);
     }
 }
