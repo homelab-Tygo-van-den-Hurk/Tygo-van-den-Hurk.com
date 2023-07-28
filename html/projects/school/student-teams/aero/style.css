@@ -19,14 +19,6 @@
   background-image: var(--back_ground-top);
 }
 
-h1 {
-  color: var(--accent-color);
-}
-
-.sub_h1 {
-  color: var(--accent-color);
-}
-
 #Interessed_in_working_with_me {
   background-image: url(./aero-eagle-image.png);
   background-repeat: no-repeat;

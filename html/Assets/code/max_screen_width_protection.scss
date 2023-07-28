@@ -1,9 +1,10 @@
+$MAX_SCREEN_RESOLUTION: 1920px;
+
 :root {
-    $MAX_SCREEN_RESOLUTION: 1080px;
     --MAX_SCREEN_RESOLUTION: $MAX_SCREEN_RESOLUTION;
 }
 
-body{
+body {
     background-color: var(--back_ground-color);
 }
 
@@ -15,9 +16,7 @@ body{
 @media only screen and (min-width: $MAX_SCREEN_RESOLUTION) {
 
     .content__body{
-        min-width: var(--MAX_SCREEN_RESOLUTION);
-        width: calc(90vw);
-        max-width: calc((var(--MAX_SCREEN_RESOLUTION) * 11)/10);
+        width: $MAX_SCREEN_RESOLUTION;
 
         margin-left: auto;
         margin-right: auto;
@@ -29,7 +28,6 @@ body{
     }
 
     body{
-        background-color: red !important    ;
         background-color: var(--back_ground-color4);
     }
 }
