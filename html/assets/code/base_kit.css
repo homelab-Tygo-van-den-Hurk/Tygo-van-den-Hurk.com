@@ -6,10 +6,10 @@
    * an example would be the skills svg's
    */
   --sec-accent-color: #A155B5 /* old: #0AB7E0, and before: #FF0F06 */;
-  --back_ground-top_dark: url(./../images/baners/landing_page_top_dark.svg);
-  --back_ground-top: url(./../images/baners/landing_page_top.svg);
-  --back_ground-bottom_dark: url(./../images/baners/landing_page_bottom_dark.svg);
-  --back_ground-bottom: url(./../images/baners/landing_page_bottom.svg);
+  --back_ground-top_dark: url(./../Images/baners/landing_page_top_dark.svg);
+  --back_ground-top: url(./../Images/baners/landing_page_top.svg);
+  --back_ground-bottom_dark: url(./../Images/baners/landing_page_bottom_dark.svg);
+  --back_ground-bottom: url(./../Images/baners/landing_page_bottom.svg);
   /* Light mode */
   --back_ground-color: #fbf8fc;
   --back_ground-color2: #eaeaea;
