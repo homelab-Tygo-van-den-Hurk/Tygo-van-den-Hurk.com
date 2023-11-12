@@ -1,6 +1,6 @@
-@import url(./Assets/code/max_screen_width_protection.css);
-@import url(./Assets/code/base_kit.css);
-@import url(./Assets/code/cards.css);
+@import url(./assets/code/css/max-screen-width-protection.css);
+@import url(./assets/code/css/base-kit.css);
+@import url(./assets/code/css/cards.css);
 #links_section {
   padding-bottom: 2em;
 }/*# sourceMappingURL=style.css.map */

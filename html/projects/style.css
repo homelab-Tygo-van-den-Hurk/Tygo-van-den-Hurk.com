@@ -1,5 +1,5 @@
-@import url(./../Assets/code/max_screen_width_protection.css);
-@import url(./../Assets/code/base_kit.css);
+@import url(./../assets/code/css/max_screen_width_protection.css);
+@import url(./../assets/code/css/base_kit.css);
 .picture_title_and_more__background {
   background: none;
   min-height: 200px;
