@@ -46,7 +46,10 @@ $CARD_BORDER_THICKNESS: 1px;
             .card__picture_uneven{
                 border-radius: var(--bor_rad) var(--bor_rad) 0 0;
                 border: none;
-
+              
+                background-size: cover;
+                background-repeat: no-repeat;
+              
                 height: 100%;
                 width: 100%;
             }
@@ -65,7 +68,10 @@ $CARD_BORDER_THICKNESS: 1px;
             .card__picture_even {
                 border-radius: var(--bor_rad) var(--bor_rad) 0 0;
                 border: none;
-
+              
+                background-size: cover;
+                background-repeat: no-repeat;
+              
                 height: 100%;
                 width: 100%;
             }

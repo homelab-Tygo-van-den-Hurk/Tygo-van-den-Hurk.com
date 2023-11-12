@@ -8,7 +8,7 @@
   --sec-accent-color: #A155B5 /* old: #0AB7E0, and before: #FF0F06 */;
   --back_ground-top_dark: url(./../../images/baners/landing_page_top_dark.svg);
   --back_ground-top: url(./../../images/baners/landing_page_top.svg);
-  --back_ground-bottom_dark: url(./../images/baners/landing_page_bottom_dark.svg);
+  --back_ground-bottom_dark: url(./../../images/baners/landing_page_bottom_dark.svg);
   --back_ground-bottom: url(./../../images/baners/landing_page_bottom.svg);
   /* Light mode */
   --back_ground-color: #fbf8fc;
@@ -72,7 +72,7 @@ p {
 }
 
 a {
-  color: var(--back_ground-color3);
+  color: var(--accent-color);
   text-align: center;
   font-family: "Source Serif Pro", monospace;
   margin-left: auto;
