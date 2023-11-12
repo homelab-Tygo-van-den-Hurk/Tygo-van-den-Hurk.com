@@ -24,6 +24,9 @@
     --back_ground-color4_dark: #0e1112;
 
     --bor_rad: 10px;
+
+    --max-text-width: 60em;
+    --text-width: 80%;
 }
 
 /*
@@ -38,7 +41,7 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60em;
+    max-width: var(--max-text-width);
     min-width: 300px;
 } * {
     padding: 0;
@@ -66,8 +69,9 @@
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    width: 60%;
-    max-width: 45em;
+    max-width: var(--max-text-width);
+    width: var(--text-width);
+
 } a {
     color: var(--accent-color);
     text-align: center;
@@ -75,8 +79,9 @@
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    width: 60%;
-    max-width: 60em;
+    max-width: var(--max-text-width);
+    width: var(--text-width);
+
 } h1 {
     font-size: 3em;
     text-align: center;
@@ -84,7 +89,9 @@
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    width: 80%;
+    max-width: var(--max-text-width);
+    width: var(--text-width);
+
 } h2 {
     text-align: center;
     margin-top: 4em;
@@ -93,7 +100,8 @@
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    width: 60%;
+    max-width: var(--max-text-width);
+    width: var(--text-width);
 
 } h3 {
     text-align: center;
@@ -103,7 +111,8 @@
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    width: 60%;
+    max-width: var(--max-text-width);
+    width: var(--text-width);
 
 } .Button_container {
     /* centering */

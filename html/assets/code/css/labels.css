@@ -1,0 +1,19 @@
+.labels {
+  margin: 0em auto;
+  display: grid;
+  grid-template-columns: auto 1em auto;
+}
+.labels * {
+  display: block;
+  margin: 0;
+  width: auto;
+}
+.labels *:nth-child(3n+1) {
+  text-align: right;
+}
+.labels *:nth-child(3n+2) {
+  text-align: center;
+}
+.labels *:nth-child(3n) {
+  text-align: left;
+}/*# sourceMappingURL=labels.css.map */

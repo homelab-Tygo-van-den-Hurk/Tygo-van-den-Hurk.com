@@ -21,6 +21,8 @@
   --back_ground-color3_dark: #343C3F;
   --back_ground-color4_dark: #0e1112;
   --bor_rad: 10px;
+  --max-text-width: 60em;
+  --text-width: 80%;
 }
 
 /*
@@ -35,7 +37,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60em;
+  max-width: var(--max-text-width);
   min-width: 300px;
 }
 
@@ -67,8 +69,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  width: 60%;
-  max-width: 45em;
+  max-width: var(--max-text-width);
+  width: var(--text-width);
 }
 
 a {
@@ -78,8 +80,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  width: 60%;
-  max-width: 60em;
+  max-width: var(--max-text-width);
+  width: var(--text-width);
 }
 
 h1 {
@@ -89,7 +91,8 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  width: 80%;
+  max-width: var(--max-text-width);
+  width: var(--text-width);
 }
 
 h2 {
@@ -100,7 +103,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  width: 60%;
+  max-width: var(--max-text-width);
+  width: var(--text-width);
 }
 
 h3 {
@@ -111,7 +115,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  width: 60%;
+  max-width: var(--max-text-width);
+  width: var(--text-width);
 }
 
 .Button_container {

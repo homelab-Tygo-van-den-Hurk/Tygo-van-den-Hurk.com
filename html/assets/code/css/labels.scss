@@ -1,0 +1,29 @@
+.labels {
+    margin: 0em auto;
+
+    display: grid;
+    grid-template-columns: auto 1em auto;
+
+    // background-color: darkgoldenrod;
+
+    * {
+        display: block;
+        margin: 0;
+        width: auto;
+
+    } *:nth-child(3n+1) {
+        text-align: right;
+    
+        // background-color: darkred;
+    
+    } *:nth-child(3n+2) {
+        text-align: center;
+        
+        // background-color: darkgreen;
+    
+    } *:nth-child(3n) {
+        text-align: left;
+    
+        // background-color: darkblue;
+    }
+}
