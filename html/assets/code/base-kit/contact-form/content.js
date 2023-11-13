@@ -3,32 +3,43 @@ document.write( // Copy froom contents.html until we find a way to fetch this in
 <style type="text/css" scoped>@import url(/assets/code/base-kit/contact-form/content.css);</style>
 <section id="contact-me-section" class="follower hidden blackout">
     <div class="rounded shadow bordered vertically-centered horisontally-centered box" id="forum-container">
-        <button class="rounded shadow bordered" id="contact-me-close-button">
-            <div>x</div>
-        </button>
+        <button class="rounded shadow bordered" id="contact-me-close-button">x</button>
         <form id="contact-me-forum" action="">
             <div id="contact-me-forum-email">
                 <label 
                     for="email"
-                    class="horisontally-centered"
+                    class="horisontally-centered bold"
                     id="contact-me-forum-email-label"
                 >Email adress:</label>
                 <input 
                     name="email" 
-                    class="horisontally-centered"
+                    class="horisontally-centered rounded"
                     id="contact-me-forum-email-input" 
                     type="email" 
                     placeholder="example@domain.com">
             </div>
+            <div id="contact-me-forum-subject">
+                <label 
+                    for="subject"
+                    class="horisontally-centered bold"
+                    id="contact-me-forum-subject-label"
+                >Subject:</label>
+                <input 
+                    name="subject" 
+                    class="horisontally-centered rounded"
+                    id="contact-me-forum-subject-input" 
+                    type="text" 
+                    placeholder="Reaching out">
+            </div>
             <div id="contact-me-forum-message">
                 <label 
                     for="message" 
-                    class="horisontally-centered"
+                    class="horisontally-centered bold"
                     id="contact-me-forum-message-label"
                 >Message:</label>
                 <textarea 
                     name="message" 
-                    class="not-resizable horisontally-centered"
+                    class="not-resizable horisontally-centered rounded"
                     id="contact-me-forum-message-input" 
                     placeholder="this is still a work in progress and it does not work yet."
                 ></textarea>

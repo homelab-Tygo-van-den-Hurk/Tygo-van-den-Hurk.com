@@ -128,6 +128,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+} label {
+    margin-top: var(--default-top-margin);
+    width: var(--content-width);
+    max-width: var(--max-content-width);
+    display: inline-block;
+} input, textarea {
+    padding: 0.5em;
+    margin-top: calc(var(--default-top-margin)/2);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
+    border-width: var(--border-width);
+    min-width: auto;
+    width: 80%;
+    max-width: auto;
+    display: inline-block;
+    background-color: var(--light-mode-background-layer-0-color);
+
+} input::placeholder, textarea::placeholder {
+    color: #999;
+    font-style: italic;
+} input:invalid + label, textarea:invalid + label{
+    color: red;
+    outline: 2px solid red;
+} input:focus, textarea:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color) !important;
+} input:disabled + label, textarea:disabled + label {
+    background-color: #eee;
+    color: #888;
+    cursor: not-allowed;
+
 } iframe {
     padding: 0;
     border: 0;
@@ -184,8 +215,10 @@
         background-color: var(--dark-mode-background-layer-1-color);
     } body {
         background-color: var(--dark-mode-background-layer-0-color);
-    }
-
+    } input, textarea {
+        background-color: var(--dark-mode-background-layer-0-color)
+    } 
+    
     .light-mode {
         display: none !important;
     }

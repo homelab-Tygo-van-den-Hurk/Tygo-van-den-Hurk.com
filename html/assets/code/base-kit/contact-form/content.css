@@ -16,18 +16,24 @@
 #contact-me-close-button {
   border-radius: 50%;
   aspect-ratio: 1/1;
-  width: 1em;
+  width: 2.5em;
+  height: 2.5em;
   position: absolute;
   top: 1em;
   right: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 #contact-me-forum {
-  height: 450px;
+  height: 480px;
   min-width: auto;
-  width: 350px;
+  width: 320px;
   max-width: auto;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #contact-me-forum > * {
@@ -35,17 +41,9 @@
   width: 100%;
 }
 
-#contact-me-forum > * > label {
-  margin-top: 3em;
-  min-width: auto;
-  width: 100%;
-  max-width: auto;
-}
-
-#contact-me-forum > * > input {
-  min-width: auto;
-  width: 80%;
-  max-width: auto;
+#contact-me-forum-message-input {
+  height: calc(4 * var(--default-text-size));
+  text-align: left;
 }
 
 #contact-me-forum-submit-button {
@@ -53,12 +51,9 @@
   text-transform: uppercase;
   height: calc(var(--button-height) - var(--border-width));
   width: calc(var(--button-width) - var(--border-width));
-  position: relative;
-  bottom: 1em;
   background-color: var(--accent-color);
-  border-color: var(--border-color);
-  border-radius: var(--border-radius);
-  border-width: var(--border-width);
+  margin-top: calc(1.5 * var(--default-top-margin));
+  box-shadow: none;
 }
 
 #contact-me-forum-message-input {

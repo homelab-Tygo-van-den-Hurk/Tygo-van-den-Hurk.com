@@ -13,14 +13,19 @@
   background-position: top;
   height: 100%;
   position: relative;
-}
-
-#bottom-h2 {
-  background-color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #bottom-h2::after {
   content: none;
+}
+
+#bottom-button {
+  margin-top: calc(var(--default-top-margin) * 2);
+  margin-bottom: calc(var(--default-top-margin) * 3);
 }
 
 #bottom-list-of-socials {

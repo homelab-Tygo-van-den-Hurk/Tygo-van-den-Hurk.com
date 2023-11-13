@@ -12,25 +12,22 @@
     background-size: cover;
     background-position: bottom;  
     height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #top-h1 {
     margin-top: 0;
-    background-color: darkred;
 } #top-h1::after {
     content: none;
 }
 
-#top-p {
-    background-color: darkblue;
-}
-
-#bottom-button {
-    // position: absolute;
-    // top: 30vh;
-    // margin: 0;
-    // left: 0;
-    // right: 0;
+#top-button {
+    margin-top: calc(var(--default-top-margin) * 2);
+    margin-bottom: calc(var(--default-top-margin) * 3);
 }
 
 //~~~~~~~~~~~~~~ Changes based on Dark or Light mode ~~~~~~~~~~~~~~//

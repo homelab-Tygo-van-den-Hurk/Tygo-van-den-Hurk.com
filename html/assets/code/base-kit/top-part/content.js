@@ -15,9 +15,6 @@ document.write( // Copy froom contents.html until we find a way to fetch this in
         import { showContactMeForm } from '/assets/code/base-kit/contact-form/module.js';
         const button = document.getElementById(id);
         button.addEventListener('click', showContactMeForm);
-        // button.addEventListener('click', () => {
-        //     console.log("clicked: \'"+id+"\'!");
-        // });
     </script>
 </section>
 `);
