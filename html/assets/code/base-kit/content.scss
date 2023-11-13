@@ -124,7 +124,7 @@
 
 //~~~ Self Made classes ~~~//
 .hidden {
-    display: none;
+    display: none !important;
 } .not-scrollable {
     overflow: hidden;
 } .rounded {
@@ -150,6 +150,8 @@
 } .follower {
     position: fixed;
     top: 0;
+} .not-resizable {
+    resize: none;
 }
 
 //~~~~~~~~~~~~~~~~ Dark Mode Changes ~~~~~~~~~~~~~~~~//

@@ -1,6 +1,8 @@
+/**
+ * A function that toggles the visibility of the contact me section, and toggles the scrolability of the body.
+ */
 export function showContactMeForm() {
     const contactMeForm = document.getElementById("contact-me-section");
-    const body = document.getElementById("body");
     contactMeForm.classList.toggle("hidden");
-    body.classList.toggle("not-scrollable");
+    document.body.classList.toggle("not-scrollable");
 }

@@ -154,7 +154,7 @@ iframe[seamless] {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .not-scrollable {
@@ -200,6 +200,10 @@ iframe[seamless] {
 .follower {
   position: fixed;
   top: 0;
+}
+
+.not-resizable {
+  resize: none;
 }
 
 @media (prefers-color-scheme: dark) {

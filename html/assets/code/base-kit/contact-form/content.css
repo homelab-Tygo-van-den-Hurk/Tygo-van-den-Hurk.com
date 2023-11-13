@@ -1,1 +1,72 @@
-/*# sourceMappingURL=content.css.map */
+#contact-me-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+#forum-container {
+  padding: 2em;
+  position: relative;
+  min-width: auto;
+  width: auto;
+  max-width: auto;
+}
+
+#contact-me-close-button {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 1em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+#contact-me-forum {
+  height: 450px;
+  min-width: auto;
+  width: 350px;
+  max-width: auto;
+  position: relative;
+}
+
+#contact-me-forum > * {
+  display: block;
+  width: 100%;
+}
+
+#contact-me-forum > * > label {
+  margin-top: 3em;
+  min-width: auto;
+  width: 100%;
+  max-width: auto;
+}
+
+#contact-me-forum > * > input {
+  min-width: auto;
+  width: 80%;
+  max-width: auto;
+}
+
+#contact-me-forum-submit-button {
+  background-color: var(--accent-color);
+  text-transform: uppercase;
+  height: calc(var(--button-height) - var(--border-width));
+  width: calc(var(--button-width) - var(--border-width));
+  position: relative;
+  bottom: 1em;
+  background-color: var(--accent-color);
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+}
+
+#contact-me-forum-message-input {
+  -ms-overflow-style: none; /* hides the scroll bar in Internet Explorer 10+ */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  scrollbar-width: none; /* hides the scroll bar in Firefox */
+}
+
+#contact-me-forum-message-input::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}/*# sourceMappingURL=content.css.map */
