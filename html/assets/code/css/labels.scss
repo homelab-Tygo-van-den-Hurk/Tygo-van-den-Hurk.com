@@ -1,8 +1,10 @@
+$SPACE_FOR_COLLUM_SEPARATOR: 1em;
+
 .labels {
     margin: 0em auto;
 
     display: grid;
-    grid-template-columns: auto 1em auto;
+    grid-template-columns: auto $SPACE_FOR_COLLUM_SEPARATOR auto;
 
     // background-color: darkgoldenrod;
 

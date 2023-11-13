@@ -1,0 +1,149 @@
+@import url(variables.css);
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  /* if one of these has a transition it must be there */
+  transition: border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2 ease-in-out;
+  transition: box-shadow 0.5 ease-in-out;
+}
+
+body {
+  background-color: var(--light-mode-background-layer-0-color);
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none; /* hides the scroll bar in Internet Explorer 10+ */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  scrollbar-width: none; /* hides the scroll bar in Firefox */
+}
+body * {
+  color: var(--light-mode-text-color);
+  font-size: var(--default-text-size);
+  font-family: var(--text-font);
+  text-align: var(--text-alignments);
+  max-width: var(--max-content-width);
+  width: var(--content-width);
+  margin-left: var(--default-left-margin);
+  margin-right: var(--default-right-margin);
+}
+body main {
+  overflow: hidden;
+  min-width: var(--min-main-width);
+  width: 100%;
+  max-width: var(--max-main-width);
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--light-mode-background-layer-1-color);
+}
+body h1 {
+  font-size: var(--h1-size);
+  font-family: var(--title-font);
+  margin-top: var(--default-top-margin);
+}
+body h2 {
+  font-size: var(--h2-size);
+  font-family: var(--title-font);
+  margin-top: calc(1.5 * var(--default-top-margin));
+}
+body h3 {
+  font-size: var(--h3-size);
+  font-family: var(--title-font);
+  margin-top: calc(2 * var(--default-top-margin));
+}
+body a {
+  color: var(--accent-color);
+}
+body li {
+  list-style-type: var(--list-styles);
+}
+body button {
+  font-weight: bold;
+  text-transform: uppercase;
+  height: calc(var(--button-height) - var(--border-width));
+  width: calc(var(--button-width) - var(--border-width));
+}
+body iframe {
+  padding: 0;
+  border: 0;
+  background-color: darkcyan;
+  width: 100%;
+}
+body iframe[seamless] {
+  border: none;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.light-mode {
+  display: block;
+}
+
+.dark-mode {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.not-scrollable {
+  overflow: hidden;
+}
+
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.horisontally-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bordered {
+  border-width: var(--border-width);
+  border-color: var(--light-mode-border-color);
+}
+
+.shadow {
+  box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
+}
+
+.box {
+  background-color: var(--light-mode-background-layer-2-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-mode-background-layer-0-color);
+  }
+  body * {
+    color: var(--dark-mode-text-color);
+  }
+  body main {
+    background-color: var(--dark-mode-background-layer-1-color);
+  }
+  body .light-mode {
+    display: none;
+  }
+  body .dark-mode {
+    display: block;
+  }
+  body .bordered {
+    border-color: var(--dark-mode-border-color);
+  }
+  body .shadow {
+    box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
+  }
+  body .box {
+    background-color: var(--dark-mode-background-layer-2-color);
+  }
+}/*# sourceMappingURL=content.css.map */

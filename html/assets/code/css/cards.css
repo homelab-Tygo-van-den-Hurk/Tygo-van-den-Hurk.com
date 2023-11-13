@@ -34,8 +34,8 @@
 .card__border .card .card__picture_box__uneven .card__picture_uneven {
   border-radius: var(--bor_rad) var(--bor_rad) 0 0;
   border: none;
-  background-size: cover;
-  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -52,8 +52,8 @@
 .card__border .card .card__picture_box__even .card__picture_even {
   border-radius: var(--bor_rad) var(--bor_rad) 0 0;
   border: none;
-  background-size: cover;
-  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
   width: 100%;
 }

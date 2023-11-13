@@ -1,0 +1,56 @@
+:root{
+    /* default width */
+        --min-content-width: 5em;
+        --content-width: 80%;
+        --max-content-width: 60em;
+        /* Main content width */
+            --min-main-width: 350px;
+            --max-main-width: 1920px;
+    /* shadow */
+        --shadow-offset-x: 0;
+        --shadow-offset-y: 0;
+        --shadow-blur-radius: 2em;
+        --shadow-spread-radius: -0.5em;
+        --light-mode-shadow: #343C3F;
+        --dark-mode-shadow: #fbf8fc;
+    /* borders */
+        --border-radius: 10px;
+        --border-width: 1px;
+        --dark-mode-border-color: #808080;
+        --light-mode-border-color: #808080;
+    /* Margins */
+        --default-top-margin: 2em;
+        --default-left-margin: auto;
+        --default-right-margin: auto;
+    /* text */
+        --text-alignments: center;
+        --light-mode-text-color: #14181B;
+        --dark-mode-text-color: #fcf7fe;
+        /* fonts */
+        --title-font: 'Old Standard TT', serif;
+        --text-font: 'Source Serif Pro', monospace;
+        /* size */
+            --default-text-size: 11pt;
+            --h1-size: 3em;
+            --h2-size: 2.5em;
+            --h3-size: 1.4em;
+        /* list styles */
+            --list-styles: none;
+    /* buttons */
+        --button-width: 14.7em;
+        --button-height: 2.7em;
+    /* colors */
+        --unused-color-0: #343C3F;
+        --unused-color-1: #0e1112;
+        /* Accent colors */
+            --accent-color: #A155B5;
+            --sec-accent-color: #A155B5;
+        /* Light mode */
+            --light-mode-background-layer-0-color: #fcf7fe;
+            --light-mode-background-layer-1-color: #fbf8fc;
+            --light-mode-background-layer-2-color: #eaeaea;;
+        /* Dark mode */
+            --dark-mode-background-layer-0-color: #0e1112;
+            --dark-mode-background-layer-1-color: #14181B;
+            --dark-mode-background-layer-2-color: #0e1112;;
+}

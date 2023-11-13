@@ -47,8 +47,7 @@ $CARD_BORDER_THICKNESS: 1px;
                 border-radius: var(--bor_rad) var(--bor_rad) 0 0;
                 border: none;
               
-                background-size: cover;
-                background-repeat: no-repeat;
+                object-fit: contain;
               
                 height: 100%;
                 width: 100%;
@@ -69,8 +68,7 @@ $CARD_BORDER_THICKNESS: 1px;
                 border-radius: var(--bor_rad) var(--bor_rad) 0 0;
                 border: none;
               
-                background-size: cover;
-                background-repeat: no-repeat;
+                object-fit: contain;
               
                 height: 100%;
                 width: 100%;
