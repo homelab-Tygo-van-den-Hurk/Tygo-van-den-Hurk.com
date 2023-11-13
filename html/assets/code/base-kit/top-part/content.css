@@ -1,0 +1,40 @@
+#top-section {
+  background-image: url(/assets/images/placeholder/blue_and_yellow_blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#top-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+}
+
+#top-h1 {
+  margin-top: 0;
+  background-color: darkred;
+}
+
+#top-h1::after {
+  content: none;
+}
+
+#top-p {
+  background-color: darkblue;
+}
+
+@media (prefers-color-scheme: light) {
+  #top-container {
+    background-image: url(/assets/images/baners/landing_page_top_no_image.svg);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #top-container {
+    background-image: url(/assets/images/baners/landing_page_top_no_image_dark.svg);
+  }
+}/*# sourceMappingURL=content.css.map */

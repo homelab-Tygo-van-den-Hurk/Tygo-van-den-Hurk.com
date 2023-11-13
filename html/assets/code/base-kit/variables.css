@@ -3,6 +3,7 @@
         --min-content-width: 5em;
         --content-width: 80%;
         --max-content-width: 60em;
+        --line-after-title-width: 50px;
         /* Main content width */
             --min-main-width: 350px;
             --max-main-width: 1920px;
@@ -19,7 +20,7 @@
         --dark-mode-border-color: #808080;
         --light-mode-border-color: #808080;
     /* Margins */
-        --default-top-margin: 2em;
+        --default-top-margin: calc(2 * var(--default-text-size));
         --default-left-margin: auto;
         --default-right-margin: auto;
     /* text */
