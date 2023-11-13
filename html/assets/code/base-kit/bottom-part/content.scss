@@ -1,7 +1,7 @@
 @import url(/assets/code/base-kit/variables.css);
 
 $socialsButtonSize: 3em;
-$socialsButtonIconSize: 2em;
+$socialsButtonIconSize: 1.5em;
 
 #bottom-section {
     background-image: url(/assets/images/placeholder/blue_and_yellow_blur.jpg);
@@ -16,68 +16,29 @@ $socialsButtonIconSize: 2em;
     background-size: cover;
     background-position: top;  
     height: 100%;
-    // padding-top: min(20vh, 5em);
     position: relative;
 } 
 
 #bottom-h2 {
-    // position: absolute;
-    // top: 20vh;
-    // left: 0;
-    // right: 0;
-    // margin: 0;
     background-color: darkred;
-} #bottom-h2::after {
-    content: none;
-}
-
-#bottom-p {
-    // position: absolute;
-    // top: 25vh;
-    // margin: 0;
-    // left: 0;
-    // right: 0;
-    background-color: darkblue;
-}
-
-#bottom-button {
-    // position: absolute;
-    // top: 30vh;
-    // margin: 0;
-    // left: 0;
-    // right: 0;
+} #bottom-h2::after { 
+    content: none; // removes the line
 }
 
 #bottom-list-of-socials {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    // justify-content:space-evenly;
-    max-width: min-content;
-    width: 100%;
-    max-width: 80%;
-        // margin-top: 1em;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    bottom: 20vh;
-    left: 10%;
-    right: 10%;
-    background-color: darkolivegreen;
+    margin-top: 5em;
+    text-align: center;
 }
 
 #bottom-list-of-socials > a {
+    display: inline-block;
+    align-self: center;
     height: fit-content;
     width: fit-content;
-    display: block;
-    margin: 0;
-    align-items: center;
-
-    border-width: var(--border-width);
-    border-color: var(--border-color);
-    border-radius: var(--border-radius);
-
-    background-color: darksalmon;
+    border-radius: 50%;
 }
 
 #bottom-list-of-socials > a > img {
@@ -87,17 +48,17 @@ $socialsButtonIconSize: 2em;
 
     background-color: var(--accent-color);
     border-radius: 50%;
+    border: solid;
+    border-width: var(--border-width);
     padding: calc(($socialsButtonSize - (2 * var(--border-width)) - $socialsButtonIconSize)/2 );
-}
-
-#bottom-list-of-socials-facebook-icon {
+} #bottom-list-of-socials-facebook-icon {
     display: none !important;
-} #bottom-list-of-socials-instagram-icon {
-    display: none !important;
-} #bottom-list-of-socials-snapchat-icon {
-    display: none !important;
-} #bottom-list-of-socials-linkedin-icon {
-    display: none !important;
+// } #bottom-list-of-socials-instagram-icon {
+//     display: none !important;
+// } #bottom-list-of-socials-snapchat-icon {
+//     display: none !important;
+// } #bottom-list-of-socials-linkedin-icon {
+//     display: none !important;
 } #bottom-list-of-socials-whatsapp-icon {
     display: none !important;
 } #bottom-list-of-socials-email-icon {
@@ -109,11 +70,19 @@ $socialsButtonIconSize: 2em;
     #bottom-container {
         background-image: url(/assets/images/baners/landing_page_bottom_no_image.svg);
     }
+
+    #bottom-list-of-socials > a > img {
+        border-color: black;
+    }
 }
 
 @media (prefers-color-scheme: dark){
     #bottom-container {
         background-image: url(/assets/images/baners/landing_page_bottom_no_image_dark.svg);
+    }
+
+    #bottom-list-of-socials > a > img {
+        border-color: white;
     }
 }
 
