@@ -28,6 +28,7 @@
 #top-button {
     margin-top: calc(var(--default-top-margin) * 2);
     margin-bottom: calc(var(--default-top-margin) * 3);
+    box-shadow: none;
 }
 
 //~~~~~~~~~~~~~~ Changes based on Dark or Light mode ~~~~~~~~~~~~~~//

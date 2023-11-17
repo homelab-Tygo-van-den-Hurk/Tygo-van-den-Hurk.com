@@ -1,41 +1,62 @@
 @import url(variables.css);
 * {
-  color: var(--light-mode-text-color);
+  text-align: var(--text-alignments);
   font-size: var(--default-text-size);
   font-family: var(--text-font);
-  text-align: var(--text-alignments);
+  color: var(--light-mode-text-color);
+  border: none;
   margin-top: 0;
   margin-left: var(--default-left-margin);
   margin-right: var(--default-right-margin);
   margin-bottom: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  * {
+    color: var(--dark-mode-text-color);
+  }
+}
 html {
-  padding: 0;
-  margin: 0;
   min-width: 100vw;
   max-width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background-color: var(--light-mode-background-layer-0-color);
-  padding: 0;
-  margin: 0;
+  background-color: var(--light-mode-body-background-color);
   min-width: 100vw;
   max-width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-mode-body-background-color);
+  }
+}
 main {
-  overflow: hidden;
+  background-color: var(--light-mode-main-background-color);
+  border: solid;
+  border-width: var(--border-width);
+  border-color: var(--border-color);
   min-width: var(--min-main-width);
   width: 100%;
   max-width: var(--max-main-width);
   min-height: 100vh;
   height: 100%;
   margin: 0 auto;
-  background-color: var(--light-mode-background-layer-1-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
 }
 
+@media (prefers-color-scheme: dark) {
+  main {
+    background-color: var(--dark-mode-main-background-color);
+    box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
+  }
+}
 section {
   padding: 0;
   margin: 0;
@@ -49,15 +70,14 @@ div {
 h1 {
   font-size: var(--h1-size);
   font-family: var(--title-font);
-  margin-top: var(--default-top-margin);
   text-transform: capitalize;
+  color: var(--light-mode-title-color);
   max-width: var(--max-content-width);
   width: var(--content-width);
+  margin-top: calc(2 * var(--default-top-margin));
 }
 
 h1::after {
-  content: "";
-  display: block;
   background-color: var(--accent-color);
   width: var(--line-after-title-width);
   height: 2px;
@@ -65,20 +85,26 @@ h1::after {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: calc(var(--default-top-margin) / 2);
+  display: block;
+  content: "";
 }
 
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: var(--dark-mode-title-color);
+  }
+}
 h2 {
   font-size: var(--h2-size);
   font-family: var(--title-font);
-  margin-top: calc(1.5 * var(--default-top-margin));
   text-transform: capitalize;
+  color: var(--light-mode-title-color);
   max-width: var(--max-content-width);
   width: var(--content-width);
+  margin-top: calc(2 * var(--default-top-margin));
 }
 
 h2::after {
-  content: "";
-  display: block;
   background-color: var(--accent-color);
   width: var(--line-after-title-width);
   height: 2px;
@@ -86,20 +112,26 @@ h2::after {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: calc(var(--default-top-margin) / 2);
+  display: block;
+  content: "";
 }
 
+@media (prefers-color-scheme: dark) {
+  h2 {
+    color: var(--dark-mode-title-color);
+  }
+}
 h3 {
   font-size: var(--h3-size);
   font-family: var(--title-font);
-  margin-top: calc(2 * var(--default-top-margin));
   text-transform: capitalize;
+  color: var(--light-mode-title-color);
   max-width: var(--max-content-width);
   width: var(--content-width);
+  margin-top: calc(2 * var(--default-top-margin));
 }
 
 h3::after {
-  content: "";
-  display: block;
   background-color: var(--accent-color);
   width: var(--line-after-title-width);
   height: 2px;
@@ -107,27 +139,40 @@ h3::after {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: calc(var(--default-top-margin) / 2);
+  display: block;
+  content: "";
 }
 
+@media (prefers-color-scheme: dark) {
+  h3 {
+    color: var(--dark-mode-title-color);
+  }
+}
 em {
-  font-weight: bold;
+  font-style: normal;
   color: var(--accent-color);
 }
 
 p {
-  margin-top: calc(var(--default-top-margin) / 2);
+  color: var(--light-mode-text-color);
   max-width: var(--max-content-width);
   width: var(--content-width);
+  margin-top: calc(var(--default-top-margin) / 2);
 }
 
+@media (prefers-color-scheme: dark) {
+  p {
+    color: var(--dark-mode-text-color);
+  }
+}
 a {
   color: var(--accent-color);
 }
 
 ul {
-  padding: 0;
   max-width: var(--max-content-width);
   width: var(--content-width);
+  padding: 0;
 }
 
 li {
@@ -137,75 +182,63 @@ li {
 button {
   font-weight: bold;
   text-transform: uppercase;
-  height: calc(var(--button-height) - var(--border-width));
-  width: calc(var(--button-width) - var(--border-width));
-  margin-top: 1em;
   background-color: var(--accent-color);
   border-color: var(--border-color);
   border-radius: var(--border-radius);
   border-width: var(--border-width);
+  width: calc(var(--button-width) - var(--border-width));
+  height: calc(var(--button-height) - var(--border-width));
+  margin-top: 1em;
 }
 
+button:hover {
+  background-color: var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  p {
+    color: var(--dark-mode-text-color);
+  }
+}
 img {
-  aspect-ratio: 1/1;
-  width: 100%;
-  border-radius: var(--border-radius);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: var(--border-radius);
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 label {
-  margin-top: var(--default-top-margin);
   width: var(--content-width);
   max-width: var(--max-content-width);
+  margin-top: var(--default-top-margin);
   display: inline-block;
 }
 
 input, textarea {
-  padding: 0.5em;
-  margin-top: calc(var(--default-top-margin) / 2);
+  background-color: var(--light-mode-background-layer-0-color);
   border-color: var(--border-color);
   border-radius: var(--border-radius);
   border-width: var(--border-width);
   min-width: auto;
   width: 80%;
   max-width: auto;
+  padding: 0.5em;
+  margin-top: calc(var(--default-top-margin) / 2);
   display: inline-block;
-  background-color: var(--light-mode-background-layer-0-color);
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #999;
-  font-style: italic;
+@media (prefers-color-scheme: dark) {
+  input, textarea {
+    background-color: var(--dark-mode-background-layer-0-color);
+  }
 }
-
-input::placeholder, textarea::placeholder {
-  color: #999;
-  font-style: italic;
-}
-
-input:invalid + label, textarea:invalid + label {
-  color: red;
-  outline: 2px solid red;
-}
-
-input:focus, textarea:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color) !important;
-}
-
-input:disabled + label, textarea:disabled + label {
-  background-color: #eee;
-  color: #888;
-  cursor: not-allowed;
-}
-
 iframe {
-  padding: 0;
-  border: 0;
   background-color: darkcyan;
+  border: 0;
   width: 100vw;
+  padding: 0;
 }
 
 iframe[seamless] {
@@ -273,18 +306,6 @@ iframe[seamless] {
 }
 
 @media (prefers-color-scheme: dark) {
-  * {
-    color: var(--dark-mode-text-color);
-  }
-  main {
-    background-color: var(--dark-mode-background-layer-1-color);
-  }
-  body {
-    background-color: var(--dark-mode-background-layer-0-color);
-  }
-  input, textarea {
-    background-color: var(--dark-mode-background-layer-0-color);
-  }
   .light-mode {
     display: none !important;
   }
@@ -296,6 +317,29 @@ iframe[seamless] {
   }
   .box {
     background-color: var(--dark-mode-background-layer-2-color);
+  }
+  .layer-0 {
+    background-color: var(--dark-mode-layer-0-background-color) !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .layer-1 {
+    background-color: var(--dark-mode-layer-2-background-color) !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .layer-2 {
+    background-color: var(--dark-mode-layer-2-background-color) !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .light-mode {
+    display: none !important;
   }
 }
 @media (prefers-color-scheme: light) {
