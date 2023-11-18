@@ -1,67 +1,118 @@
 #contact-me-section {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
 
-#forum-container {
-  padding: 2em;
-  position: relative;
-  min-width: auto;
-  width: auto;
-  max-width: auto;
-}
-
 #contact-me-close-button {
+  color: var(--light-mode-title-color);
   border-radius: 50%;
-  aspect-ratio: 1/1;
+  border-color: var(--light-mode-title-color);
   width: 2.5em;
   height: 2.5em;
+  padding: 0;
+  margin: 0;
+  aspect-ratio: 1/1;
   position: absolute;
   top: 1em;
   right: 1em;
-  margin: 0;
-  padding: 0;
+  text-transform: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  #contact-me-close-button {
+    color: var(--dark-mode-title-color);
+    border-color: var(--dark-mode-title-color);
+  }
+}
+#forum-container {
+  background-color: var(--light-mode-layer-0-background-color);
+  min-width: auto;
+  width: auto;
+  max-width: auto;
+  padding: 0em;
+  position: relative;
+  aspect-ratio: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  #forum-container {
+    background-color: var(--dark-mode-layer-0-background-color);
+  }
+}
 #contact-me-forum {
-  height: 480px;
   min-width: auto;
   width: 320px;
   max-width: auto;
+  height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  aspect-ratio: auto;
 }
 
-#contact-me-forum > * {
-  display: block;
+#contact-me-forum > div > * {
+  color: var(--light-mode-title-color);
+  border-color: var(--light-mode-border-color);
   width: 100%;
+  display: block;
 }
 
+@media (prefers-color-scheme: dark) {
+  #contact-me-forum > div > * {
+    color: var(--dark-mode-title-color);
+    border-color: var(--dark-mode-border-color);
+  }
+}
+#contact-me-forum > div > input, textarea {
+  margin-top: calc(var(--default-top-margin) / 3);
+  font-style: italic;
+  color: var(--light-mode-text-color);
+  border: solid var(--border-width);
+  background-color: var(--light-mode-layer-1-background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  #contact-me-forum > div > input, textarea {
+    color: var(--dark-mode-text-color);
+    background-color: var(--dark-mode-layer-1-background-color);
+  }
+}
 #contact-me-forum-message-input {
   height: calc(4 * var(--default-text-size));
   text-align: left;
 }
 
+#contact-me-forum-message-input {
+  /* hides the scroll bar in Internet Explorer 10+ */
+  -ms-overflow-style: none;
+  /* Hide horizontal scrollbar */
+  overflow-x: hidden;
+  /* hides the scroll bar in Firefox */
+  scrollbar-width: none;
+}
+
+#contact-me-forum-message-input::-webkit-scrollbar {
+  /* Safari and Chrome */
+  display: none;
+}
+
 #contact-me-forum-submit-button {
-  background-color: var(--accent-color);
+  color: var(--light-mode-title-color);
   text-transform: uppercase;
-  height: calc(var(--button-height) - var(--border-width));
-  width: calc(var(--button-width) - var(--border-width));
   background-color: var(--accent-color);
+  border-color: var(--light-mode-title-color);
+  width: calc(var(--button-width) - var(--border-width));
+  height: calc(var(--button-height) - var(--border-width));
   margin-top: calc(1.5 * var(--default-top-margin));
   box-shadow: none;
 }
 
-#contact-me-forum-message-input {
-  -ms-overflow-style: none; /* hides the scroll bar in Internet Explorer 10+ */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  scrollbar-width: none; /* hides the scroll bar in Firefox */
-}
-
-#contact-me-forum-message-input::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+@media (prefers-color-scheme: dark) {
+  #contact-me-forum-submit-button {
+    color: var(--dark-mode-title-color);
+    border-color: var(--dark-mode-title-color);
+  }
 }/*# sourceMappingURL=content.css.map */

@@ -4,44 +4,48 @@ document.write( // Copy froom contents.html until we find a way to fetch this in
 <section id="contact-me-section" class="follower hidden blackout">
     <div class="rounded shadow bordered vertically-centered horisontally-centered box" id="forum-container">
         <button class="rounded shadow bordered" id="contact-me-close-button">x</button>
-        <form id="contact-me-forum" action="">
+        <form id="contact-me-forum" method="POST">
             <div id="contact-me-forum-email">
                 <label 
-                    for="email"
-                    class="horisontally-centered bold"
+                    for="contact-me-forum-email-input"
+                    class="horisontally-centered"
                     id="contact-me-forum-email-label"
-                >Email adress:</label>
+                >Email adress</label>
                 <input 
+                    autocomplete="email"
                     name="email" 
                     class="horisontally-centered rounded"
                     id="contact-me-forum-email-input" 
                     type="email" 
-                    placeholder="example@domain.com">
+                    placeholder="example@domain.com"
+                    required>
             </div>
             <div id="contact-me-forum-subject">
                 <label 
-                    for="subject"
-                    class="horisontally-centered bold"
+                    for="contact-me-forum-subject-input"
+                    class="horisontally-centered"
                     id="contact-me-forum-subject-label"
-                >Subject:</label>
+                >Subject</label>
                 <input 
                     name="subject" 
                     class="horisontally-centered rounded"
                     id="contact-me-forum-subject-input" 
                     type="text" 
-                    placeholder="Reaching out">
+                    placeholder="Reaching out"
+                    required>
             </div>
             <div id="contact-me-forum-message">
                 <label 
-                    for="message" 
-                    class="horisontally-centered bold"
+                    for="contact-me-forum-message-input" 
+                    class="horisontally-centered"
                     id="contact-me-forum-message-label"
-                >Message:</label>
+                >Message</label>
                 <textarea 
                     name="message" 
                     class="not-resizable horisontally-centered rounded"
                     id="contact-me-forum-message-input" 
-                    placeholder="this is still a work in progress and it does not work yet."
+                    placeholder="This is still a work in progress and it does not work yet."
+                    required
                 ></textarea>
             </div>
             <input 
