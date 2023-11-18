@@ -23,6 +23,7 @@
     // Background Color, and image
     // border
         border: none;
+        border-image-width: none;
     // width 
     // heigth
     // padding
@@ -467,77 +468,132 @@ iframe {
 // ??????????????????????????????????????????????? Self-Made-Classes ??????????????????????????????????????????????? //
 // ????????????????????????????????????????????????????????????????????????????????????????????????????????????????? //
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hidden ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 .hidden {
     display: none !important;
-} .not-scrollable, .box {
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Not Scrolable ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.not-scrollable {
     overflow: hidden;
-} .rounded, .box {
+} 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rounded ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.rounded {
     border-radius: var(--border-radius);
-} .bold {
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Bold ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.bold {
     font-weight: bold;
-} .horisontally-centered, .box {
+} 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Horisontally, and Vertically-Centered ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~// 
+.horisontally-centered {
     margin-left: auto;
     margin-right: auto;
 } .vertically-centered{
     display: flex;
     align-items: center;
-} .bordered, .box {
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Bordered ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.bordered {
     border-width: var(--border-width) !important;
     border-color: var(--light-mode-border-color);
     border: solid;
-} .shadow, .box {
+} 
+@media (prefers-color-scheme: dark){
+    .bordered {
+        border-color: var(--dark-mode-border-color);
+    } 
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Shadowed ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.shadow {
     box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
-} .box {
-    background-color: var(--light-mode-background-layer-2-color);
-    height: fit-content;
-    min-width: auto;
-    width: var(--content-width);
-    max-width: var(--max-content-width);
-    margin-top: var(--default-top-margin);
-} .blackout {
-    z-index: 100;
-    background-color: rgba($color: #000000, $alpha: 0.7);
-} .follower {
-    position: fixed;
-    top: 0;
-} .not-resizable {
+} 
+@media (prefers-color-scheme: dark){
+    .shadow {
+        box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
+    } 
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Non-Resizable ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.not-resizable {
     resize: none;
 }
 
-//~~~~~~~~~~~~~~~~ Dark Mode Changes ~~~~~~~~~~~~~~~~//
-@media (prefers-color-scheme: dark){
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Boxs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.box {
+    @extend .shadow;
+    @extend .bordered;
+    @extend .rounded;
+    @extend .horisontally-centered;
+    @extend .not-scrollable;
     
-    .light-mode {
-        display: none !important;
-    }
-
-    .bordered {
-        border-color: var(--dark-mode-border-color);
-    } .shadow {
-        box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
-    } .box {
+    // font weigth, alignment, size, family, color
+    // Color
+    // Background Color, and image
+        background-color: var(--light-mode-background-layer-2-color);
+    // border
+    // width 
+        min-width: auto;
+        width: var(--content-width);
+        max-width: var(--max-content-width);
+    // heigth
+        height: fit-content;
+    // padding
+    // margin
+        margin-top: var(--default-top-margin);
+    // other
+        aspect-ratio: 1/1;
+}
+@media (prefers-color-scheme: dark){
+    .box {
         background-color: var(--dark-mode-background-layer-2-color);
     }
+}
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Black-outs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.blackout {
+    z-index: 100;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.7);
+}
+@media (prefers-color-scheme: dark){
+    .blackout {
+        background-color: rgba($color: #000000, $alpha: 0.7);
+    }
+}
 
-    .layer-0 {
-        background-color: var(--dark-mode-layer-0-background-color) !important;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    } .layer-1 {
-        background-color: var(--dark-mode-layer-2-background-color) !important;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    } .layer-2 {
-        background-color: var(--dark-mode-layer-2-background-color) !important;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    } 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Followes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+.follower {
+    position: fixed;
+    top: 0;
 } 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Layers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.layer-0 {
+    background-color: var(--light-mode-layer-0-background-color);
+} .layer-1 {
+    background-color: var(--light-mode-layer-1-background-color);
+} .layer-2 {
+    background-color: var(--light-mode-layer-2-background-color);
+} 
+@media (prefers-color-scheme: dark){
+    .layer-0 {
+        background-color: var(--dark-mode-layer-0-background-color);
+    } .layer-1 {
+        background-color: var(--dark-mode-layer-1-background-color);
+    } .layer-2 {
+        background-color: var(--dark-mode-layer-2-background-color);
+    } 
+}
+
+// ????????????????????????????????????????????????????????????????????????????????????????????????????????????????? //
+// ????????????????????????????????????????????? Remaining Other Things ???????????????????????????????????????????? //
+// ????????????????????????????????????????????????????????????????????????????????????????????????????????????????? //
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hiding the Things that are for a Diffrent Mode ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 @media (prefers-color-scheme: dark){
@@ -550,7 +606,6 @@ iframe {
         display: none !important;
     }
 }
-
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hiding the scrollbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 body {

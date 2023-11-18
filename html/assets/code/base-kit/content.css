@@ -5,6 +5,7 @@
   font-family: var(--text-font);
   color: var(--light-mode-text-color);
   border: none;
+  border-image-width: none;
   margin-top: 0;
   margin-left: var(--default-left-margin);
   margin-right: var(--default-right-margin);
@@ -277,64 +278,76 @@ iframe[seamless] {
   border: solid;
 }
 
+@media (prefers-color-scheme: dark) {
+  .bordered, .box {
+    border-color: var(--dark-mode-border-color);
+  }
+}
 .shadow, .box {
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
 }
 
+@media (prefers-color-scheme: dark) {
+  .shadow, .box {
+    box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
+  }
+}
+.not-resizable {
+  resize: none;
+}
+
 .box {
   background-color: var(--light-mode-background-layer-2-color);
-  height: -moz-fit-content;
-  height: fit-content;
   min-width: auto;
   width: var(--content-width);
   max-width: var(--max-content-width);
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: var(--default-top-margin);
+  aspect-ratio: 1/1;
 }
 
+@media (prefers-color-scheme: dark) {
+  .box {
+    background-color: var(--dark-mode-background-layer-2-color);
+  }
+}
 .blackout {
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
+@media (prefers-color-scheme: dark) {
+  .blackout {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
 .follower {
   position: fixed;
   top: 0;
 }
 
-.not-resizable {
-  resize: none;
+.layer-0 {
+  background-color: var(--light-mode-layer-0-background-color);
+}
+
+.layer-1 {
+  background-color: var(--light-mode-layer-1-background-color);
+}
+
+.layer-2 {
+  background-color: var(--light-mode-layer-2-background-color);
 }
 
 @media (prefers-color-scheme: dark) {
-  .light-mode {
-    display: none !important;
-  }
-  .bordered {
-    border-color: var(--dark-mode-border-color);
-  }
-  .shadow {
-    box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
-  }
-  .box {
-    background-color: var(--dark-mode-background-layer-2-color);
-  }
   .layer-0 {
-    background-color: var(--dark-mode-layer-0-background-color) !important;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: var(--dark-mode-layer-0-background-color);
   }
   .layer-1 {
-    background-color: var(--dark-mode-layer-2-background-color) !important;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: var(--dark-mode-layer-1-background-color);
   }
   .layer-2 {
-    background-color: var(--dark-mode-layer-2-background-color) !important;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: var(--dark-mode-layer-2-background-color);
   }
 }
 @media (prefers-color-scheme: dark) {

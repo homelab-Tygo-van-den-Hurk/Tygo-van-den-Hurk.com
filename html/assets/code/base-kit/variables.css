@@ -54,9 +54,9 @@
         /* Dark mode */
             --dark-mode-body-background-color: #0e1112;
             --dark-mode-main-background-color: #14181B;
-            --dark-mode-layer-0-background-color: #343C3F;
-            --dark-mode-layer-1-background-color: #1D2226;
-            --dark-mode-layer-2-background-color: #1D2226;
+            --dark-mode-layer-0-background-color: #1D2226;
+            --dark-mode-layer-1-background-color: #343C3F;
+            --dark-mode-layer-2-background-color: #4D585C;
             --dark-mode-border-color: #808080;
             --dark-mode-title-color: #fcf7fe;
             --dark-mode-text-color: #808080;

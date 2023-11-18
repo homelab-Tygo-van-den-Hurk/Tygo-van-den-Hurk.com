@@ -1,3 +1,4 @@
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Top Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #top-section {
     background-image: url(/assets/images/placeholder/blue_and_yellow_blur.jpg);
     background-repeat: no-repeat;
@@ -7,10 +8,12 @@
 
 } 
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Top Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #top-container {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;  
+    background-image: url(/assets/images/baners/landing_page_top_no_image.svg);
     height: 100%;
 
     display: flex;
@@ -18,28 +21,50 @@
     align-items: center;
     flex-direction: column;
 }
-
-#top-h1 {
-    margin-top: 0;
-} #top-h1::after {
-    content: none;
-}
-
-#top-button {
-    margin-top: calc(var(--default-top-margin) * 2);
-    margin-bottom: calc(var(--default-top-margin) * 3);
-    box-shadow: none;
-}
-
-//~~~~~~~~~~~~~~ Changes based on Dark or Light mode ~~~~~~~~~~~~~~//
-@media (prefers-color-scheme: light) {
-    #top-container {
-        background-image: url(/assets/images/baners/landing_page_top_no_image.svg);
-    }
-}
-
 @media (prefers-color-scheme: dark){
     #top-container {
         background-image: url(/assets/images/baners/landing_page_top_no_image_dark.svg);
     }
 }
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ H2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#top-h1 {
+    margin-top: 0;
+    color: var(--light-mode-layer-0-background-color);
+} #top-h1::after {
+    content: none;
+}
+@media (prefers-color-scheme: dark) {
+    #bottom-h2 {
+        color: var(--dark-mode-layer-0-background-color);
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Paragraphs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#top-p {
+    color: var(--light-mode-layer-0-background-color);
+}
+@media (prefers-color-scheme: dark) {
+    #top-p {
+        color: var(--dark-mode-layer-0-background-color);
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#top-button {
+    margin-top: calc(var(--default-top-margin) * 2);
+    margin-bottom: calc(var(--default-top-margin) * 3);
+    box-shadow: none;
+    color: var(--light-mode-layer-0-background-color);
+    border-color: var(--light-mode-layer-0-background-color);
+    border: solid var(--border-width) !important;
+}
+@media (prefers-color-scheme: dark) {
+    #bottom-button {
+        color: var(--dark-mode-layer-0-background-color);
+        border-color: var(--dark-mode-layer-0-background-color);
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Changes based on Display Width ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+// ...

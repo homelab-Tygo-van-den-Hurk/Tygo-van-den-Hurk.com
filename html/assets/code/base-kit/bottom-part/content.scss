@@ -3,6 +3,7 @@
 $socialsButtonSize: 3em;
 $socialsButtonIconSize: 1.5em;
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Bottom Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-section {
     background-image: url(/assets/images/placeholder/blue_and_yellow_blur.jpg);
     background-repeat: no-repeat;
@@ -11,10 +12,12 @@ $socialsButtonIconSize: 1.5em;
     height: 100vh;
 }
     
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Bottom Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-container {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;  
+    background-image: url(/assets/images/baners/landing_page_bottom_no_image.svg);
     height: 100%;
     position: relative;
     
@@ -23,18 +26,50 @@ $socialsButtonIconSize: 1.5em;
     align-items: center;
     flex-direction: column;
 } 
+@media (prefers-color-scheme: dark){
+    #bottom-container {
+        background-image: url(/assets/images/baners/landing_page_bottom_no_image_dark.svg);
+    }
+}
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ H2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-h2 {
+    color: var(--light-mode-layer-0-background-color);
 } #bottom-h2::after { 
     content: none; // removes the line
 }
+@media (prefers-color-scheme: dark) {
+    #bottom-h2 {
+        color: var(--dark-mode-layer-0-background-color);
+    }
+}
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Paragraphs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#bottom-p {
+    color: var(--light-mode-layer-0-background-color);
+}
+@media (prefers-color-scheme: dark) {
+    #bottom-p {
+        color: var(--dark-mode-layer-0-background-color);
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-button {
     margin-top: calc(var(--default-top-margin) * 2);
     margin-bottom: calc(var(--default-top-margin) * 3);
     box-shadow: none;
+    color: var(--light-mode-layer-0-background-color);
+    border-color: var(--light-mode-layer-0-background-color);
+}
+@media (prefers-color-scheme: dark) {
+    #bottom-button {
+        color: var(--dark-mode-layer-0-background-color);
+        border-color: var(--dark-mode-layer-0-background-color);
+    }
 }
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Lists ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-list-of-socials {
     width: fit-content;
     margin-left: auto;
@@ -51,17 +86,27 @@ $socialsButtonIconSize: 1.5em;
     border-radius: 50%;
 }
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Images ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-list-of-socials > a > img {
     aspect-ratio: 1/1;
     width: $socialsButtonIconSize;
-    display: block;
+    // display: block;
 
     background-color: var(--accent-color);
     border-radius: 50%;
     border: solid;
     border-width: var(--border-width);
+    border-color: black;
     padding: calc(($socialsButtonSize - (2 * var(--border-width)) - $socialsButtonIconSize)/2 );
-} #bottom-list-of-socials-facebook-icon {
+} 
+@media (prefers-color-scheme: dark){
+    #bottom-list-of-socials > a > img {
+        border-color: white;
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Icons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#bottom-list-of-socials-facebook-icon {
     display: none !important;
 // } #bottom-list-of-socials-instagram-icon {
 //     display: none !important;
@@ -75,28 +120,7 @@ $socialsButtonIconSize: 1.5em;
     display: none !important;
 }
 
-//~~~~~~~~~~~~~~ Changes based on Dark or Light mode ~~~~~~~~~~~~~~//
-@media (prefers-color-scheme: light) {
-    #bottom-container {
-        background-image: url(/assets/images/baners/landing_page_bottom_no_image.svg);
-    }
-
-    #bottom-list-of-socials > a > img {
-        border-color: black;
-    }
-}
-
-@media (prefers-color-scheme: dark){
-    #bottom-container {
-        background-image: url(/assets/images/baners/landing_page_bottom_no_image_dark.svg);
-    }
-
-    #bottom-list-of-socials > a > img {
-        border-color: white;
-    }
-}
-
-//~~~~~~~~~~~~~~ Changes based on Display Width ~~~~~~~~~~~~~~//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Changes based on Display Width ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 @media only screen and (min-width: 750px) {
     // ...
 }

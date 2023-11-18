@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  background-image: url(/assets/images/baners/landing_page_bottom_no_image.svg);
   height: 100%;
   position: relative;
   display: flex;
@@ -19,16 +20,47 @@
   flex-direction: column;
 }
 
+@media (prefers-color-scheme: dark) {
+  #bottom-container {
+    background-image: url(/assets/images/baners/landing_page_bottom_no_image_dark.svg);
+  }
+}
+#bottom-h2 {
+  color: var(--light-mode-layer-0-background-color);
+}
+
 #bottom-h2::after {
   content: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  #bottom-h2 {
+    color: var(--dark-mode-layer-0-background-color);
+  }
+}
+#bottom-p {
+  color: var(--light-mode-layer-0-background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  #bottom-p {
+    color: var(--dark-mode-layer-0-background-color);
+  }
+}
 #bottom-button {
   margin-top: calc(var(--default-top-margin) * 2);
   margin-bottom: calc(var(--default-top-margin) * 3);
   box-shadow: none;
+  color: var(--light-mode-layer-0-background-color);
+  border-color: var(--light-mode-layer-0-background-color);
 }
 
+@media (prefers-color-scheme: dark) {
+  #bottom-button {
+    color: var(--dark-mode-layer-0-background-color);
+    border-color: var(--dark-mode-layer-0-background-color);
+  }
+}
 #bottom-list-of-socials {
   width: -moz-fit-content;
   width: fit-content;
@@ -51,14 +83,19 @@
 #bottom-list-of-socials > a > img {
   aspect-ratio: 1/1;
   width: 1.5em;
-  display: block;
   background-color: var(--accent-color);
   border-radius: 50%;
   border: solid;
   border-width: var(--border-width);
+  border-color: black;
   padding: calc((3em - 2 * var(--border-width) - 1.5em) / 2);
 }
 
+@media (prefers-color-scheme: dark) {
+  #bottom-list-of-socials > a > img {
+    border-color: white;
+  }
+}
 #bottom-list-of-socials-facebook-icon {
   display: none !important;
 }
@@ -69,21 +106,4 @@
 
 #bottom-list-of-socials-email-icon {
   display: none !important;
-}
-
-@media (prefers-color-scheme: light) {
-  #bottom-container {
-    background-image: url(/assets/images/baners/landing_page_bottom_no_image.svg);
-  }
-  #bottom-list-of-socials > a > img {
-    border-color: black;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  #bottom-container {
-    background-image: url(/assets/images/baners/landing_page_bottom_no_image_dark.svg);
-  }
-  #bottom-list-of-socials > a > img {
-    border-color: white;
-  }
 }/*# sourceMappingURL=content.css.map */
