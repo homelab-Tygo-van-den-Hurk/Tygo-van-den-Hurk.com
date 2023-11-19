@@ -10,6 +10,9 @@
   margin-left: var(--default-left-margin);
   margin-right: var(--default-right-margin);
   margin-bottom: 0;
+  -webkit-text-size-adjust: none !important;
+     -moz-text-size-adjust: none !important;
+          text-size-adjust: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +33,9 @@ body {
   max-width: 100vw;
   padding: 0;
   margin: 0;
+  -webkit-text-size-adjust: none !important;
+     -moz-text-size-adjust: none !important;
+          text-size-adjust: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -300,9 +306,8 @@ iframe[seamless] {
   background-color: var(--light-mode-background-layer-2-color);
   min-width: auto;
   width: var(--content-width);
-  max-width: var(--max-content-width);
-  height: -moz-fit-content;
-  height: fit-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   margin-top: var(--default-top-margin);
   aspect-ratio: 1/1;
 }

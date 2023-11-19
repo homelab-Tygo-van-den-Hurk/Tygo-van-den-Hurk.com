@@ -34,6 +34,7 @@
         margin-bottom: 0;
     // margin related
     // other
+        text-size-adjust: none !important;
 } 
 @media (prefers-color-scheme: dark) {
     * {
@@ -74,6 +75,7 @@ body {
     // margin
         margin: 0;
     // other
+        text-size-adjust: none !important;
 } 
 @media (prefers-color-scheme: dark) {
     body {
@@ -540,9 +542,9 @@ iframe {
     // width 
         min-width: auto;
         width: var(--content-width);
-        max-width: var(--max-content-width);
+        max-width: max-content;
     // heigth
-        height: fit-content;
+        // height: fit-content;
     // padding
     // margin
         margin-top: var(--default-top-margin);

@@ -2,12 +2,18 @@
 <html lang="en">
     <head>
         <title>Live Development Area</title>
-        <style>@import url(/assets/code/base-kit/content.css);</style>
-        <!-- fonts -->
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk, home">
+        <meta name="description" content="Hi! I&rsquo;m Tygo van den Hurk, I am a student at the TU&#47;e. This is my personal-site, please take a look around and don&rsquo;t be affraid to contact me!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Style Points -->
+        <link rel="icon" href="/assets/images/icons/maintenance-icon.svg">
+        <link rel="stylesheet" href="/assets/code/base-kit/content.css"> 
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
-        <link rel="icon" href="/assets/images/icons/maintenance-icon.svg">
     </head>
     <body>
         <script src="/assets/code/base-kit/contact-form/content.js"></script>
@@ -39,13 +45,24 @@
                 </p>
                 <section>
                     <h3>images and box test</h3>
-                    <div class="box shadow rounded">
+                    <div class="box">
                         <img src="/assets/images/placeholder/pawel-czerwinski-ve-UaSZQtqk-unsplash.jpg" alt="a placeholder image.">
+                    </div>
+                    <br>
+                    <br>
+                    <p>
+                        and now a smaller picture:
+                    </p>
+                    <div class="box">
+                        <img 
+                            style="max-width: 15em;"
+                            src="/assets/images/placeholder/pawel-czerwinski-ve-UaSZQtqk-unsplash.jpg" 
+                            alt="a placeholder image.">
                     </div>
                 </section>
                 <section>
                     <h3>listing layers</h3>
-                    <div class="light-mode">
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); max-width: calc(var(--max-content-width)*(2/3)); margin-left: auto; margin-right: auto;">
                         <div class="layer-0">
                             Test Light Mode layer 0
                         </div>
@@ -55,31 +72,31 @@
                         <div class="layer-2">
                             Test Light Mode layer 2
                         </div>
-                    </div>
-                    <div class="dark-mode">
-                        <div class="layer-0">
-                            Test dark Mode layer 0
-                        </div>
+                        
                         <div class="layer-1">
                             Test dark Mode layer 1
                         </div>
                         <div class="layer-2">
                             Test dark Mode layer 2
                         </div>
-                    </div>
-                    <div class="layer-0">
-                        Test Light Mode layer 0
-                    </div>
-                    <div class="layer-1">
-                        Test Light Mode layer 1
-                    </div>
-                    <div class="layer-2">
-                        Test Light Mode layer 2
+                        <div class="layer-0">
+                            Test dark Mode layer 0
+                        </div>
+
+                        <div class="layer-2">
+                            Test Light Mode layer 2
+                        </div>
+                        <div class="layer-0">
+                            Test Light Mode layer 0
+                        </div>
+                        <div class="layer-1">
+                            Test Light Mode layer 1
+                        </div>
                     </div>
                 </section>
                 <section>
                     <h3>lists</h3>
-                    <p>List:</p>
+                    <p>This is a short List:</p>
                     <ul>
                         <li>item 0</li>
                         <li>item 1</li>
