@@ -45,7 +45,8 @@ body {
 }
 main {
   background-color: var(--light-mode-main-background-color);
-  border: solid;
+  border-left: solid;
+  border-right: solid;
   border-width: var(--border-width);
   border-color: var(--border-color);
   min-width: var(--min-main-width);
@@ -189,22 +190,21 @@ li {
 button {
   font-weight: bold;
   text-transform: uppercase;
+  color: var(--light-mode-layer-0-background-color);
   background-color: var(--accent-color);
-  border-color: var(--border-color);
+  border: solid;
+  border-color: var(--light-mode-layer-0-background-color);
   border-radius: var(--border-radius);
   border-width: var(--border-width);
-  width: calc(var(--button-width) - var(--border-width));
-  height: calc(var(--button-height) - var(--border-width));
+  width: calc(var(--button-width) - 2 * var(--border-width));
+  height: calc(var(--button-height) - 2 * var(--border-width));
   margin-top: 1em;
 }
 
-button:hover {
-  background-color: var(--accent-color);
-}
-
 @media (prefers-color-scheme: dark) {
-  p {
-    color: var(--dark-mode-text-color);
+  button {
+    color: var(--light-mode-layer-0-background-color);
+    border-color: var(--light-mode-layer-0-background-color);
   }
 }
 img {
@@ -275,7 +275,9 @@ iframe[seamless] {
 
 .vertically-centered {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .bordered, .box {

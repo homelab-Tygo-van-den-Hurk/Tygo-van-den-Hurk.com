@@ -1,12 +1,18 @@
 @import url(/assets/code/base-kit/variables.css);
 #bottom-section {
-  background-image: url(/assets/images/placeholder/blue_and_yellow_blur.jpg);
+  background-image: url(/assets/images/paterns/Inn.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  background-color: var(--light-mode-main-background-color);
   height: 100vh;
 }
 
+@media (prefers-color-scheme: dark) {
+  #bottom-section {
+    background-color: var(--dark-mode-main-background-color);
+  }
+}
 #bottom-container {
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +54,7 @@
 
 @media (prefers-color-scheme: dark) {
   #bottom-button {
-    border-color: var(--light-mode-layer-0-background-color);
+    border-color: var(--light-mode-layer-0-background-color) !important;
   }
 }
 #bottom-list-of-socials {
@@ -77,13 +83,13 @@
   border-radius: 50%;
   border: solid;
   border-width: var(--border-width);
-  border-color: black;
+  border-color: var(--light-mode-layer-0-background-color);
   padding: calc((3em - 2 * var(--border-width) - 1.5em) / 2);
 }
 
 @media (prefers-color-scheme: dark) {
   #bottom-list-of-socials > a > img {
-    border-color: white;
+    border-color: var(--light-mode-layer-0-background-color);
   }
 }
 #bottom-list-of-socials-facebook-icon {

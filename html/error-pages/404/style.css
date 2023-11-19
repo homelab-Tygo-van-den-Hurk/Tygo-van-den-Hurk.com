@@ -1,0 +1,34 @@
+@import url(/assets/code/base-kit/content.css);
+:root {
+  --accent-color: #A155B5;
+  --sec-accent-color: #A155B5;
+}
+
+#error-pages-404-section {
+  height: 100%;
+}
+
+#error-pages-404-img {
+  width: var(--content-width);
+  max-width: 25em;
+}
+
+#error-pages-404-h1 {
+  font-weight: bold;
+}
+
+#error-pages-404-h1::after {
+  content: none;
+}
+
+#error-pages-404-h2 {
+  margin-top: 0em;
+}
+
+#error-pages-404-p {
+  margin-top: 3em;
+}
+
+#error-pages-404-contact-me-button {
+  margin-top: 3em;
+}/*# sourceMappingURL=style.css.map */

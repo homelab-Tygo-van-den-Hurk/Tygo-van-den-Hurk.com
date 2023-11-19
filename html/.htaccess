@@ -1,2 +1,5 @@
 AllowOverride All
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
 ErrorDocument 404 ./error-pages/404.html

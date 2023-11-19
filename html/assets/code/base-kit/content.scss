@@ -91,7 +91,8 @@ main {
     // Background Color, and image
         background-color: var(--light-mode-main-background-color);
     // border
-        border: solid;
+        border-left: solid;
+        border-right: solid;
         border-width: var(--border-width);
         border-color: var(--border-color);
     // width 
@@ -168,7 +169,7 @@ h1 {
     // font weigth, alignment, size, family, color
     // Color
     // Background Color, and image
-    background-color: var(--accent-color);
+        background-color: var(--accent-color);
     // border
     // width 
         width: var(--line-after-title-width);
@@ -344,28 +345,30 @@ button {
     // font weigth, alignment, size, family, color
         font-weight: bold;
         text-transform: uppercase;
-    // Color
+        color: var(--light-mode-layer-0-background-color);
     // Background Color, and image
         background-color: var(--accent-color);
     // border
-        border-color: var(--border-color);
+        border: solid;
+        border-color: var(--light-mode-layer-0-background-color);
         border-radius: var(--border-radius);
         border-width: var(--border-width);
     // width 
-        width: calc(var(--button-width) - var(--border-width));
+        width: calc(var(--button-width) - 2*var(--border-width));
     // heigth
-        height: calc(var(--button-height) - var(--border-width));
+        height: calc(var(--button-height) - 2*var(--border-width));
     // padding
     // margin
         margin-top: 1em;
     // other
 } 
-button:hover {
-        background-color: var(--accent-color);
-} 
+// button:hover {
+//     background-color: red;// var(--accent-color);
+// } 
 @media (prefers-color-scheme: dark) {
-    p {
-        color: var(--dark-mode-text-color);
+    button {
+        color: var(--light-mode-layer-0-background-color);
+        border-color: var(--light-mode-layer-0-background-color);
     }
 }
 
@@ -494,9 +497,11 @@ iframe {
 .horisontally-centered {
     margin-left: auto;
     margin-right: auto;
-} .vertically-centered{
+} .vertically-centered {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Bordered ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//

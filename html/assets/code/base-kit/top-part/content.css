@@ -1,11 +1,17 @@
 #top-section {
-  background-image: url(/assets/images/placeholder/blue_and_yellow_blur.jpg);
+  background-image: url(/assets/images/paterns/Clarence.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  background-color: var(--light-mode-main-background-color);
   height: 100vh;
 }
 
+@media (prefers-color-scheme: dark) {
+  #top-section {
+    background-color: var(--dark-mode-main-background-color);
+  }
+}
 #top-container {
   background-repeat: no-repeat;
   background-size: cover;

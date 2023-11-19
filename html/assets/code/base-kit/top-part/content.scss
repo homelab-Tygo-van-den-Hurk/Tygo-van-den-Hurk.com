@@ -1,12 +1,34 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Top Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #top-section {
-    background-image: url(/assets/images/placeholder/blue_and_yellow_blur.jpg);
+    background-image: url(/assets/images/paterns/Clarence.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    background-color: var(--light-mode-main-background-color);
     height: 100vh;
 
 } 
+@media (prefers-color-scheme: dark){
+    #top-section {
+        background-color: var(--dark-mode-main-background-color);
+    }
+}
+// #top-section::after {
+//     content: "";
+//     background-color: var(--light-mode-main-background-color);
+//     width: 100%;
+//     max-width: var(--max-main-width);
+//     height: 5px;
+//     bottom: 0px;
+//     z-index: 1000;
+//     position: absolute;
+//     display: block;
+// }
+// @media (prefers-color-scheme: dark){
+//     #top-section::after {
+//         background-color: var(--dark-mode-main-background-color);
+//     }
+// }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Top Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #top-container {

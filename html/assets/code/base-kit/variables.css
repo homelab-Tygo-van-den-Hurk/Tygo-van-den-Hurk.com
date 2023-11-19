@@ -1,4 +1,4 @@
-:root{
+:root {
     /* default width */
         --min-content-width: 5em;
         --content-width: 80%;
@@ -17,8 +17,8 @@
     /* borders */
         --border-radius: 10px;
         --border-width: 1px;
-        --dark-mode-border-color: #808080;
-        --light-mode-border-color: #808080;
+        --dark-mode-border-color: var(--dark-mode-layer-0-background-color);
+        --light-mode-border-color: var(--light-mode-layer-0-background-color);
     /* Margins */
         --default-top-margin: calc(2 * var(--default-text-size));
         --default-left-margin: auto;
