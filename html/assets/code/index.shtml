@@ -26,6 +26,10 @@
         <script src="/assets/code/base-kit/contact-form/content.js"></script>
         <main>
             <script src="/assets/code/base-kit/top-part/content.js"></script>
+            <script>
+                document.getElementById("top-h1").innerText = "Edited Title";
+                document.getElementById("top-p").innerText = "Edited text below the title of this page.";
+            </script>
             <section id="text-and-title-section">
                 <p class="light-mode">You are using light-mode &#9728;&#65039; </p>
                 <p class="dark-mode">You are using dark-mode &#x1f319; </p>
@@ -150,6 +154,7 @@
                     let cards = Card("");
                     printCards(cards);
                 </script>
+
             </section>
             <script src="/assets/code/base-kit/bottom-part/content.js"></script>
         </main>

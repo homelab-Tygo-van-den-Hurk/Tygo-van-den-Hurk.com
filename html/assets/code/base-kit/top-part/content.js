@@ -2,7 +2,7 @@ document.write( // Copy froom contents.html until we find a way to fetch this in
 `
 <style type="text/css" scoped>@import url(/assets/code/base-kit/top-part/content.css);</style>
 <section id="top-section">
-    <!-- Give the title and text below it contents using the 'content' css attribute. -->
+    <!-- Give the title and text below it contents using the 'innerText' java script attribute. -->
     <!-- Change the top background using the css attribute. -->
     <div id="top-container">
         <h1 id="top-h1">Title</h1>
