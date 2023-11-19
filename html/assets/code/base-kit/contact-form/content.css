@@ -7,6 +7,7 @@
 
 #contact-me-close-button {
   color: var(--light-mode-title-color);
+  font-weight: bold;
   border-radius: 50%;
   border-color: var(--light-mode-title-color);
   width: 2.5em;

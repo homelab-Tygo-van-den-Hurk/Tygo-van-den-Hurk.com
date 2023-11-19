@@ -38,34 +38,36 @@ $socialsButtonIconSize: 1.5em;
 } #bottom-h2::after { 
     content: none; // removes the line
 }
-@media (prefers-color-scheme: dark) {
-    #bottom-h2 {
-        color: var(--dark-mode-layer-0-background-color);
-    }
-}
+// @media (prefers-color-scheme: dark) {
+//     #bottom-h2 {
+//         color: var(--dark-mode-layer-0-background-color);
+//     }
+// }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Paragraphs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-p {
     color: var(--light-mode-layer-0-background-color);
 }
-@media (prefers-color-scheme: dark) {
-    #bottom-p {
-        color: var(--dark-mode-layer-0-background-color);
-    }
-}
+// @media (prefers-color-scheme: dark) {
+//     #bottom-p {
+//         color: var(--dark-mode-layer-0-background-color);
+//     }
+// }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #bottom-button {
-    margin-top: calc(var(--default-top-margin) * 2);
+    margin-top: calc(var(--default-top-margin));
     margin-bottom: calc(var(--default-top-margin) * 3);
     box-shadow: none;
     color: var(--light-mode-layer-0-background-color);
     border-color: var(--light-mode-layer-0-background-color);
+    border: solid var(--border-width);
 }
 @media (prefers-color-scheme: dark) {
     #bottom-button {
-        color: var(--dark-mode-layer-0-background-color);
-        border-color: var(--dark-mode-layer-0-background-color);
+        border-color: var(--light-mode-layer-0-background-color);
+        // color: var(--dark-mode-layer-0-background-color);
+        // border-color: var(--dark-mode-layer-0-background-color);
     }
 }
 

@@ -34,21 +34,21 @@
 } #top-h1::after {
     content: none;
 }
-@media (prefers-color-scheme: dark) {
-    #bottom-h2 {
-        color: var(--dark-mode-layer-0-background-color);
-    }
-}
+// @media (prefers-color-scheme: dark) {
+//     #top-h2 {
+//         color: var(--dark-mode-layer-0-background-color);
+//     }
+// }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Paragraphs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #top-p {
     color: var(--light-mode-layer-0-background-color);
 }
-@media (prefers-color-scheme: dark) {
-    #top-p {
-        color: var(--dark-mode-layer-0-background-color);
-    }
-}
+// @media (prefers-color-scheme: dark) {
+//     #top-p {
+//         color: var(--dark-mode-layer-0-background-color);
+//     }
+// }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 #top-button {
