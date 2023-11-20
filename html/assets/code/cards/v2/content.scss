@@ -1,0 +1,44 @@
+@import "docker/apache/Tygo-van-den-hurk.com/html/assets/code/base-kit/content";
+
+.cards {
+
+    .card-outer {
+        @extend .box;
+    
+        background-color: green !important;
+        
+        aspect-ratio: 2/1;
+    
+        .card-img-container {
+            @extend .rounded;
+
+            background-color: blue !important;
+    
+            height: 100%;
+            aspect-ratio: 1/1;
+            // display: inline-block;
+
+            .card-img {
+                
+            }
+        }
+    
+        .card-text-container {
+            @extend .rounded;
+    
+            background-color: red !important;
+            display: inline-block;
+            height: 100%;
+            aspect-ratio: 1/1;
+
+            .card-h2 {
+                position: inherit
+            }
+
+            .card-text {
+                aspect-ratio: 1/1;
+                position: inherit
+            }
+        }
+    }    
+}

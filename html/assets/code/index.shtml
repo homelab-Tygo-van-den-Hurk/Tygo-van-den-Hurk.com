@@ -65,7 +65,7 @@
             <section id="image-and-box-section">
                 <h3>images and box test</h3>
                 <div class="box">
-                    <img src="/assets/images/placeholder/pawel-czerwinski-ve-UaSZQtqk-unsplash.jpg" alt="a placeholder image.">
+                    <img src="/assets/images/paterns/Whangaehu.svg" alt="a placeholder image.">
                 </div>
                 <br>
                 <br>
@@ -75,7 +75,7 @@
                 <div class="box">
                     <img 
                         style="max-width: 15em;"
-                        src="/assets/images/placeholder/pawel-czerwinski-ve-UaSZQtqk-unsplash.jpg" 
+                        src="/assets/images/paterns/Whangaehu.svg" 
                         alt="a placeholder image.">
                 </div>
             </section>
@@ -154,6 +154,25 @@
                     let cards = Card("");
                     printCards(cards);
                 </script>
+
+                <style type="text/css" scoped>@import url(/assets/code/cards/v2/content.css);</style>
+                <div class="cards">
+
+                    <div class="card-outer">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/paterns/Aare.svg" alt="discibtion">
+                        </div>
+                        <div class="card-text-container">
+                            <h2 class="card-h2">Card Title</h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quasi facilis quis? 
+                                Labore ab quidem laboriosam quasi impedit. Saepe id nesciunt delectus laudantium autem
+                                reiciendis perferendis officia eius ipsam consequuntur?
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
 
             </section>
             <script src="/assets/code/base-kit/bottom-part/content.js"></script>
