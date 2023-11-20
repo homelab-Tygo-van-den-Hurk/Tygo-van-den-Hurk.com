@@ -22,13 +22,17 @@
                 <img alt="linkedin icon" src="/assets/images/icons/socials/linkedin-white.svg"> <!-- class="dark-mode"> -->
                 <!-- <img alt="linkedin icon" src="/assets/images/icons/socials/linkedin-black.svg" class="light-mode"> -->
             </a>
-            <a href="/error-pages/404.html" id="bottom-list-of-socials-whatsapp-icon">
+            <a href="/error-pages/404/" id="bottom-list-of-socials-whatsapp-icon">
                 <img alt="whatsapp icon" src="/assets/images/icons/socials/whatsapp-white.svg"> <!-- class="dark-mode"> -->
                 <!-- <img alt="whatsapp icon" src="/assets/images/icons/socials/whatsapp-black.svg" class="light-mode"> -->
             </a>
-            <a href="/error-pages/404.html" id="bottom-list-of-socials-email-icon">
+            <a href="/error-pages/404/" id="bottom-list-of-socials-email-icon">
                 <img alt="email icon" src="/assets/images/icons/socials/email-white.svg"> <!-- class="dark-mode"> -->
                 <!-- <img alt="email icon" src="/assets/images/icons/socials/email-black.svg" class="light-mode"> -->
+            </a>
+            <a href="https://github.com/St-H123" id="bottom-list-of-socials-github-icon">
+                <img alt="github icon" src="/assets/images/icons/socials/github-white.svg"> <!-- class="dark-mode"> -->
+                <!-- <img alt="github icon" src="/assets/images/icons/socials/github-black.svg" class="light-mode"> -->
             </a>
         </div>
     </div>
