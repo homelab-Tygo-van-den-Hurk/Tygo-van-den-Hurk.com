@@ -13,7 +13,7 @@
         --shadow-blur-radius: 2em;
         --shadow-spread-radius: -0.5em;
         --light-mode-shadow: #343C3F;
-        --dark-mode-shadow: #fbf8fc;
+        --dark-mode-shadow: #d0ccd2 /* old #fbf8fc */;
     /* borders */
         --border-radius: 10px;
         --border-width: 1px;

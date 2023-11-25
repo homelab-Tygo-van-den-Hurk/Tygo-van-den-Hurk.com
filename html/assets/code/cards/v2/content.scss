@@ -1,22 +1,41 @@
-@import "docker/apache/Tygo-van-den-hurk.com/html/assets/code/base-kit/content";
-
 .cards {
 
-    .card-outer {
-        @extend .box;
-    
-        background-color: green !important;
-        
-        aspect-ratio: 2/1;
-    
-        .card-img-container {
-            @extend .rounded;
+    background-color: purple;
 
-            background-color: blue !important;
-    
-            height: 100%;
-            aspect-ratio: 1/1;
-            // display: inline-block;
+    .card-outer {
+        // font weigth, alignment, size, family, color
+        // Color
+        // Background Color, and image
+            background-color: green !important;
+        // border
+        // width 
+            max-width: 60EM;
+        // heigth
+        // padding
+        // margin
+            margin-left: auto;
+            margin-right: auto;
+        // other
+            // aspect-ratio: 2/1;
+
+        
+
+        .card-img-container {
+            // font weigth, alignment, size, family, color
+            // Color
+            // Background Color, and image
+                background-color: blue !important;
+            // border
+            // width 
+                width: 40%;
+            // heigth
+                height: 100%;
+            // padding
+            // margin
+            // other
+                display: inline-block;
+                // aspect-ratio: 1/1;
+                text-align: left;
 
             .card-img {
                 
@@ -24,12 +43,21 @@
         }
     
         .card-text-container {
-            @extend .rounded;
-    
-            background-color: red !important;
-            display: inline-block;
-            height: 100%;
-            aspect-ratio: 1/1;
+            // font weigth, alignment, size, family, color
+            // Color
+            // Background Color, and image
+                background-color: red !important;
+            // border
+            // width 
+                width: 40%;
+            // heigth
+                height: 100%;
+            // padding
+            // margin
+            // other
+                display: inline-block;
+                // aspect-ratio: 1/1;
+                text-align: right;
 
             .card-h2 {
                 position: inherit

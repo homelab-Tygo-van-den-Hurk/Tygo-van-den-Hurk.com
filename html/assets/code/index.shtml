@@ -156,6 +156,8 @@
                 </script>
 
                 <style type="text/css" scoped>@import url(/assets/code/cards/v2/content.css);</style>
+                <h3 id="cards-h3">Cards</h3>
+                <p id="cards-p">Here I can show the cards</p>
                 <div class="cards">
 
                     <div class="card-outer">
