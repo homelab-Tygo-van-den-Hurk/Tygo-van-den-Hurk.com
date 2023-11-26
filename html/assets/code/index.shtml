@@ -167,10 +167,13 @@
                 <div replace-this-element-with-file="content.html"></div>           
             </section>
             <div replace-this-element-with-file="/assets/code/base-kit/bottom-part/content.shtml">
-                An error must have occured, this was suppost to be replaces.
+                An error must have occured, this was suppost to be replaced.
             </div>
             <script src="/assets/code/base-kit/bottom-part/content.js"></script>
         </main>
     </body>
-    <script type="module">import { includeHTML } from "/assets/code/importing-files-using-java-script/module.js"; includeHTML();</script>
+    <!-- <script type="module">
+        import { includeHTML } from "/assets/code/importing-files-using-java-script/module.js"; 
+        includeHTML();
+    </script> -->
 </html>
