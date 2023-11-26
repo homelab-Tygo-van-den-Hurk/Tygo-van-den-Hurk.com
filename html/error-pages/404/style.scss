@@ -10,7 +10,7 @@
 
 #error-pages-404-img {
     width: var(--content-width);
-    max-width: 25em; 
+    max-width: 15em; 
 }
 
 #error-pages-404-h1 {
@@ -29,4 +29,8 @@
 
 #error-pages-404-contact-me-button {
     margin-top: 3em;
+}
+
+main {
+    background-color: red !important;
 }
