@@ -1,6 +1,4 @@
 #contact-me-section {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -27,7 +25,7 @@
     border-color: var(--dark-mode-title-color);
   }
 }
-#forum-container {
+#contact-me-forum-container {
   background-color: var(--light-mode-layer-0-background-color);
   min-width: auto;
   width: auto;
@@ -38,7 +36,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  #forum-container {
+  #contact-me-forum-container {
     background-color: var(--dark-mode-layer-0-background-color);
   }
 }

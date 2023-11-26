@@ -357,6 +357,11 @@ iframe[seamless] {
     background-color: var(--dark-mode-layer-2-background-color);
   }
 }
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}
+
 @media (prefers-color-scheme: dark) {
   .light-mode {
     display: none !important;

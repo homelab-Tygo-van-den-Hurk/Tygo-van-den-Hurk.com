@@ -4,9 +4,7 @@
     // Background Color, and image
     // border
     // width 
-        width: 100vw;
     // heigth
-        height: 100vh;
     // padding
     // margin
     // margin related
@@ -47,7 +45,7 @@
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#forum-container {
+#contact-me-forum-container {
     // font weigth, alignment size, family, color
     // Background Color, and image
         background-color: var(--light-mode-layer-0-background-color);
@@ -66,7 +64,7 @@
     aspect-ratio: auto;
 }
 @media (prefers-color-scheme: dark) {
-    #forum-container {
+    #contact-me-forum-container {
         background-color: var(--dark-mode-layer-0-background-color);
     }  
 }

@@ -15,8 +15,8 @@
     </script>
     <script id="top-use-contact-form-java-script-module" type="module">
         const BUTTON_ID = "top-button"
-        import { showContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
+        import { toggleContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
         const BUTTON = document.getElementById(BUTTON_ID);
-        BUTTON.addEventListener('click', showContactMeForm);
+        BUTTON.addEventListener('click', toggleContactMeForm);
     </script>
 </section>

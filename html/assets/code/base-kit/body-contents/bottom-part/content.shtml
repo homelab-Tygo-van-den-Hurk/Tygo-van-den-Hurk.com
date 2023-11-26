@@ -45,8 +45,8 @@
     <script type="module" src="/assets/code/base-kit/body-contents/contact-form/module.js"></script>
     <script type="module">
         const id = "bottom-button";
-        import { showContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
+        import { toggleContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
         const button = document.getElementById(id);
-        button.addEventListener('click', showContactMeForm);
+        button.addEventListener('click', toggleContactMeForm);
     </script>
 </section>
