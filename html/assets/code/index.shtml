@@ -34,7 +34,7 @@
                 <p class="light-mode">You are using light-mode &#9728;&#65039; </p>
                 <p class="dark-mode">You are using dark-mode &#x1f319; </p>
                 <p>
-                    <!--#echo var="This server is configured to work with SSI!" -->
+                    <!--#echo var="DATE_LOCAL" --><br>
                     if the message above is not the one that informs you that SSI works, then SSI appears to not work.
                 </p>
                 <h1>h1 test</h1>
