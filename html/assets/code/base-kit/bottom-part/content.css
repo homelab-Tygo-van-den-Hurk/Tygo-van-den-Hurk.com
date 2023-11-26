@@ -67,13 +67,15 @@
 }
 
 #bottom-list-of-socials > a {
-  display: inline-block;
+  display: none;
   align-self: center;
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
 }
 
 #bottom-list-of-socials > a > img {
@@ -92,14 +94,19 @@
     border-color: var(--light-mode-layer-0-background-color);
   }
 }
-#bottom-list-of-socials-facebook-icon {
-  display: none !important;
+/* To show icons un-comment them */
+#bottom-list-of-socials-github-icon {
+  display: inline-block !important;
 }
 
-#bottom-list-of-socials-whatsapp-icon {
-  display: none !important;
+#bottom-list-of-socials-linkedin-icon {
+  display: inline-block !important;
 }
 
-#bottom-list-of-socials-email-icon {
-  display: none !important;
+#bottom-list-of-socials-instagram-icon {
+  display: inline-block !important;
+}
+
+#bottom-list-of-socials-snapchat-icon {
+  display: inline-block !important;
 }/*# sourceMappingURL=content.css.map */

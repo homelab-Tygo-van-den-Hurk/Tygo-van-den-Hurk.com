@@ -1,10 +1,10 @@
 document.write( // Copy froom contents.html until we find a way to fetch this instead.
 `
 <style type="text/css" scoped>@import url(/assets/code/base-kit/contact-form/content.css);</style>
-<section id="contact-me-section" class="follower hidden blackout">
+<section id="contact-me-section" class="hidden follower blackout">
     <div class="rounded shadow bordered vertically-centered horisontally-centered box" id="forum-container">
         <button class="rounded shadow bordered" id="contact-me-close-button">x</button>
-        <form id="contact-me-forum" method="POST">
+        <form id="contact-me-forum" method="POST" action="https://formspree.io/f/xayggqaq">
             <div id="contact-me-forum-email">
                 <label 
                     for="contact-me-forum-email-input"
@@ -44,7 +44,7 @@ document.write( // Copy froom contents.html until we find a way to fetch this in
                     name="message" 
                     class="not-resizable horisontally-centered rounded"
                     id="contact-me-forum-message-input" 
-                    placeholder="This is still a work in progress and it does not work yet."
+                    placeholder="this is still a work in progress and it does not work yet."
                     required
                 ></textarea>
             </div>
@@ -57,6 +57,23 @@ document.write( // Copy froom contents.html until we find a way to fetch this in
     </div>
     <script type="module" src="/assets/code/base-kit/contact-form/module.js"></script>
     <script type="module">
+        /**
+         * Checks if escape is pressed and the form is not hidden. 
+         * If this is the case then we hide it.
+         */
+        document.addEventListener('keydown', (event) => {
+            
+            const keyPressed = event.key;
+            const escapeKey = "Escape";
+            if (keyPressed === escapeKey) {
+
+                const contactMeForm = document.getElementById(contactMeSectionID);
+                if (! contactMeForm.classList.contains(hideClass)) {
+                    contactMeForm.classList.add(hideClass);
+                    document.body.classList.remove(notScrollableClass);
+                }
+            }
+        });
         const id = "contact-me-close-button"
         import { showContactMeForm } from '/assets/code/base-kit/contact-form/module.js';
         const button = document.getElementById(id);

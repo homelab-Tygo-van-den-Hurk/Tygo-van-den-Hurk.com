@@ -82,35 +82,19 @@
             <section id="layers-and-colors-section">
                 <h3>listing layers</h3>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); max-width: calc(var(--max-content-width)*(2/3)); margin-left: auto; margin-right: auto;">
-                    <div class="layer-0">
-                        Test Light Mode layer 0
-                    </div>
-                    <div class="layer-1">
-                        Test Light Mode layer 1
-                    </div>
-                    <div class="layer-2">
-                        Test Light Mode layer 2
-                    </div>
                     
-                    <div class="layer-1">
-                        Test dark Mode layer 1
-                    </div>
-                    <div class="layer-2">
-                        Test dark Mode layer 2
-                    </div>
-                    <div class="layer-0">
-                        Test dark Mode layer 0
-                    </div>
+                    <div class="layer-0">Test Light Mode layer 0</div>
+                    <div class="layer-1">Test Light Mode layer 1</div>
+                    <div class="layer-2">Test Light Mode layer 2</div>
+                    
+                    <div class="layer-1">Test dark Mode layer 1</div>
+                    <div class="layer-2">Test dark Mode layer 2</div>
+                    <div class="layer-0">Test dark Mode layer 0</div>
 
-                    <div class="layer-2">
-                        Test Light Mode layer 2
-                    </div>
-                    <div class="layer-0">
-                        Test Light Mode layer 0
-                    </div>
-                    <div class="layer-1">
-                        Test Light Mode layer 1
-                    </div>
+                    <div class="layer-2">Test Light Mode layer 2</div>
+                    <div class="layer-0">Test Light Mode layer 0</div>
+                    <div class="layer-1">Test Light Mode layer 1</div>
+
                 </div>
             </section>
             <section id="lists-and-items-section">
@@ -126,6 +110,7 @@
                 <h3>specsheet</h3>
                 <style type="text/css" scoped>@import url(/assets/code/spec-sheet/content.css);</style>
                 <div class="spec-sheet">
+
                     <p>Quality 0</p>
                     <p>:</p>
                     <p>Value 0</p>
@@ -137,6 +122,7 @@
                     <p>Quality 2</p>
                     <p>:</p>
                     <p>Value 2 (with a long name)</p>
+                    
                 </div>
             </section>
             <section id="cards-section">
@@ -165,19 +151,26 @@
                             <img class="card-img" src="/assets/images/paterns/Aare.svg" alt="discibtion">
                         </div>
                         <div class="card-text-container">
-                            <h2 class="card-h2">Card Title</h2>
+                            <!-- <h2 class="card-h2">Card Title</h2>
                             <p class="card-text">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quasi facilis quis? 
                                 Labore ab quidem laboriosam quasi impedit. Saepe id nesciunt delectus laudantium autem
                                 reiciendis perferendis officia eius ipsam consequuntur?
-                            </p>
+                            </p> -->
                         </div>
                     </div>
 
                 </div>
-
             </section>
+            <section id="different-include-variant-section">
+                <h3 id="importing HTML">including HTML using the W3 script</h3>
+                <div replace-this-element-with-file="content.html"></div>           
+            </section>
+            <div replace-this-element-with-file="/assets/code/base-kit/bottom-part/content.shtml">
+                An error must have occured, this was suppost to be replaces.
+            </div>
             <script src="/assets/code/base-kit/bottom-part/content.js"></script>
         </main>
     </body>
+    <script type="module">import { includeHTML } from "/assets/code/importing-files-using-java-script/module.js"; includeHTML();</script>
 </html>
