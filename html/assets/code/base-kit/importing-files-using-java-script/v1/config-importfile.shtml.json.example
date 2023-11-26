@@ -1,0 +1,8 @@
+{
+    "replaceInnerHTMLText": [
+        {
+            "id": "some-extreemly-unique-id-as-a-non-unique-id-WILL-lead-to-problems",
+            "text": "the text that will be incerted into this element"
+        }
+    ]
+}

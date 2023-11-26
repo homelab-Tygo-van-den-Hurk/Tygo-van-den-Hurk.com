@@ -1,0 +1,4 @@
+<script type="module">
+    import { includeHTML } from "/assets/code/importing-files-using-java-script/v1/module.js";
+    includeHTML();
+</script>
