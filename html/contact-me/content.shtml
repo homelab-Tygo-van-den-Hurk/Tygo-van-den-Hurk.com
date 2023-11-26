@@ -1,0 +1,9 @@
+<script type="module">    
+    import { contactMeSectionID } from '/assets/code/base-kit/body-contents/contact-form/module.js';
+    
+    const contactMeSection = document.getElementById(contactMeSectionID);
+    const mainElement = document.querySelector('main');
+
+    mainElement.innerHTML = contactMeSection.innerHTML;
+    contactMeSection.innerHTML = '';
+</script>

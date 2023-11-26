@@ -1,0 +1,16 @@
+:root {
+    --accent-color: #FF8062 !important;
+}
+
+body {
+    // SVG's out of the patterns folder that looked good:
+    // Mataura.svg
+    // Taieri.svg
+    // Waihou.svg
+    // Waimakariri.svg
+    background-image: url(/assets/images/paterns/Whangaehu.svg); 
+}
+
+#contact-me-close-button {
+    display: none !important;
+}

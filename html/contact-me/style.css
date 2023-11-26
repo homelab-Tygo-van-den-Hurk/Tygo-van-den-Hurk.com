@@ -1,0 +1,11 @@
+:root {
+  --accent-color: #FF8062 !important;
+}
+
+body {
+  background-image: url(/assets/images/paterns/Whangaehu.svg);
+}
+
+#contact-me-close-button {
+  display: none !important;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+<!--#set var="titleText" value="404 Page not found"-->
+<!--#set var="titleSubText" value="This page does not exist"-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
+        <link rel="stylesheet" href="/error-pages/404/style.css"> 
+        <link rel="icon" href="/error-pages/404/tab-icon.svg">
+    </head>
+    <body>
+        <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
+        <main class="full-screen horisontally-centered vertically-centered">
+            <!--#include virtual="content.shtml" -->
+        </main>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!--#set var="titleText" value="Contact me - Tygo van den Hurk"-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
+        <link rel="icon" href="/assets/images/me/head-shot (Small).jpg">
+    </head>
+    <body class="full-screen">
+        <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
+        <main class="horisontally-centered vertically-centered blackout">
+            <!-- Gets moved into here using the  -->
+        </main>
+        <!--#include virtual="content.shtml" --> 
+    </body>
+</html>

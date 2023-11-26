@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
+        <link rel="icon" href="/assets/images/icons/maintenance-icon.svg">
+    </head>
+    <body>
+        <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
+        <main>
+            <!--#include virtual="/assets/code/base-kit/body-contents/top-part/content.shtml" -->
+            <!--#include virtual="content.shtml" -->
+            <!--#include virtual="/assets/code/base-kit/body-contents/bottom-part/content.shtml" -->
+        </main>
+    </body>
+</html>
