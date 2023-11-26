@@ -9,7 +9,7 @@
     </head>
     <body>
         <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
-        <main class="full-screen horisontally-centered vertically-centered">
+        <main>
             <!--#include virtual="content.shtml" -->
         </main>
     </body>

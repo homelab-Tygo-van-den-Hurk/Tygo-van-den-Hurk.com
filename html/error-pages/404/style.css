@@ -5,7 +5,11 @@
 }
 
 #error-pages-404-section {
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #error-pages-404-img {
@@ -31,8 +35,4 @@
 
 #error-pages-404-contact-me-button {
   margin-top: 3em;
-}
-
-main {
-  background-color: red !important;
 }/*# sourceMappingURL=style.css.map */

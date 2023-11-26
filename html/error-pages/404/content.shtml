@@ -1,4 +1,4 @@
-<section id="error-pages-404-section">
+<section id="error-pages-404-section" class="full-screen horisontally-centered vertically-centered">
     <img 
         id="error-pages-404-img" 
         src="/error-pages/404/broken-robot.svg" 
@@ -9,14 +9,16 @@
         This page does not seem to exist. If you found this page by clicking a link, 
         or think this is a mistake, then please let me know so I can investigate further.
     </p>
-    <button id="error-pages-404-contact-me-button" type="button">
-        Contact me
-    </button>
-    <script src="/assets/code/base-kit/body-contents/contact-form/module.js" type="module"></script>
+    <a href="/contact-me/" id="error-pages-404-a">
+        <button id="error-pages-404-contact-me-button" type="button">
+            Contact me
+        </button>
+    </a>
+    <!-- <script src="/assets/code/base-kit/body-contents/contact-form/module.js" type="module"></script>
     <script type="module">
         const id = "error-pages-404-contact-me-button"
         import { toggleContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
         const button = document.getElementById(id);
         button.addEventListener('click', toggleContactMeForm);
-    </script>
+    </script> -->
 </section>
