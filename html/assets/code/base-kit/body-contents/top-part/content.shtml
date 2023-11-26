@@ -1,17 +1,22 @@
-<style type="text/css" scoped>@import url(/assets/code/base-kit/top-part/content.css);</style>
+<style id="top-import-style" type="text/css" scoped>
+    @import url(/assets/code/base-kit/body-contents/top-part/content.css);
+</style>
 <section id="top-section">
-    <!-- Give the title and text below it contents using the 'innerText' java script attribute. -->
-    <!-- Change the top background using the css attribute. -->
     <div id="top-container">
-        <h1 id="top-h1">${titleText}</h1>
-        <p id="top-p">${subTitleText}</p>
-        <button id="top-button" type="button" class="shadow rounded">Let&rsquo;s talk!</button>
+        <h1 id="top-h1"><!--#echo var="titleText" --></h1>
+        <p id="top-p"><!--#echo var="titleSubText" --></p>
+        <button id="top-button" type="button" class="shadow rounded">
+            Let&rsquo;s talk!
+        </button>
     </div>
-    <script type="module" src="/assets/code/base-kit/contact-form/module.js"></script>
-    <script type="module">
-        const id = "top-button"
-        import { showContactMeForm } from '/assets/code/base-kit/contact-form/module.js';
-        const button = document.getElementById(id);
-        button.addEventListener('click', showContactMeForm);
+    <script 
+        id="top-load-contact-form-java-script-module" 
+        type="module" src="/assets/code/base-kit/body-contents/contact-form/module.js">
+    </script>
+    <script id="top-use-contact-form-java-script-module" type="module">
+        const BUTTON_ID = "top-button"
+        import { showContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
+        const BUTTON = document.getElementById(BUTTON_ID);
+        BUTTON.addEventListener('click', showContactMeForm);
     </script>
 </section>

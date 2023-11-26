@@ -1,4 +1,7 @@
-<style type="text/css" scoped>@import url(/assets/code/base-kit/contact-form/content.css);</style>
+<!--#include virtual="/assets/code/base-kit/body-contents/no-script-warning.shtml"-->
+<style type="text/css" scoped>
+    @import url(/assets/code/base-kit/body-contents/contact-form/content.css);
+</style>
 <section id="contact-me-section" class="hidden follower blackout">
     <div class="rounded shadow bordered vertically-centered horisontally-centered box" id="forum-container">
         <button class="rounded shadow bordered" id="contact-me-close-button">x</button>

@@ -10,6 +10,10 @@ $SPACE_FOR_COLLUM_SEPARATOR: 1em;
         width: auto;
     } *:nth-child(3n+1) {
         text-align: right;
+    // } *:nth-child(3n+1)::after {
+    //     content: ":";
+    //     text-align: center;
+    //     width: $SPACE_FOR_COLLUM_SEPARATOR;
     } *:nth-child(3n+2) {
         text-align: center;
     } *:nth-child(3n) {

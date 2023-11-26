@@ -26,9 +26,9 @@
                 <p class="light-mode">You are using light-mode &#9728;&#65039; </p>
                 <p class="dark-mode">You are using dark-mode &#x1f319; </p>
                 <p>
-                    <!--#set var="doesSSIwork" value="SSI is enabled!" -->
+                    <!--#set var="doesSSIwork" value="SSI is enabled!"-->
                     if SSI is enabled, then it will say so below:<br>
-                    <em><!--#echo var="doesSSIwork" --></em>
+                    <em><!--#echo var="doesSSIwork"--></em>
                 </p>
                 <h1>h1 test</h1>
                 <p>
