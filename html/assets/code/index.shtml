@@ -11,31 +11,24 @@
         <link rel="icon" href="/assets/images/icons/maintenance-icon.svg">
         <link rel="stylesheet" href="/assets/code/base-kit/content.css"> 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Serif+Pro&display=swap">
+        <!--#include virtual="/assets/code/base-kit/header-contents/font-imports.shtml" -->
     <body>
-        <noscript>
-            <style type="text/css">.pagecontainer {display:none;}</style>
-            <div class="noscriptmsg">
-                You don't have javascript enabled. 
-                Without javascript this site does not work.
-                Try disabling extentions on this site that could be problematic.
-            </div>
-        </noscript>
+        <!--#include virtual="/assets/code/base-kit/body-contents/no-script-warning.shtml" -->
         <script src="/assets/code/base-kit/contact-form/content.js"></script>
         <main>
-            <script src="/assets/code/base-kit/top-part/content.js"></script>
+            <!--#include virtual="/assets/code/base-kit/body-contents/top-part/content.shtml" -->
             <script>
+                // Use this to alter the 'Title' and the 'paragraph under the Title'.
                 document.getElementById("top-h1").innerText = "Edited Title";
                 document.getElementById("top-p").innerText = "Edited text below the title of this page.";
             </script>
-            <section id="text-and-title-section">
+            <section id="text-and-titles-section">
                 <p class="light-mode">You are using light-mode &#9728;&#65039; </p>
                 <p class="dark-mode">You are using dark-mode &#x1f319; </p>
                 <p>
-                    <!--#echo var="DATE_LOCAL" --><br>
-                    if the message above is not the one that informs you that SSI works, then SSI appears to not work.
+                    <!--#set var="doesSSIwork" value="SSI is enabled!" -->
+                    if SSI is enabled, then it will say so below:<br>
+                    <em><!--#echo var="doesSSIwork" --></em>
                 </p>
                 <h1>h1 test</h1>
                 <p>
@@ -108,7 +101,9 @@
             </section>
             <section id="specsheet-and-specs-section">
                 <h3>specsheet</h3>
-                <style type="text/css" scoped>@import url(/assets/code/spec-sheet/content.css);</style>
+                <style type="text/css" scoped>
+                    @import url(/assets/code/spec-sheet/content.css);
+                </style>
                 <div class="spec-sheet">
 
                     <p>Quality 0</p>
@@ -126,20 +121,6 @@
                 </div>
             </section>
             <section id="cards-section">
-                <script type="module" src="/assets/code/cards/v2/module.js"></script>
-                <script type="module">
-                    // const cardsInformation = [
-                    //     {
-                    //         "title": "Test Title",
-                    //         "text": "Test Text"
-                    //         "imagePath": "/assets/images/",
-                    //         "image"
-                    //     }
-                    // ];
-                    import { printCards, Card } from "/assets/code/cards/v2/module.js"
-                    let cards = Card("");
-                    printCards(cards);
-                </script>
 
                 <style type="text/css" scoped>@import url(/assets/code/cards/v2/content.css);</style>
                 <h3 id="cards-h3">Cards</h3>
@@ -162,18 +143,7 @@
 
                 </div>
             </section>
-            <section id="different-include-variant-section">
-                <h3 id="importing HTML">including HTML using the W3 script</h3>
-                <div replace-this-element-with-file="content.html"></div>           
-            </section>
-            <div replace-this-element-with-file="/assets/code/base-kit/bottom-part/content.shtml">
-                An error must have occured, this was suppost to be replaced.
-            </div>
-            <script src="/assets/code/base-kit/bottom-part/content.js"></script>
+            <!--#include virtual="/assets/code/base-kit/bottom-part/content.shtml" -->
         </main>
     </body>
-    <!-- <script type="module">
-        import { includeHTML } from "/assets/code/importing-files-using-java-script/module.js"; 
-        includeHTML();
-    </script> -->
 </html>
