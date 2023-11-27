@@ -1,4 +1,8 @@
 @import url(variables.css);
+:root {
+  --max-main-width: $max-main-width;
+}
+
 * {
   text-align: var(--text-alignments);
   font-size: var(--default-text-size);
@@ -45,13 +49,11 @@ body {
 }
 main {
   background-color: var(--light-mode-main-background-color);
-  border-left: solid;
-  border-right: solid;
   border-width: var(--border-width);
   border-color: var(--border-color);
   min-width: var(--min-main-width);
   width: 100%;
-  max-width: var(--max-main-width);
+  max-width: 1920px;
   min-height: 100vh;
   height: 100%;
   margin: 0 auto;
@@ -63,6 +65,12 @@ main {
   main {
     background-color: var(--dark-mode-main-background-color);
     box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
+  }
+}
+@media only screen and (min-height: 1920px) {
+  main {
+    border-left: solid;
+    border-right: solid;
   }
 }
 section {
