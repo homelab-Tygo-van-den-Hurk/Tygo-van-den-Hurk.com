@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
-        <link rel="icon" href="/assets/images/icons/maintenance-icon.svg">
     </head>
     <body>
         <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
