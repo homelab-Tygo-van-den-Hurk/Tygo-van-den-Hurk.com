@@ -1,13 +1,7 @@
 <title><!--#echo var="titleText"--> — Tygo van den Hurk</title>
 
-<!--#if expr="$discription" -->
-    <!--#echo var="discription"-->
-<!--#endif -->
-
-<!--#if expr="$keywords" -->
-    <!--#echo var="keywords"-->
-<!--#endif -->
-
+<!--#echo var="keywords"-->
+<!--#echo var="discription"-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="darkreader-lock">
