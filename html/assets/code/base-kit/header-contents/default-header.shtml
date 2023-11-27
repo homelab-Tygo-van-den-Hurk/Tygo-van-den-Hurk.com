@@ -9,6 +9,7 @@
     name="description" 
     content="Hi! I&rsquo;m Tygo van den Hurk, I am a student at the TU&#47;e. This is my personal-site, please take a look around and don&rsquo;t be affraid to contact me!">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="darkreader-lock">
 
 <!-- Style Points -->
 <link rel="stylesheet" href="/assets/code/base-kit/content.css"> 
