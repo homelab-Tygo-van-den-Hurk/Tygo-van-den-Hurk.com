@@ -4,6 +4,7 @@
     const contactMeSection = document.getElementById(contactMeSectionID);
     const mainElement = document.querySelector('main');
 
+    mainElement.innerHTML = '';
     mainElement.innerHTML = contactMeSection.innerHTML;
     contactMeSection.innerHTML = '';
 </script>

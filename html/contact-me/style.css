@@ -2,8 +2,10 @@
   --accent-color: #FF8062 !important;
 }
 
-body {
+main {
   background-image: url(/assets/images/paterns/Whangaehu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #contact-me-close-button {

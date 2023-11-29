@@ -1,15 +1,42 @@
-<!--#set var="titleText" value="Contact me - Tygo van den Hurk"-->
+<!--#set var="titleText" value="Contact me"-->
+<!--#set var="titleSubText" value="Hey using this page you can contace me."-->
+<!--#set var="keywords" value='<meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk, contact">'-->
+<!--#set var="discription" value='<meta name="description" content="Hey! Tygo here! Using this page you can get in touch!">'--> 
+
+
+<!--#if expr='-n v("titleText")' -->
+<!--#else -->
+    <!--#set var="titleText" value='The title is undefined, Please define the Title at the start of the file.'-->
+<!--#endif -->
+
+<!--#if expr='-n v("titleSubText")' -->
+<!--#else -->
+    <!--#set var="titleSubText" value='The sub-title-text is undefined, Please define the sub-title-text at the start of the file.'-->
+<!--#endif -->
+
+<!--#if expr='-n v("keywords")' -->
+<!--#else -->
+    <!--#set var="keywords" value='<meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk">'-->
+<!--#endif -->
+
+<!--#if expr='-n v("discription")' -->
+<!--#else -->
+    <!--#set var="discription" value='<meta name="description" content="Hey! Tygo here! I&rsquo;m a student at the TU&#47;e. Studying Computer Science. This is my personal website. Feel free to take a look around.">'--> 
+<!--#endif -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
-        <link rel="icon" href="/assets/images/me/head-shot (Small).jpg">
     </head>
-    <body class="full-screen">
+    <body>
         <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
-        <main class="horisontally-centered vertically-centered blackout">
-            <!-- Gets moved into here using the  -->
+        <main class="full-screen horisontally-centered vertically-centered">
+            <!-- #include virtual="/assets/code/base-kit/body-contents/top-part/content.shtml" -->
+            <!--#include virtual="./content.shtml" -->
+            <!-- #include virtual="/assets/code/base-kit/body-contents/bottom-part/content.shtml" -->
         </main>
-        <!--#include virtual="content.shtml" --> 
     </body>
 </html>
+
+<!-- #include virtual="/assets/code/base-kit/default.shtml" -->
