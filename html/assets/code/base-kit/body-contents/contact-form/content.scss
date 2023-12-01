@@ -1,5 +1,9 @@
+$MIN_WIDTH: 320px;
+$MIN_HEIGHT: 480px;
+$CHANGE_POINT: 800px;
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#contact-me-section {
+section#contact-me-section {
     // font weigth, alignment size, family, color
     // Background Color, and image
     // border
@@ -14,7 +18,7 @@
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Close Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#contact-me-close-button {    
+button#contact-me-close-button {    
     // font weigth, alignment size, family, color
         color: var(--light-mode-title-color);
         font-weight: bold;
@@ -38,14 +42,14 @@
         text-transform: none;
 }
 @media (prefers-color-scheme: dark) {
-    #contact-me-close-button {    
+    button#contact-me-close-button {    
         color: var(--dark-mode-title-color);
         border-color: var(--dark-mode-title-color);
     }
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Container ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#contact-me-forum-container {
+div#contact-me-forum-container {
     // font weigth, alignment size, family, color
     // Background Color, and image
         background-color: var(--light-mode-layer-0-background-color);
@@ -58,31 +62,32 @@
     // padding
         padding: 0em;
     // margin
-    // margin related
+        margin-top: 0;
     // other
-    position: relative;
-    aspect-ratio: auto;
+        position: relative;
+        aspect-ratio: auto;
 }
 @media (prefers-color-scheme: dark) {
-    #contact-me-forum-container {
+    div#contact-me-forum-container {
         background-color: var(--dark-mode-layer-0-background-color);
     }  
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#contact-me-forum {
+form#contact-me-forum {
     // font weigth, alignment size, family, color
     // Background Color, and image
     // border
     // width 
-        min-width: auto;
-        width: 320px;
-        max-width: auto;
+        min-width: $MIN_WIDTH;
+        width: 80vw;
+        max-width: $CHANGE_POINT;
     // heigth
-        height: 480px;
+        min-height: $MIN_HEIGHT;
+        height: 80vh;
+        max-height: calc(0.4 * $CHANGE_POINT);
     // padding
     // margin
-    // margin related
     // other
         display: flex;
         justify-content: center;
@@ -92,7 +97,8 @@
 } 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#contact-me-forum > div > * {
+form#contact-me-forum > div {width: 100%;}
+form#contact-me-forum > div > * {
     // font weigth, alignment size, family, color
         color: var(--light-mode-title-color);
         // color: red !important;
@@ -100,7 +106,9 @@
     // border
         border-color: var(--light-mode-border-color);
     // width 
-        width: 100%;
+        min-width: calc(var(--content-width) * $MIN_WIDTH);
+        width: var(--content-width);
+        max-width: auto;
     // heigth
     // padding
     // margin
@@ -109,13 +117,44 @@
         display: block;
 }
 @media (prefers-color-scheme: dark) {
-    #contact-me-forum > div > * {
+    form#contact-me-forum > div > * {
         color: var(--dark-mode-title-color);
         border-color: var(--dark-mode-border-color);
     }  
 }
+// @media only screen and (min-width: $CHANGE_POINT) {
+//     // form#contact-me-forum {
+//     // }
+//     form#contact-me-forum > div#contact-me-forum-email, div#contact-me-forum-subject {
+//         // font weigth, alignment size, family, color
+//         // Background Color, and image
+//             background-color: green;
+//         // border
+//         // width 
+//             width: 50% !important;
+//         // heigth
+//         // padding
+//         // other
+//             float: left;
+//             //// display: inline-block;
+//     }
+//     form#contact-me-forum > div#contact-me-forum-message {
+//         // font weigth, alignment size, family, color
+//         // Background Color, and image
+//             background-color: blue;
+//         // border
+//         // width 
+//             width: 50%;
+//         // heigth
+//         // padding
+//         // other
+//             float: right;
+//             //// display: inline-block;
+//     } 
+// }
 
-#contact-me-forum > div > input, textarea {
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Elements: Input, and TextArea's ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+form#contact-me-forum > div > input, textarea {
     margin-top: calc(var(--default-top-margin)/3);
     font-style: italic;
     color: var(--light-mode-text-color);
@@ -123,33 +162,38 @@
     background-color: var(--light-mode-layer-1-background-color);
 }
 @media (prefers-color-scheme: dark) {
-    #contact-me-forum > div > input, textarea {
+    form#contact-me-forum > div > input, textarea {
         color: var(--dark-mode-text-color);
         background-color: var(--dark-mode-layer-1-background-color);
     }
 }
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Text-Area ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#contact-me-forum-message-input {
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Elements: Email Label ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+label#contact-me-forum-email-label {
+    margin-top: 0;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Elements: Text-Area ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+input#contact-me-forum-message-input {
     height: calc(4*var(--default-text-size));
     text-align: left;
 } 
 
 // Hides the Scoll Bar
-#contact-me-forum-message-input { 
+input#contact-me-forum-message-input { 
     /* hides the scroll bar in Internet Explorer 10+ */
     -ms-overflow-style: none;
     /* Hide horizontal scrollbar */
     overflow-x: hidden;
     /* hides the scroll bar in Firefox */
     scrollbar-width: none;
-} #contact-me-forum-message-input::-webkit-scrollbar { 
+} input#contact-me-forum-message-input::-webkit-scrollbar { 
     /* Safari and Chrome */
     display: none;  
 }
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Submit Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-#contact-me-forum-submit-button {
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Elements: Form Submit Button ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+input#contact-me-forum-submit-button {
     // font weigth, alignment size, family, color
         color: var(--light-mode-title-color);
         text-transform: uppercase;
@@ -168,7 +212,7 @@
         box-shadow: none;
 }
 @media (prefers-color-scheme: dark) {
-    #contact-me-forum-submit-button {
+    input#contact-me-forum-submit-button {
         color: var(--dark-mode-title-color);
         border-color: var(--dark-mode-title-color);
     }

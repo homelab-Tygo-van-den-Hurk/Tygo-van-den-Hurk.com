@@ -1,9 +1,9 @@
-#contact-me-section {
+section#contact-me-section {
   display: flex;
   align-items: center;
 }
 
-#contact-me-close-button {
+button#contact-me-close-button {
   color: var(--light-mode-title-color);
   font-weight: bold;
   border-radius: 50%;
@@ -20,31 +20,34 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  #contact-me-close-button {
+  button#contact-me-close-button {
     color: var(--dark-mode-title-color);
     border-color: var(--dark-mode-title-color);
   }
 }
-#contact-me-forum-container {
+div#contact-me-forum-container {
   background-color: var(--light-mode-layer-0-background-color);
   min-width: auto;
   width: auto;
   max-width: auto;
   padding: 0em;
+  margin-top: 0;
   position: relative;
   aspect-ratio: auto;
 }
 
 @media (prefers-color-scheme: dark) {
-  #contact-me-forum-container {
+  div#contact-me-forum-container {
     background-color: var(--dark-mode-layer-0-background-color);
   }
 }
-#contact-me-forum {
-  min-width: auto;
-  width: 320px;
-  max-width: auto;
-  height: 480px;
+form#contact-me-forum {
+  min-width: 320px;
+  width: 80vw;
+  max-width: 800px;
+  min-height: 480px;
+  height: 80vh;
+  max-height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,20 +55,26 @@
   aspect-ratio: auto;
 }
 
-#contact-me-forum > div > * {
+form#contact-me-forum > div {
+  width: 100%;
+}
+
+form#contact-me-forum > div > * {
   color: var(--light-mode-title-color);
   border-color: var(--light-mode-border-color);
-  width: 100%;
+  min-width: calc(var(--content-width) * 320px);
+  width: var(--content-width);
+  max-width: auto;
   display: block;
 }
 
 @media (prefers-color-scheme: dark) {
-  #contact-me-forum > div > * {
+  form#contact-me-forum > div > * {
     color: var(--dark-mode-title-color);
     border-color: var(--dark-mode-border-color);
   }
 }
-#contact-me-forum > div > input, textarea {
+form#contact-me-forum > div > input, textarea {
   margin-top: calc(var(--default-top-margin) / 3);
   font-style: italic;
   color: var(--light-mode-text-color);
@@ -74,17 +83,21 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  #contact-me-forum > div > input, textarea {
+  form#contact-me-forum > div > input, textarea {
     color: var(--dark-mode-text-color);
     background-color: var(--dark-mode-layer-1-background-color);
   }
 }
-#contact-me-forum-message-input {
+label#contact-me-forum-email-label {
+  margin-top: 0;
+}
+
+input#contact-me-forum-message-input {
   height: calc(4 * var(--default-text-size));
   text-align: left;
 }
 
-#contact-me-forum-message-input {
+input#contact-me-forum-message-input {
   /* hides the scroll bar in Internet Explorer 10+ */
   -ms-overflow-style: none;
   /* Hide horizontal scrollbar */
@@ -93,12 +106,12 @@
   scrollbar-width: none;
 }
 
-#contact-me-forum-message-input::-webkit-scrollbar {
+input#contact-me-forum-message-input::-webkit-scrollbar {
   /* Safari and Chrome */
   display: none;
 }
 
-#contact-me-forum-submit-button {
+input#contact-me-forum-submit-button {
   color: var(--light-mode-title-color);
   text-transform: uppercase;
   background-color: var(--accent-color);
@@ -110,7 +123,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  #contact-me-forum-submit-button {
+  input#contact-me-forum-submit-button {
     color: var(--dark-mode-title-color);
     border-color: var(--dark-mode-title-color);
   }
