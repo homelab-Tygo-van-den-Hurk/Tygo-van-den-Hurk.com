@@ -1,0 +1,82 @@
+<section id="contact-me-section" class="hidden follower blackout full-screen">
+    <div id="contact-me-forum-container" class="rounded shadow bordered vertically-centered horisontally-centered box">
+        <button id="contact-me-close-button" class="rounded shadow bordered">x</button>
+        <form id="contact-me-forum" onSubmit="verify();" method="POST">
+            <!-- action="https://formspree.io/f/xayggqaq"> -->
+            <div id="contact-me-forum-email">
+                <label id="contact-me-forum-email-label"
+                    for="contact-me-forum-email-input"
+                    class="horisontally-centered"
+                >Email adress</label>
+                <input id="contact-me-forum-email-input" 
+                    autocomplete="email"
+                    name="email" 
+                    class="horisontally-centered rounded"
+                    type="email" 
+                    placeholder="example@domain.com"
+                    required>
+            </div>
+            <div id="contact-me-forum-subject">
+                <label id="contact-me-forum-subject-label"
+                    for="contact-me-forum-subject-input"
+                    class="horisontally-centered"
+                >Subject</label>
+                <input id="contact-me-forum-subject-input" 
+                    name="subject" 
+                    class="horisontally-centered rounded"
+                    type="text" 
+                    placeholder="Reaching out"
+                    required>
+            </div>
+            <div id="contact-me-forum-message">
+                <label id="contact-me-forum-message-label"
+                    for="contact-me-forum-message-input" 
+                    class="horisontally-centered"
+                >Message</label>
+                <textarea id="contact-me-forum-message-input" 
+                    name="message" 
+                    class="not-resizable horisontally-centered rounded"
+                    placeholder="Hey Tygo, this is [your name here] and I wanted to reach out over [subject]."
+                    required
+                ></textarea>
+            </div>
+            <input id="contact-me-forum-submit-button"
+                type="submit" 
+                value="Sent" 
+                class="rounded shadow bordered horisontally-centered">
+        </form>
+    </div>
+    <script id="contact-me-loading-javascript-module" type="module" src="/assets/code/base-kit/body-contents/contact-form/module.js"></script>
+    <script id="contact-me-using-javascript-module" type="module">
+        import { // the constants, and functions from the module
+            contactMeSectionID, hideClass, notScrollableClass, toggleContactMeForm 
+        } from '/assets/code/base-kit/body-contents/contact-form/module.js';
+        const thankYouSection_id = "thank-you-for-contacting-section"
+
+        /**
+         * Checks if escape is pressed and the form is not hidden. 
+         * If this is the case then we hide it.
+         */
+        document.addEventListener("keydown", (event) => {
+            
+            const keyPressed = event.key;
+            const escapeKey = "Escape";
+            if (keyPressed === escapeKey) {
+
+                const contactMeForm = document.getElementById(contactMeSectionID);
+                const thankYouSection = document.getElementById(thankYouSection_id);
+                if (! contactMeForm.classList.contains(hideClass)) {
+                    contactMeForm.classList.add(hideClass);
+                    thankYouSection.classList.add(hideClass);
+                    document.body.classList.remove(notScrollableClass);
+                }
+            }
+        });
+
+        /* adding functionality to the close button */ {
+            const id = "contact-me-close-button"
+            const button = document.getElementById(id);
+            button.addEventListener('click', toggleContactMeForm);
+        }
+    </script>
+</section>

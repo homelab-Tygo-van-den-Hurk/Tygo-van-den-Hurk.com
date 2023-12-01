@@ -1,130 +1,78 @@
-<!--#include virtual="/assets/code/base-kit/body-contents/no-script-warning.shtml"-->
+<!--#include virtual="./no-script-warning.shtml"-->
 <style type="text/css" scoped>
     @import url(/assets/code/base-kit/body-contents/contact-form/content.css);
 </style>
-<section id="contact-me-section" class="hidden follower blackout full-screen">
-    <div id="contact-me-forum-container" class="rounded shadow bordered vertically-centered horisontally-centered box">
-        <button id="contact-me-close-button" class="rounded shadow bordered">x</button>
-        <form id="contact-me-forum" >
-            <!-- method="POST" action="https://formspree.io/f/xayggqaq"> -->
-            <div id="contact-me-forum-email">
-                <label id="contact-me-forum-email-label"
-                    for="contact-me-forum-email-input"
-                    class="horisontally-centered"
-                >Email adress</label>
-                <input id="contact-me-forum-email-input" 
-                    autocomplete="email"
-                    name="email" 
-                    class="horisontally-centered rounded"
-                    type="email" 
-                    placeholder="example@domain.com"
-                    required>
-            </div>
-            <div id="contact-me-forum-subject">
-                <label id="contact-me-forum-subject-label"
-                    for="contact-me-forum-subject-input"
-                    class="horisontally-centered"
-                >Subject</label>
-                <input id="contact-me-forum-subject-input" 
-                    name="subject" 
-                    class="horisontally-centered rounded"
-                    type="text" 
-                    placeholder="Reaching out"
-                    required>
-            </div>
-            <div id="contact-me-forum-message">
-                <label id="contact-me-forum-message-label"
-                    for="contact-me-forum-message-input" 
-                    class="horisontally-centered"
-                >Message</label>
-                <textarea id="contact-me-forum-message-input" 
-                    name="message" 
-                    class="not-resizable horisontally-centered rounded"
-                    placeholder="this is still a work in progress and it does not work yet."
-                    required
-                ></textarea>
-            </div>
-            <input id="contact-me-forum-submit-button"
-                type="submit" 
-                value="Sent" 
-                class="rounded shadow bordered horisontally-centered">
-        </form>
-    </div>
-    <script id="contact-me-loading-javascript-module" type="module" src="/assets/code/base-kit/body-contents/contact-form/module.js"></script>
-    <script id="contact-me-using-javascript-module" type="module">
-        import { // the constants, and functions from the module
-            contactMeSectionID, hideClass, notScrollableClass, toggleContactMeForm 
-        } from '/assets/code/base-kit/body-contents/contact-form/module.js';
-        const thankYouSection_id = "thank-you-for-contacting-section"
+<script>
+    
+    /**
+     * Checks if the email is valid.
+     * 
+     * @argument {string} email - the email to check
+     */
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
 
-        /**
-         * Checks if escape is pressed and the form is not hidden. 
-         * If this is the case then we hide it.
-         */
-        document.addEventListener("keydown", (event) => {
-            
-            const keyPressed = event.key;
-            const escapeKey = "Escape";
-            if (keyPressed === escapeKey) {
+    /**
+     * Checks if the string is blank.
+     * 
+     * @argument {string} str - the string to check
+     */
+    function isBlank(str) {
+        return str.trim() === '';
+    }
 
-                const contactMeForm = document.getElementById(contactMeSectionID);
-                const thankYouSection = document.getElementById(thankYouSection_id);
-                if (! contactMeForm.classList.contains(hideClass)) {
-                    contactMeForm.classList.add(hideClass);
-                    thankYouSection.classList.add(hideClass);
-                    document.body.classList.remove(notScrollableClass);
-                }
+    /**
+     * Checks if the form is valid, and changes the colors of those that aren't.
+     */
+    function verify(){
+        
+        console.log("verifying");
+
+        const red = "#FF3300";
+
+        var normalColor;
+        /* Get the normal text color depending on wether or not dark mode is enabled */ {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                normalColor = "#808080";
+            } else {
+                normalColor = "#808080";
             }
-        });
-
-        /* adding functionality to the close button */ {
-            const id = "contact-me-close-button"
-            const button = document.getElementById(id);
-            button.addEventListener('click', toggleContactMeForm);
         }
-    </script>
-</section>
-<section id="thank-you-for-contacting-section" 
-    class="hidden follower blackout full-screen horisontally-centered vertically-centered">
-    <div id="thank-you-for-contacting-container">
-        <button id="thank-you-for-contacting-button">x</button>
-        <h2 id="thank-you-for-contacting-h2">
-            Thank You!
-        </h2>
-        <p id="thank-you-for-contacting-p">
-            If the page you visited said that the message was sent, then you've reached me!
-            You're message is now in my inbox! I'll get back at you as soon as I can! <br>
-            <br>
-            Hopefully until soon, <br>
-            <br>
-            - Tygo
-        </p>
-    </div>
-    <script id="thank-you-for-contacting-using-javascript-module" type="module">
-        import { // the constants, and functions from the module
-            contactMeSectionID, hideClass, notScrollableClass, toggleContactMeForm 
-        } from '/assets/code/base-kit/body-contents/contact-form/module.js';
 
-        /* adding functionality to the submit button */ {
-            const contactMeFormSubmitButton_id = "contact-me-forum-submit-button"
-            const contactMeFormSubmitButton = document.getElementById(contactMeFormSubmitButton_id);
-            function hideForumShowThanks() {
-
-                // Hiding the Form
-                toggleContactMeForm(); // hides the form in this case
-                
-                /* Showing the Thank-You-Section */ {
-                    const thankYouSection_id = "thank-you-for-contacting-section"
-                    const thankYouSection = document.getElementById(contactMeFormSubmitButton_id);
-                    thankYouSection.classList.remove(hideClass);
-                    document.body.classList.add(notScrollableClass);
-
-                    console.log("done!");
-                    console.log("thankYouSection: "+thankYouSection.classList);
-                    console.log("body: "+document.body.classList);
-                }
+        /* Making things red if they are not valid */ {
+            const email = document.getElementById("contact-me-forum-email-input");
+            if(! isValidEmail(email.value)){
+                email.style.color = red;
+            } else {
+                message.style.color = normalColor;
             }
-            contactMeFormSubmitButton.addEventListener('click', hideForumShowThanks);
-        }  
-    </script>
-</section>
+            
+            const subject = document.getElementById("contact-me-forum-subject-input");
+            if(isBlank(subject.value)){
+                subject.style.color = red;
+            } else {
+                message.style.color = normalColor;
+            }
+
+            const message = document.getElementById("contact-me-forum-subject-input");
+            if(isBlank(message.value)){
+                message.style.color = red;
+            } else {
+                message.style.color = normalColor;
+            }
+        }
+    }
+</script>
+<!--#include virtual="./contact-form-section.shtml"-->
+<!--#include virtual="./thank-you-section.shtml"-->
+<script id="contact-me-on-form-submit-function">
+    contactMeFormSubmitButton.addEventListener('click', event => {
+        event.preventDefault();
+        verify();
+        
+        hideForumShowThanks();
+        this.submit();
+    });
+</script>

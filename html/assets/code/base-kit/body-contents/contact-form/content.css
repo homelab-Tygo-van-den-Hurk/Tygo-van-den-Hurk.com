@@ -74,18 +74,53 @@ form#contact-me-forum > div > * {
     border-color: var(--dark-mode-border-color);
   }
 }
-form#contact-me-forum > div > input, textarea {
+form#contact-me-forum > div > input,
+form#contact-me-forum > div > textarea {
   margin-top: calc(var(--default-top-margin) / 3);
-  font-style: italic;
-  color: var(--light-mode-text-color);
+  color: var(--light-mode-title-color);
   border: solid var(--border-width);
   background-color: var(--light-mode-layer-1-background-color);
 }
 
+form#contact-me-forum > div > input::-moz-placeholder, form#contact-me-forum > div > textarea::-moz-placeholder {
+  font-style: italic;
+  color: var(--light-mode-text-color);
+}
+
+form#contact-me-forum > div > input::placeholder,
+form#contact-me-forum > div > textarea::placeholder {
+  font-style: italic;
+  color: var(--light-mode-text-color);
+}
+
+form#contact-me-forum > div > input:focus,
+form#contact-me-forum > div > textarea:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
+}
+
+form#contact-me-forum > div > input:focus::-moz-placeholder, form#contact-me-forum > div > textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+form#contact-me-forum > div > input:focus::placeholder,
+form#contact-me-forum > div > textarea:focus::placeholder {
+  opacity: 0;
+}
+
 @media (prefers-color-scheme: dark) {
-  form#contact-me-forum > div > input, textarea {
-    color: var(--dark-mode-text-color);
+  form#contact-me-forum > div > input,
+  form#contact-me-forum > div > textarea {
+    color: var(--dark-mode-title-color);
     background-color: var(--dark-mode-layer-1-background-color);
+  }
+  form#contact-me-forum > div > input::-moz-placeholder, form#contact-me-forum > div > textarea::-moz-placeholder {
+    color: var(--dark-mode-text-color);
+  }
+  form#contact-me-forum > div > input::placeholder,
+  form#contact-me-forum > div > textarea::placeholder {
+    color: var(--dark-mode-text-color);
   }
 }
 label#contact-me-forum-email-label {
