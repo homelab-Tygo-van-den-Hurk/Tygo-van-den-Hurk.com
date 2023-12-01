@@ -9,6 +9,11 @@ main {
     // Waihou.svg
     // Waimakariri.svg
     background-image: url(/assets/images/paterns/Whangaehu.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: none;
 }
 
 #contact-me-close-button {
