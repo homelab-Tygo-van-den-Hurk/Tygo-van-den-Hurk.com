@@ -35,7 +35,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;  
-    background-image: url(/assets/images/baners/landing_page_top_no_image.svg);
+    background-image: url(/assets/images/baners/top-light-variant-1.svg);
     height: 100%;
 
     display: flex;
@@ -45,7 +45,7 @@
 }
 @media (prefers-color-scheme: dark){
     #top-container {
-        background-image: url(/assets/images/baners/landing_page_top_no_image_dark.svg);
+        background-image: url(/assets/images/baners/top-dark-variant-1.svg);
     }
 }
 

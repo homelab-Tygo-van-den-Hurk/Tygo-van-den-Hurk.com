@@ -27,7 +27,6 @@
         <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
         <main>
             <!--#include virtual="/assets/code/base-kit/body-contents/top-part/content.shtml" -->
-            <!--#echo var="DOCUMENT_URI" -->
             <!--#include virtual="./content.shtml" -->
             <!--#include virtual="/assets/code/base-kit/body-contents/bottom-part/content.shtml" -->
         </main>
