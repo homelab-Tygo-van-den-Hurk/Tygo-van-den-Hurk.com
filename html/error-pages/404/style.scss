@@ -4,11 +4,21 @@
     --sec-accent-color: #A155B5;
 }
 
+main {
+    min-height: 100vh !important;
+    height: max(fit-content, 100vh) !important;
+    max-height: auto !important;
+    min-width: 100vw !important;
+    width: max(fit-content, 100vw) !important;
+    max-width: auto !important;
+}
+
 #error-pages-404-section {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0;
 }
 
 #error-pages-404-img {
