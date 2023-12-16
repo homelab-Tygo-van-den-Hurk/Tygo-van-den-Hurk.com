@@ -1,5 +1,5 @@
 <!--~ snapchat -->
-<div class="social-media-links-phone-app">
+<div id="social-media-links-phone-app-snapchat" class="social-media-links-phone-app">
     <a id="snapchat-app" href="/socials/snapchat/" class="social-media-links-phone-app-link">
         <img id="snapchat-app-icon"
             class="social-media-links-phone-app-img" 
@@ -12,11 +12,11 @@
     </p>
 </div>
 <!--~ instagram -->
-<div class="social-media-links-phone-app">
+<div id="social-media-links-phone-app-instagram" class="social-media-links-phone-app">
     <a id="instagram-app" href="/socials/instagram/" class="social-media-links-phone-app-link">
         <img id="instagram-app-icon"
             class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/instagram/white.svg" 
+            src="/assets/images/icons/socials/instagram/original.svg" 
             alt="instagram icon"
         >
     </a>
@@ -25,106 +25,106 @@
     </p>
 </div>
 <!--~ linkedin -->
-<div class="social-media-links-phone-app">
+<div id="social-media-links-phone-app-linkedin" class="social-media-links-phone-app">
     <a id="linkedin-app" href="/socials/linkedin/" class="social-media-links-phone-app-link">
         <img id="linkedin-app-icon"
             class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/linkedin/white.svg" 
+            src="/assets/images/icons/socials/linkedin/original.svg" 
             alt="linkin icon"
         >
     </a>
     <p class="social-media-links-phone-app-p">
-        linkedin
-    </p>
-</div>
-<!--~ whatsapp -->
-<div class="social-media-links-phone-app">
-    <a id="whatsapp-app" href="/socials/whatsapp/" class="social-media-links-phone-app-link">
-        <img id="whatsapp-app-icon"
-            class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/whatsapp/white.svg" 
-            alt="app icon"
-        >
-    </a>
-    <p class="social-media-links-phone-app-p">
-        whatsapp
-    </p>
-</div>
-<!--~ email -->
-<div class="social-media-links-phone-app">
-    <a id="email-app" href="/socials/email/" class="social-media-links-phone-app-link">
-        <img id="email-app-icon"
-            class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/email/white.svg" 
-            alt="app icon"
-        >
-    </a>
-    <p class="social-media-links-phone-app-p">
-        email
-    </p>
-</div>
-<!--~ github -->
-<div class="social-media-links-phone-app">
-    <a id="github-app" href="/socials/github/" class="social-media-links-phone-app-link">
-        <img id="github-app-icon"
-            class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/github/white.svg" 
-            alt="app icon"
-        >
-    </a>
-    <p class="social-media-links-phone-app-p">
-        github
+        Linkedin
     </p>
 </div>
 <!--~ behance -->
-<div class="social-media-links-phone-app">
+<div id="social-media-links-phone-app-behance" class="social-media-links-phone-app">
     <a id="behance-app" href="/socials/behance/" class="social-media-links-phone-app-link">
         <img id="behance-app-icon"
             class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/behance/white.svg" 
+            src="/assets/images/icons/socials/behance/original.svg" 
             alt="app icon"
         >
     </a>
     <p class="social-media-links-phone-app-p">
-        behance
+        Behance
+    </p>
+</div>
+<!--~ whatsapp -->
+<div id="social-media-links-phone-app-whatsapp" class="social-media-links-phone-app">
+    <a id="whatsapp-app" href="/socials/whatsapp/" class="social-media-links-phone-app-link">
+        <img id="whatsapp-app-icon"
+            class="social-media-links-phone-app-img" 
+            src="/assets/images/icons/socials/whatsapp/original.svg" 
+            alt="app icon"
+        >
+    </a>
+    <p class="social-media-links-phone-app-p">
+        Whatsapp
+    </p>
+</div>
+<!--~ github -->
+<div id="social-media-links-phone-app-github" class="social-media-links-phone-app">
+    <a id="github-app" href="/socials/github/" class="social-media-links-phone-app-link">
+        <img id="github-app-icon"
+            class="social-media-links-phone-app-img" 
+            src="/assets/images/icons/socials/github/original.svg" 
+            alt="app icon"
+        >
+    </a>
+    <p class="social-media-links-phone-app-p">
+        Github
+    </p>
+</div>
+<!--~ email -->
+<div id="social-media-links-phone-app-email" class="social-media-links-phone-app">
+    <a id="email-app" href="/socials/email/" class="social-media-links-phone-app-link">
+        <img id="email-app-icon"
+            class="social-media-links-phone-app-img" 
+            src="/assets/images/icons/socials/email/original.svg" 
+            alt="app icon"
+        >
+    </a>
+    <p class="social-media-links-phone-app-p">
+        Mail
     </p>
 </div>
 <!--~ apple music -->
-<div class="social-media-links-phone-app">
+<div id="social-media-links-phone-app-apple-music" class="social-media-links-phone-app">
     <a id="apple-music-app" href="/socials/apple-music/" class="social-media-links-phone-app-link">
         <img id="apple-music-app-icon"
             class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/apple-music/white.svg" 
+            src="/assets/images/icons/socials/apple-music/original.svg" 
             alt="app icon"
         >
     </a>
     <p class="social-media-links-phone-app-p">
-        Apple Music
+        Music
     </p>
 </div>
 <!--~ portfolio -->
-<div class="social-media-links-phone-app">
+<div id="social-media-links-phone-app-portfolio" class="social-media-links-phone-app">
     <a id="portfolio-app" href="/portfolio/" class="social-media-links-phone-app-link">
         <img id="portfolio-app-icon"
             class="social-media-links-phone-app-img" 
-            src="/assets/images/me/head-shot (Small).jpg" 
+            src="/assets/images/tab-icons/portfolio.svg" 
             alt="app icon"
         >
     </a>
     <p class="social-media-links-phone-app-p">
-        portfolio
+        Portfolio
     </p>
 </div>
 <!--~ facebook -->
-<div class="social-media-links-phone-app">
+<div id="social-media-links-phone-app-facebook" class="social-media-links-phone-app">
     <a id="facebook-app" href="/socials/facebook/" class="social-media-links-phone-app-link">
         <img id="facebook-app-icon"
             class="social-media-links-phone-app-img" 
-            src="/assets/images/icons/socials/facebook/white.svg" 
+            src="/assets/images/icons/socials/facebook/original.svg" 
             alt="app icon"
         >
     </a>
     <p class="social-media-links-phone-app-p">
-        facebook
+        Facebook
     </p>
 </div>

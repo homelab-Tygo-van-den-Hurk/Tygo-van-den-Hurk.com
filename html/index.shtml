@@ -6,15 +6,10 @@
         </title>
         <!-- meta -->
         <meta charset="utf-8">
-        <meta 
-            name="keywords"
-            content="Tygo, van den Hurk, Tygo van den Hurk, home">
-        <meta
-            name="description"
-            content="Hi! I&rsquo;m Tygo van den Hurk, I am a student at the TU&#47;e. This is my personal-site, please take a look around and don&rsquo;t be affraid to contact me!">
-        <meta 
-            name="viewport" 
-            content="width=device-width, initial-scale=1, maximum-scale=5">
+        <meta name="darkreader-lock">
+        <meta name="keywords"content="Tygo, van den Hurk, Tygo van den Hurk, home">
+        <meta name="description" content="Hi! I&rsquo;m Tygo van den Hurk, I am a student at the TU&#47;e. This is my personal-site, please take a look around and don&rsquo;t be affraid to contact me!">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
         <!-- links -->
         <link rel="icon" href="assets/images/me/head-shot (Small).jpg">
         <link rel="stylesheet" href="style.css"> 
@@ -148,33 +143,33 @@
                         <ul class="list_of_socials"><!-- display 5 at a time max is done via css-->
                             <p></p><li class="instagram Interessed___li_icon"><a href="https://www.instagram.com/tygo.van.den.hurk/" class="Interessed__icon_a">
         
-                                <img src="../assets/images/icons/instagram_white.svg" alt="instagram icon" class="Interessed__icon_darkmode">
-                                <img src="../assets/images/icons/instagram.svg" alt="instagram icon" class="Interessed__icon_lightmode">
+                                <img src="/assets/images/icons/socials/instagram/white.svg" alt="instagram icon" class="Interessed__icon_darkmode">
+                                <img src="/assets/images/icons/socials/instagram/black.svg" alt="instagram icon" class="Interessed__icon_lightmode">
         
                             </a></li><li class="snapchat Interessed___li_icon"><a href="https://t.snapchat.com/fWkBlmdb" class="Interessed__icon_a">
         
-                                <img src="../assets/images/icons/snapchat_white.svg" alt="snap icon" class="Interessed__icon_darkmode">
-                                <img src="../assets/images/icons/snapchat.svg" alt="snap icon" class="Interessed__icon_lightmode">
+                                <img src="/assets/images/icons/socials/snapchat/white.svg" alt="snap icon" class="Interessed__icon_darkmode">
+                                <img src="/assets/images/icons/socials/snapchat/black.svg" alt="snap icon" class="Interessed__icon_lightmode">
         
                             </a></li><li class="linkedin Interessed___li_icon"><a href="https://www.linkedin.com/in/tygo-van-den-hurk" class="Interessed__icon_a">
         
-                                <img src="../assets/images/icons/linkedin_white.svg" alt="linkedin icon" class="Interessed__icon_darkmode">
-                                <img src="../assets/images/icons/linkedin.svg" alt="linkedin icon" class="Interessed__icon_lightmode">
+                                <img src="/assets/images/icons/socials/linkedin/white.svg" alt="linkedin icon" class="Interessed__icon_darkmode">
+                                <img src="/assets/images/icons/socials/linkedin/black.svg" alt="linkedin icon" class="Interessed__icon_lightmode">
         
                             </a></li><li class="whatsapp Interessed___li_icon"><a href="other/" class="Interessed__icon_a">
         
-                                <img src="../assets/images/icons/whatsapp_white.svg" alt="whatsapp icon" class="Interessed__icon_darkmode">
-                                <img src="../assets/images/icons/whatsapp.svg" alt="whatsapp icon" class="Interessed__icon_lightmode">
+                                <img src="/assets/images/icons/socials/whatsapp/white.svg" alt="whatsapp icon" class="Interessed__icon_darkmode">
+                                <img src="/assets/images/icons/socials/whatsapp/black.svg" alt="whatsapp icon" class="Interessed__icon_lightmode">
         
                             </a></li><li class="email Interessed___li_icon"><a href="other/" class="Interessed__icon_a">
         
-                                <img src="../assets/images/icons/email_white.svg" alt="email icon" class="Interessed__icon_darkmode">
-                                <img src="../assets/images/icons/email.svg" alt="email icon" class="Interessed__icon_lightmode">
+                                <img src="/assets/images/icons/socials/email/white.svg" alt="email icon" class="Interessed__icon_darkmode">
+                                <img src="/assets/images/icons/socials/email/black.svg" alt="email icon" class="Interessed__icon_lightmode">
         
                             </a></li><li class="facebook Interessed___li_icon"><a href="https://facebook.com/profile.php?id=100011384536668" class="Interessed__icon_a">
         
-                                <img src="../assets/images/icons/facebook_white.svg" alt="facebook icon" class="Interessed__icon_darkmode">
-                                <img src="../assets/images/icons/facebook.svg" alt="facebook icon" class="Interessed__icon_lightmode">
+                                <img src="/assets/images/icons/socials/facebook/white.svg" alt="facebook icon" class="Interessed__icon_darkmode">
+                                <img src="/assets/images/icons/socials/facebook/black.svg" alt="facebook icon" class="Interessed__icon_lightmode">
 
                             </a></li>
                         </ul>

@@ -28,6 +28,9 @@
 <html lang="en">
     <head>
         <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
+        <meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk, contact">
+        <meta name="description" content="Hey! Tygo here! Using this page you can get in touch!">
+        <link rel="icon" href="/assets/images/me/head-shot (small&rounded).png">
     </head>
     <body>
         <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
