@@ -8,10 +8,10 @@ section#contact-me-section {
     // Background Color, and image
     // border
     // width 
-    // heigth
+    // height
     // padding
     // margin
-    // margin related
+        margin-top: 0;
     // other
         display: flex;
         align-items: center;
@@ -28,7 +28,7 @@ button#contact-me-close-button {
         border-color: var(--light-mode-title-color);
     // width 
         width: 2.5em;
-    // heigth
+    // height
         height: 2.5em;
     // padding
         padding: 0;
@@ -58,7 +58,7 @@ div#contact-me-forum-container {
         min-width: auto;
         width: auto;
         max-width: auto;
-    // heigth
+    // height
     // padding
         padding: 0em;
     // margin
@@ -82,7 +82,7 @@ form#contact-me-forum {
         min-width: $MIN_WIDTH;
         width: 80vw;
         max-width: $CHANGE_POINT;
-    // heigth
+    // height
         min-height: $MIN_HEIGHT;
         height: 80vh;
         max-height: calc(0.4 * $CHANGE_POINT);
@@ -109,10 +109,9 @@ form#contact-me-forum > div > * {
         min-width: calc(var(--content-width) * $MIN_WIDTH);
         width: var(--content-width);
         max-width: auto;
-    // heigth
+    // height
     // padding
     // margin
-    // margin related
     // other
         display: block;
 }
@@ -132,7 +131,7 @@ form#contact-me-forum > div > * {
 //         // border
 //         // width 
 //             width: 50% !important;
-//         // heigth
+//         // height
 //         // padding
 //         // other
 //             float: left;
@@ -145,7 +144,7 @@ form#contact-me-forum > div > * {
 //         // border
 //         // width 
 //             width: 50%;
-//         // heigth
+//         // height
 //         // padding
 //         // other
 //             float: right;
@@ -228,7 +227,7 @@ input#contact-me-forum-submit-button {
         border-color: var(--light-mode-title-color);
     // width 
         width: calc(var(--button-width) - var(--border-width));
-    // heigth
+    // height
         height: calc(var(--button-height) - var(--border-width));
     // padding
     // margin
