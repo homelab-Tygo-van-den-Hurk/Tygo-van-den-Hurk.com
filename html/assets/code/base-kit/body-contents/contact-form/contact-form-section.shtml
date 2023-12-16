@@ -1,17 +1,17 @@
 <section id="contact-me-section" class="hidden follower blackout full-screen">
-    <div id="contact-me-forum-container" class="rounded shadow bordered vertically-centered horisontally-centered box">
+    <div id="contact-me-forum-container" class="rounded shadow bordered vertically-centered horizontally-centered box">
         <button id="contact-me-close-button" class="rounded shadow bordered">x</button>
         <form id="contact-me-forum" onSubmit="verify();" method="POST" action="https://formspree.io/f/xayggqaq"> 
         <!-- ... -->
             <div id="contact-me-forum-email">
                 <label id="contact-me-forum-email-label"
                     for="contact-me-forum-email-input"
-                    class="horisontally-centered"
+                    class="horizontally-centered"
                 >Email adress</label>
                 <input id="contact-me-forum-email-input" 
                     autocomplete="email"
                     name="email" 
-                    class="horisontally-centered rounded"
+                    class="horizontally-centered rounded"
                     type="email" 
                     placeholder="obi-wan.kenobi@the-jedi-temple.com"
                     required>
@@ -19,11 +19,11 @@
             <div id="contact-me-forum-subject">
                 <label id="contact-me-forum-subject-label"
                     for="contact-me-forum-subject-input"
-                    class="horisontally-centered"
+                    class="horizontally-centered"
                 >Subject</label>
                 <input id="contact-me-forum-subject-input" 
                     name="subject" 
-                    class="horisontally-centered rounded"
+                    class="horizontally-centered rounded"
                     type="text" 
                     placeholder="I have the high ground"
                     required>
@@ -31,11 +31,11 @@
             <div id="contact-me-forum-message">
                 <label id="contact-me-forum-message-label"
                     for="contact-me-forum-message-input" 
-                    class="horisontally-centered"
+                    class="horizontally-centered"
                 >Message</label>
                 <textarea id="contact-me-forum-message-input" 
                     name="message" 
-                    class="not-resizable horisontally-centered rounded"
+                    class="not-resizable horizontally-centered rounded"
                     placeholder="Hello there..&#10;It's over, Anakin! I have the high ground!"
                     required
                 ></textarea>
@@ -43,7 +43,7 @@
             <input id="contact-me-forum-submit-button"
                 type="submit" 
                 value="Sent" 
-                class="rounded shadow bordered horisontally-centered">
+                class="rounded shadow bordered horizontally-centered">
         </form>
     </div>
     <script id="contact-me-loading-javascript-module" type="module" src="/assets/code/base-kit/body-contents/contact-form/module.js"></script>

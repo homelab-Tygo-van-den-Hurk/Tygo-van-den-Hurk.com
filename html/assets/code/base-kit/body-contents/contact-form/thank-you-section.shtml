@@ -1,5 +1,5 @@
 <section id="thank-you-for-contacting-section" 
-    class="hidden follower blackout full-screen horisontally-centered vertically-centered">
+    class="hidden follower blackout full-screen horizontally-centered vertically-centered">
     <div id="thank-you-for-contacting-container">
         <button id="thank-you-for-contacting-button">x</button>
         <h2 id="thank-you-for-contacting-h2">

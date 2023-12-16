@@ -31,7 +31,7 @@
     </head>
     <body>
         <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
-        <main class="full-screen horisontally-centered vertically-centered">
+        <main class="full-screen horizontally-centered vertically-centered">
             <!-- #include virtual="/assets/code/base-kit/body-contents/top-part/content.shtml" -->
             <!--#include virtual="./content.shtml" -->
             <!-- #include virtual="/assets/code/base-kit/body-contents/bottom-part/content.shtml" -->

@@ -66,13 +66,13 @@ $max-main-width: 1920px;
             --dark-mode-text-color: #808080;
 }
 
-// /* thing to costimise */ {
-//     font weigth, alignment, size, family, color
+// /* thing to customise */ {
+//     font weight, alignment, size, family, color
 //     Color
 //     Background Color, and image
 //     border
 //     width 
-//     heigth
+//     height
 //     padding
 //     margin
 //     other
@@ -80,7 +80,7 @@ $max-main-width: 1920px;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DEFAULT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 * {
-    // font weigth, alignment size, family, color
+    // font weight, alignment size, family, color
         text-align: var(--text-alignments);
         font-size: var(--default-text-size);
         font-family: var(--text-font);
@@ -90,7 +90,7 @@ $max-main-width: 1920px;
         border: none;
         border-image-width: none;
     // width 
-    // heigth
+    // height
     // padding
     // margin
         margin-top: 0;
@@ -109,14 +109,14 @@ $max-main-width: 1920px;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 html {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
     // border
     // width 
         min-width: 100vw;
         max-width: 100vw;
-    // heigth
+    // height
     // padding
         padding: 0;
     // margin
@@ -126,7 +126,7 @@ html {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 body {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: var(--light-mode-body-background-color);
@@ -134,7 +134,8 @@ body {
     // width 
         min-width: 100vw;
         max-width: 100vw;
-    // heigth
+    // height
+        min-height: 100vh;
     // padding
         padding: 0;
     // margin
@@ -151,7 +152,7 @@ body {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 main {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: var(--light-mode-main-background-color);
@@ -162,7 +163,7 @@ main {
         min-width: var(--min-main-width);
         width: 100%;
         max-width: $max-main-width;
-    // heigth
+    // height
         min-height: 100vh;
         height: 100%;
     // padding
@@ -187,13 +188,13 @@ main {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 section {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         // background-color: red !important;
     // border
     // width 
-    // heigth
+    // height
     // padding
         padding: 0;
     // margin
@@ -207,12 +208,12 @@ section {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Div ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 div {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
     // border
     // width 
-    // heigth
+    // height
     // padding
         padding: 0;
     // margin
@@ -222,7 +223,7 @@ div {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ H1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 h1 {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
         font-size: var(--h1-size);
         font-family: var(--title-font);
         text-transform: capitalize;
@@ -233,20 +234,20 @@ h1 {
     // width 
         max-width: var(--max-content-width);
         width: var(--content-width);
-    // heigth
+    // height
     // padding
     // margin
         margin-top: calc(2 * var(--default-top-margin));
     // other
 } h1::after {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: var(--accent-color);
     // border
     // width 
         width: var(--line-after-title-width);
-    // heigth
+    // height
         height: 2px; 
     // padding
     // margin
@@ -266,7 +267,7 @@ h1 {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ H2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 h2 {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
         font-size: var(--h2-size);
         font-family: var(--title-font);
         text-transform: capitalize;
@@ -277,20 +278,20 @@ h2 {
     // width 
         max-width: var(--max-content-width);
         width: var(--content-width);
-    // heigth
+    // height
     // padding
     // margin
         margin-top: calc(2 * var(--default-top-margin));
     // other
 } h2::after {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: var(--accent-color);
     // border
     // width 
         width: var(--line-after-title-width);
-    // heigth
+    // height
         height: 2px; 
     // padding
     // margin
@@ -310,7 +311,7 @@ h2 {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ H3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 h3 {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
         font-size: var(--h3-size);
         font-family: var(--title-font);
         text-transform: capitalize;
@@ -321,20 +322,20 @@ h3 {
     // width 
         max-width: var(--max-content-width);
         width: var(--content-width);
-    // heigth
+    // height
     // padding
     // margin
         margin-top: calc(2 * var(--default-top-margin));
     // other
 } h3::after {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: var(--accent-color);
     // border
     // width 
         width: var(--line-after-title-width);
-    // heigth
+    // height
         height: 2px; 
     // padding
     // margin
@@ -354,7 +355,7 @@ h3 {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Em ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 em {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
         font-style: normal;
         // font-weight: bold;
     // Color
@@ -362,7 +363,7 @@ em {
     // Background Color, and image
     // border
     // width 
-    // heigth
+    // height
     // padding
     // margin
     // other
@@ -370,7 +371,7 @@ em {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Paragraphs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 p {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
         color: var(--light-mode-text-color);
     // Background Color, and image
@@ -378,7 +379,7 @@ p {
     // width 
         max-width: var(--max-content-width);
         width: var(--content-width);
-    // heigth
+    // height
     // padding
     // margin
     margin-top: calc(var(--default-top-margin)/2);
@@ -397,14 +398,14 @@ a {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Lists ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 ul {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
     // border
     // width 
         max-width: var(--max-content-width);
         width: var(--content-width);
-    // heigth
+    // height
     // padding
         padding: 0;
     // margin
@@ -415,7 +416,7 @@ ul {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 button {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
         font-weight: bold;
         text-transform: uppercase;
         color: var(--light-mode-layer-0-background-color);
@@ -428,7 +429,7 @@ button {
         border-width: var(--border-width);
     // width 
         width: calc(var(--button-width) - 2*var(--border-width));
-    // heigth
+    // height
         height: calc(var(--button-height) - 2*var(--border-width));
     // padding
     // margin
@@ -448,7 +449,7 @@ button {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Images ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 img {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-repeat: no-repeat;
@@ -459,23 +460,23 @@ img {
     // width 
         width: 100%;
         // Define a max width AND .box will automagically stop growing when the image does.
-    // heigth
+    // height
     // padding
     // margin
     // other
         aspect-ratio: 1/1;
 } 
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Lables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Labels ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 label {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
     // border
     // width 
         width: var(--content-width);
         max-width: var(--max-content-width);
-    // heigth
+    // height
     // padding
     // margin
         margin-top: var(--default-top-margin);
@@ -485,7 +486,7 @@ label {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Inputs & Text-Areas ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 input, textarea {
-        // font weigth, alignment, size, family, color
+        // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: var(--light-mode-background-layer-0-color);
@@ -497,7 +498,7 @@ input, textarea {
         min-width: auto;
         width: 80%;
         max-width: auto;
-    // heigth
+    // height
     // padding
         padding: 0.5em;
     // margin
@@ -526,7 +527,7 @@ input, textarea {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ iFrames ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 iframe {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: darkcyan;
@@ -534,7 +535,7 @@ iframe {
         border: 0;
     // width 
         width: 100vw;
-    // heigth
+    // height
     // padding
         padding: 0;
     // margin
@@ -552,7 +553,7 @@ iframe {
     display: none !important;
 }
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Not Scrolable ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Not Scrollable ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 .not-scrollable {
     overflow: hidden;
 } 
@@ -567,8 +568,8 @@ iframe {
     font-weight: bold;
 } 
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Horisontally, and Vertically-Centered ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~// 
-.horisontally-centered {
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Horizontally, and Vertically-Centered ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~// 
+.horizontally-centered {
     margin-left: auto;
     margin-right: auto;
 } .vertically-centered {
@@ -610,10 +611,10 @@ iframe {
     @extend .shadow;
     @extend .bordered;
     @extend .rounded;
-    @extend .horisontally-centered;
+    @extend .horizontally-centered;
     @extend .not-scrollable;
     
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: var(--light-mode-background-layer-2-color);
@@ -622,7 +623,7 @@ iframe {
         min-width: auto;
         width: var(--content-width);
         max-width: max-content;
-    // heigth
+    // height
         // height: fit-content;
     // padding
     // margin

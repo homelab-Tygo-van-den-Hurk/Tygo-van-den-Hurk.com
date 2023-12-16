@@ -94,6 +94,7 @@ body {
   background-color: var(--light-mode-body-background-color);
   min-width: 100vw;
   max-width: 100vw;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   -webkit-text-size-adjust: none !important;
@@ -338,7 +339,7 @@ iframe[seamless] {
   font-weight: bold;
 }
 
-.horisontally-centered, .box {
+.horizontally-centered, .box {
   margin-left: auto;
   margin-right: auto;
 }
