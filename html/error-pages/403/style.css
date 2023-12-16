@@ -46,4 +46,5 @@ main {
 
 #error-pages-403-contact-me-button {
   margin-top: 3em;
+  border: none !important;
 }/*# sourceMappingURL=style.css.map */
