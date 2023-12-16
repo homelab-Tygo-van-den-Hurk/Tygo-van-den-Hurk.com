@@ -1,0 +1,335 @@
+@import url(/assets/code/base-kit/content.css);
+
+$phone-border-radius: 50px;
+$app-border-radius: 20px;
+$home-bar-height: 7px;
+
+body {
+    background-color: var(--light-mode-main-background-color);
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-mode-main-background-color);
+    }
+}
+
+main {
+    max-width: none !important;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PHONE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+div#social-media-links-phone-body {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+        background-image: url("/assets/images/wavey/(gray)/iPhone-variant.png");
+    // border
+        border: solid;
+        border-color: black !important;
+        border-radius: $phone-border-radius;
+        border-width: 5px;
+    // width 
+        min-width: none;
+        width: 80%;
+        max-width: 30em;
+    // height
+    // padding
+        padding: 0;
+    // margin
+        margin-top: max(var(--default-top-margin), 5vh);
+        margin-left: auto;
+        margin-right: auto;
+    // other
+        aspect-ratio: 18/39;
+        position: relative;
+        box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
+    
+    * {
+        aspect-ratio: auto;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    div#social-media-links-phone-body {
+        border-color: var(--dark-mode-border-color);
+        box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
+        background-image: url("/assets/images/wavey/(black)/iPhone-variant.png");
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PHONE TOP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+div#social-media-links-phone-top {
+    
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+        border-radius: $phone-border-radius;
+    // width 
+    // height
+        height: 3em;
+    // padding
+    // margin
+    // other
+       position: relative;
+}
+
+div#social-media-links-phone-top-name {
+    // font weight, alignment, size, family, color
+        font-size: 1.5em;
+    // Color
+    // Background Color, and image
+    // border
+    // width 
+    // height
+    // padding
+    // margin
+    // other
+        display: inline-block;
+}
+
+p#social-media-links-phone-top-name-p {
+    // font weight, alignment, size, family, color
+    // Color
+        color: black;
+    // Background Color, and image
+    // border
+    // width 
+    // height
+    // padding
+        padding: 0;
+    // margin
+        margin: 0;
+    // other
+        display: inline-block;
+}
+@media (prefers-color-scheme: dark) {
+    p#social-media-links-phone-top-name-p {
+        color: white;
+    }
+}
+
+div#social-media-links-phone-top-camera {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+    // width 
+    // height
+    // padding
+    // margin
+    // other
+        display: inline-block;
+}
+
+div#social-media-links-phone-top-time {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+    // width 
+    // height
+    // padding
+    // margin
+    // other
+        display: inline-block;
+}
+
+time#social-media-links-phone-top-time-p {
+    // font weight, alignment, size, family, color
+    // Color
+        color: black;
+    // Background Color, and image
+    // border
+    // width 
+        width: 100%;
+    // height
+    // padding
+        padding: 0;
+    // margin
+        margin: 0;
+    // other
+        display: inline-block;
+}
+@media (prefers-color-scheme: dark) {
+    time#social-media-links-phone-top-time-p {
+        color: white;
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PHONE APPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+div#social-media-links-phone-apps {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+    // width 
+        width: auto;
+    // height
+    // padding
+        padding: 25px;
+    // margin
+        margin: 0;
+    // other
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        overflow: hidden;
+}
+
+div#social-media-links-phone-apps > div.social-media-links-phone-app {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+    // width 
+        width: auto;
+    // height
+    // padding
+        padding: 0;
+    // margin
+        margin: 0;
+    // other
+}
+
+div#social-media-links-phone-apps > 
+    div.social-media-links-phone-app > 
+        .social-media-links-phone-app-link {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+        border-radius: $app-border-radius;
+    // width 
+        width: 100%;
+    // height
+    // padding
+        padding: 0;
+    // margin
+        margin: 0;
+    // other
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+div#social-media-links-phone-apps > 
+    div.social-media-links-phone-app > 
+        a.social-media-links-phone-app-link > 
+            img.social-media-links-phone-app-img {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+    // width 
+        width: 100%;
+        max-width: 50%;
+    // height
+    // padding
+        padding: 0;
+    // margin
+        margin: 0 auto;
+    // other
+        aspect-ratio: 1/1;
+}
+
+div#social-media-links-phone-apps > div.social-media-links-phone-app > .social-media-links-phone-app-p {
+    color: black;
+}
+@media (prefers-color-scheme: dark) {
+    div#social-media-links-phone-apps > div.social-media-links-phone-app > .social-media-links-phone-app-p {
+        color: white;
+    }
+}
+
+div#social-media-links-phone-apps > div.social-media-links-phone-app {
+    a#snapchat-app {
+        background-color: #CCC000;
+    } 
+    
+    a#instagram-app {
+        background-color: #DD2A7B;
+    }
+    
+    a#linkedin-app {
+        background-color: #0077B5;
+    }
+    
+    a#whatsapp-app {
+        background-color: lightgreen;
+    }
+    
+    a#email-app {
+        background-color: lightskyblue;
+    }
+    
+    a#github-app {
+        background-color: black;
+    }
+    
+    a#behance-app {
+        background-color: black;
+    } 
+    
+    a#apple-music-app {
+        background-color: #FC3C44;
+    } 
+    
+    a#portfolio-app {
+        background-color: var(--accent-color);
+        
+        #portfolio-app-icon {
+            width: 100% !important;
+            max-width: none;
+        }
+    } 
+    
+    a#facebook-app {
+        background-color: #3B5998;
+    }
+    
+    a#discord-app {
+        background-color: #5865F2;
+    }
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PHONE BOTTOM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+div#social-media-links-phone-bottom {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+    // border
+    // width 
+    // height
+        height: 30px;
+    // padding
+    // margin
+    // other
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+}
+
+div#social-media-links-phone-bottom-bar {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+        background-color: black;
+    // border
+        border-radius: calc($home-bar-height / 2);
+    // width 
+        width: 50%;
+    // height
+        height: $home-bar-height;
+    // padding
+    // margin
+        margin: 0 auto;
+    // other
+}
+@media (prefers-color-scheme: dark) {
+    div#social-media-links-phone-bottom-bar {
+        background-color: white;
+    }
+}

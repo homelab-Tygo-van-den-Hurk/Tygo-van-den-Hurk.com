@@ -179,7 +179,7 @@ main {
         box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
     }
 }
-@media only screen and (min-height: $max-main-width){
+@media only screen and (min-height: $max-main-width) {
     main {
         border-left: solid;
         border-right: solid;
@@ -585,7 +585,7 @@ iframe {
     border-color: var(--light-mode-border-color);
     border: solid;
 } 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     .bordered {
         border-color: var(--dark-mode-border-color);
     } 
@@ -595,7 +595,7 @@ iframe {
 .shadow {
     box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
 } 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     .shadow {
         box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
     } 
@@ -631,7 +631,7 @@ iframe {
     // other
         aspect-ratio: 1/1;
 }
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     .box {
         background-color: var(--dark-mode-background-layer-2-color);
     }
@@ -642,7 +642,7 @@ iframe {
     z-index: 100;
     background-color: rgba($color: #FFFFFF, $alpha: 0.7);
 }
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     .blackout {
         background-color: rgba($color: #000000, $alpha: 0.7);
     }
@@ -663,7 +663,7 @@ iframe {
 } .layer-2 {
     background-color: var(--light-mode-layer-2-background-color);
 } 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     .layer-0 {
         background-color: var(--dark-mode-layer-0-background-color);
     } .layer-1 {
@@ -684,7 +684,7 @@ iframe {
 // ????????????????????????????????????????????????????????????????????????????????????????????????????????????????? //
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hiding the Things that are for a Diffrent Mode ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     .light-mode {
         display: none !important;
     }

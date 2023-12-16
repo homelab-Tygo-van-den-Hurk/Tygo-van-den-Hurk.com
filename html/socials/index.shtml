@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Social-Media — Tygo van den Hurk</title>
         <meta charset="UTF-8">
+        <meta name="author" content="Tygo van den Hurk">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Redirecting</title>
-        <meta http-equiv="refresh" content="0; /link-list/" />
-        <style>
-            @import url(/assets/code/base-kit/content.css);
-        </style>
+        <!-- ! HERE IS A THING TO CHANGE. The description must be the name of the social platform. ! -->
+        <meta name="description" content="This page contains all my socials. Feel free to reach out on any of them!">
+        <!-- ! HERE IS A THING TO CHANGE. The keyword must be the name of the social platform. ! -->
+        <meta name="keywords" content="Tygo, van den Hurk, socials, social media">
+        <!-- ! HERE IS A THING TO CHANGE. This link must point to the icon for this social media platform. ! -->
+        <link rel="icon" href="/assets/images/me/head-shot (small&rounded).png">
+        <link rel="stylesheet" href="./style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
-
+        <main>
+            <section id="social-media-links-section">
+                <h1 id="social-media-links-h1">
+                    Social Media
+                </h1>
+                <p id="social-media-links-p">
+                    Here you can find all my socials. Feel free to reach out on any of them!
+                </p>
+                <div id="social-media-links-phone-body">
+                    <div id="social-media-links-phone-top">
+                        <div id="social-media-links-phone-top-name">
+                            <p id="social-media-links-phone-top-name-p">
+                                Tygo
+                            </p>
+                        </div>
+                        <div id="social-media-links-phone-top-camera"></div>
+                        <div id="social-media-links-phone-top-time">
+                            <time id="social-media-links-phone-top-time-p" datetime="">??:??</time>
+                            <script>
+                                function updateCurrentTime() {
+                                    const id = ("social-media-links-phone-top-time-p");
+                                    const currentTimeElement = document.getElementById(id);
+                                    const now = new Date();
+                                    const timeSettings = { hour: '2-digit', minute: '2-digit', hour12: false };
+                                    const formattedTime = now.toLocaleTimeString([], timeSettings);
+                                    const isoString = now.toISOString().slice(0, 19).replace('T', ' ');
+                                    currentTimeElement.textContent = formattedTime;
+                                    currentTimeElement.setAttribute('datetime', isoString);}
+                                setInterval(updateCurrentTime, 1000);
+                                updateCurrentTime();
+                            </script>
+                        </div>
+                    </div>
+                    <div id="social-media-links-phone-apps">
+                        <!--#include virtual="apps.shtml" -->
+                    </div>
+                    <div id="social-media-links-phone-bottom" class="vertically-centered">
+                        <div id="social-media-links-phone-bottom-bar"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

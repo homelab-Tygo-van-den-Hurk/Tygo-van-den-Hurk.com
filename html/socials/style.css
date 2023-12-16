@@ -1,0 +1,190 @@
+@import url(/assets/code/base-kit/content.css);
+body {
+  background-color: var(--light-mode-main-background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-mode-main-background-color);
+  }
+}
+main {
+  max-width: none !important;
+}
+
+div#social-media-links-phone-body {
+  background-image: url("/assets/images/wavey/(gray)/iPhone-variant.png");
+  border: solid;
+  border-color: black !important;
+  border-radius: 50px;
+  border-width: 5px;
+  min-width: none;
+  width: 80%;
+  max-width: 30em;
+  padding: 0;
+  margin-top: max(var(--default-top-margin), 5vh);
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 18/39;
+  position: relative;
+  box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
+}
+div#social-media-links-phone-body * {
+  aspect-ratio: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  div#social-media-links-phone-body {
+    border-color: var(--dark-mode-border-color);
+    box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
+    background-image: url("/assets/images/wavey/(black)/iPhone-variant.png");
+  }
+}
+div#social-media-links-phone-top {
+  border-radius: 50px;
+  height: 3em;
+  position: relative;
+}
+
+div#social-media-links-phone-top-name {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+p#social-media-links-phone-top-name-p {
+  color: black;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  p#social-media-links-phone-top-name-p {
+    color: white;
+  }
+}
+div#social-media-links-phone-top-camera {
+  display: inline-block;
+}
+
+div#social-media-links-phone-top-time {
+  display: inline-block;
+}
+
+time#social-media-links-phone-top-time-p {
+  color: black;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  time#social-media-links-phone-top-time-p {
+    color: white;
+  }
+}
+div#social-media-links-phone-apps {
+  width: auto;
+  padding: 25px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  overflow: hidden;
+}
+
+div#social-media-links-phone-apps > div.social-media-links-phone-app {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+div#social-media-links-phone-apps > div.social-media-links-phone-app > .social-media-links-phone-app-link {
+  border-radius: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div#social-media-links-phone-apps > div.social-media-links-phone-app > a.social-media-links-phone-app-link > img.social-media-links-phone-app-img {
+  width: 100%;
+  max-width: 50%;
+  padding: 0;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+}
+
+div#social-media-links-phone-apps > div.social-media-links-phone-app > .social-media-links-phone-app-p {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  div#social-media-links-phone-apps > div.social-media-links-phone-app > .social-media-links-phone-app-p {
+    color: white;
+  }
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#snapchat-app {
+  background-color: #CCC000;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#instagram-app {
+  background-color: #DD2A7B;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#linkedin-app {
+  background-color: #0077B5;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#whatsapp-app {
+  background-color: lightgreen;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#email-app {
+  background-color: lightskyblue;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#github-app {
+  background-color: black;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#behance-app {
+  background-color: black;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#apple-music-app {
+  background-color: #FC3C44;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#portfolio-app {
+  background-color: var(--accent-color);
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#portfolio-app #portfolio-app-icon {
+  width: 100% !important;
+  max-width: none;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#facebook-app {
+  background-color: #3B5998;
+}
+div#social-media-links-phone-apps > div.social-media-links-phone-app a#discord-app {
+  background-color: #5865F2;
+}
+
+div#social-media-links-phone-bottom {
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+div#social-media-links-phone-bottom-bar {
+  background-color: black;
+  border-radius: 3.5px;
+  width: 50%;
+  height: 7px;
+  margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  div#social-media-links-phone-bottom-bar {
+    background-color: white;
+  }
+}/*# sourceMappingURL=style.css.map */

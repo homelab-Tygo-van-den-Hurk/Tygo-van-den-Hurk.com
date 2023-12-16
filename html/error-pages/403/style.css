@@ -3,6 +3,15 @@
   --sec-accent-color: #A155B5;
 }
 
+body {
+  background-color: var(--light-mode-main-background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-mode-main-background-color);
+  }
+}
 main {
   min-height: 100vh !important;
   height: max(-moz-fit-content, 100vh) !important;
