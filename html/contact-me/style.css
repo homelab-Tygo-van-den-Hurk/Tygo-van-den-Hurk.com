@@ -11,6 +11,11 @@ main {
   max-width: none;
 }
 
+section#top-section,
+section#bottom-section {
+  display: none !important;
+}
+
 #contact-me-close-button {
   display: none !important;
 }/*# sourceMappingURL=style.css.map */

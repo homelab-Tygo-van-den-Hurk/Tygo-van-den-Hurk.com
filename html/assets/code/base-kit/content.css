@@ -117,7 +117,6 @@ main {
   min-height: 100vh;
   height: 100%;
   margin: 0 auto;
-  overflow: hidden;
   box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
 }
 
@@ -125,12 +124,6 @@ main {
   main {
     background-color: var(--dark-mode-main-background-color);
     box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--dark-mode-shadow);
-  }
-}
-@media only screen and (min-height: 1920px) {
-  main {
-    border-left: solid;
-    border-right: solid;
   }
 }
 section {
@@ -446,6 +439,7 @@ iframe[seamless] {
 body {
   -ms-overflow-style: none; /* hides the scroll bar in Internet Explorer 10+ */
   scrollbar-width: none; /* hides the scroll bar in Firefox */
+  overflow: -moz-scrollbars-none;
 }
 
 body::-webkit-scrollbar {

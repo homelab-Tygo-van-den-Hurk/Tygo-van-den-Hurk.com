@@ -142,6 +142,7 @@ body {
         margin: 0;
     // other
         text-size-adjust: none !important;
+        // overflow-x: hidden;
 } 
 @media (prefers-color-scheme: dark) {
     body {
@@ -170,7 +171,7 @@ main {
     // margin
         margin: 0 auto;
     // other
-        overflow: hidden;
+        // overflow: hidden;
         box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur-radius) var(--shadow-spread-radius) var(--light-mode-shadow);
 }
 @media (prefers-color-scheme: dark) {
@@ -180,10 +181,10 @@ main {
     }
 }
 @media only screen and (min-height: $max-main-width) {
-    main {
-        border-left: solid;
-        border-right: solid;
-    }
+    // main {
+    //     border-left: solid;
+    //     border-right: solid;
+    // }
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -700,6 +701,7 @@ body {
     -ms-overflow-style: none;  /* hides the scroll bar in Internet Explorer 10+ */
     // overflow-x: hidden; /* Hide horizontal scrollbar */
     scrollbar-width: none;  /* hides the scroll bar in Firefox */
+    overflow: -moz-scrollbars-none;
 } body::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }

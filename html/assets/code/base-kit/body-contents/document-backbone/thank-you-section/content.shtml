@@ -17,7 +17,7 @@
     <script id="thank-you-for-contacting-using-javascript-module" type="module">
         import { // the constants, and functions from the module
             contactMeSectionID, hideClass, notScrollableClass, toggleContactMeForm 
-        } from '/assets/code/base-kit/body-contents/contact-form/module.js';
+        } from "/assets/code/base-kit/body-contents/contact-form/module.js";
 
         /* adding functionality to the submit button */ {
             const contactMeFormSubmitButton_id = "contact-me-forum-submit-button"
@@ -32,10 +32,6 @@
                     const thankYouSection = document.getElementById(contactMeFormSubmitButton_id);
                     thankYouSection.classList.remove(hideClass);
                     document.body.classList.add(notScrollableClass);
-
-                    console.log("done!");
-                    console.log("thankYouSection: "+thankYouSection.classList);
-                    console.log("body: "+document.body.classList);
                 }
             }
         }  

@@ -1,7 +1,7 @@
 <!--#set var="titleText" value='QR-Code'-->
 <!--#set var="titleSubText" value='Here you can find the QR-code to this site! Show this to people to sent them to home.'-->
 <!--#set var="keywords" value='<meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk, qr">'-->
-<!--#set var="discription" value='<meta name="description" content="Hey! Tygo here! This page contains a QR-code to this site, you can use it whenever you need it.">'--> 
+<!--#set var="description" value='<meta name="description" content="Hey! Tygo here! This page contains a QR-code to this site, you can use it whenever you need it.">'--> 
 
 <!DOCTYPE html>
 <html lang="en">

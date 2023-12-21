@@ -1,7 +1,7 @@
 <title><!--#echo var="titleText"--> — Tygo van den Hurk</title>
 
 <!-- #echo var="keywords"-->
-<!-- #echo var="discription"-->
+<!-- #echo var="description"-->
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 <!--#if expr='-n v("icon")' -->
     <!--#echo var="icon"-->
 <!--#else -->
-    <link rel="icon" href="/assets/images/me/head-shot (small).jpg">
+    <link rel="icon" href="/assets/images/me/head-shot (small&rounded).png">
 <!--#endif -->
 
 <!-- Fonts -->

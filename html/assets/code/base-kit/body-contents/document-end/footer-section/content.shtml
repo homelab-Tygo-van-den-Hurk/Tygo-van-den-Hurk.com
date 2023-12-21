@@ -1,5 +1,5 @@
 <style type="text/css" scoped>
-    @import url(/assets/code/base-kit/body-contents/bottom-part/content.css);
+    @import url("/assets/code/base-kit/body-contents/document-end/footer-section/content.css");
 </style>
 <!--~ override the background image of 'bottom-section' for every page-->
 <section id="bottom-section">
@@ -43,10 +43,12 @@
             <!--? add some more in the future! ?-->
         </div>
     </div>
-    <script type="module" src="/assets/code/base-kit/body-contents/contact-form/module.js"></script>
-    <script type="module">
+    <script type="module" src="/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js">
+    </script><script id="bottom-use-contact-form-java-script-module" type="module">
         const id = "bottom-button";
-        import { toggleContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
+        import {
+            toggleContactMeForm 
+        } from "/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js";
         const button = document.getElementById(id);
         button.addEventListener('click', toggleContactMeForm);
     </script>

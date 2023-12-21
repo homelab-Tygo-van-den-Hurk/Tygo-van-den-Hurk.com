@@ -37,6 +37,9 @@
     <div id="my-skills-showcase-grid" class="showcase-grid">
         
         <div class="showcase-grid-item">
+            <div class="showcase-grid-item-image-container">
+                <img class="showcase-grid-item-image" src="/assets/images/skills/creative.svg" alt="Image's description">
+            </div>
             <h3 class="showcase-grid-item-title">Programming Languages</h3>
             <p class="showcase-grid-item-description">
                 Python, Java, C, C++, C#, JavaScript, TypeScript, HTML, CSS, PHP, SQL, Bash, Assembly
@@ -72,26 +75,43 @@
     </div>
 </section>
 
-<div id="separator" class="full-screen layer-1" style="height: 1em !important; margin-top: 5em; margin-bottom: 3em;">
-</div>
+<!-- <div id="separator" class="full-screen layer-1" style="height: 1em !important; margin-top: 5em; margin-bottom: 3em;"></div> -->
 
 <section id="example-section">
     <h1 id="some-id-000">Some Title</h1>
-    <p id="some-id-001">
+    <p id="some-id-001a">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Dignissimos corrupti debitis veniam officia assumenda. 
+        Totam quia qui soluta labore magnam, atque neque doloribus, 
+        eveniet distinctio placeat sunt tempore ullam asperiores!
+    </p>
+    <p id="some-id-001b">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Dignissimos corrupti debitis veniam officia assumenda. 
         Totam quia qui soluta labore magnam, atque neque doloribus, 
         eveniet distinctio placeat sunt tempore ullam asperiores!
     </p>
     <h2 id="some-id-002">Some Title</h2>
-    <p id="some-id-003">
+    <p id="some-id-003a">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Dignissimos corrupti debitis veniam officia assumenda. 
+        Totam quia qui soluta labore magnam, atque neque doloribus, 
+        eveniet distinctio placeat sunt tempore ullam asperiores!
+    </p>
+    <p id="some-id-003b">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Dignissimos corrupti debitis veniam officia assumenda. 
         Totam quia qui soluta labore magnam, atque neque doloribus, 
         eveniet distinctio placeat sunt tempore ullam asperiores!
     </p>
     <h3 id="some-id-004">Some Title</h3>
-    <p id="some-id-005">
+    <p id="some-id-005a">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Dignissimos corrupti debitis veniam officia assumenda. 
+        Totam quia qui soluta labore magnam, atque neque doloribus, 
+        eveniet distinctio placeat sunt tempore ullam asperiores!
+    </p>
+    <p id="some-id-005b">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Dignissimos corrupti debitis veniam officia assumenda. 
         Totam quia qui soluta labore magnam, atque neque doloribus, 
@@ -106,9 +126,10 @@
 </section>
 
 <section id="panel-grid-section">
-
-    <h2>Testing panel-grids</h2>
-
+    <style id="panel-grid-import-style" type="text/css" scoped>
+        @import url("/assets/code/panel-grid/content.css");
+    </style>
+    <h2 id="panel-grid-section-h2">Testing panel-grids</h2>
     <div class="panel-grid-container">
         <div class="panel-grid-item">0</div>
         <div class="panel-grid-item">1</div>
@@ -116,7 +137,18 @@
         <div class="panel-grid-item">3</div>
         <div class="panel-grid-item">4</div>
     </div>
-    <style id="panel-grid-import-style" type="text/css" scoped>
-        @import url("/assets/code/panel-grid/content.css");
-    </style>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var allElements = document.querySelectorAll('*');
+    
+    allElements.forEach(function (element) {
+        var elementStyles = getComputedStyle(element);
+        
+        if (element.offsetWidth > element.scrollWidth || element.offsetHeight > element.scrollHeight) {
+            console.log('Overflowing element:', element);
+        }
+    });
+});
+</script>

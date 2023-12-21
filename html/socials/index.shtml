@@ -24,7 +24,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/no-script-warning.shtml" -->
+        <!--#include virtual="/assets/code/base-kit/body-contents/document-backbone/no-script-section/content.shtml" -->
         <main>
             <section id="social-media-links-section">
                 <div id="social-media-links-text-container">

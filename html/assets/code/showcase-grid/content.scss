@@ -18,7 +18,7 @@
  * </div>
  *
  * Every other element within the showcase-grid will be hidden by default that does not have one of these classes.
- * Lastly the discription is hidden if the container becomes too small.
+ * Lastly the description is hidden if the container becomes too small.
  *
  * ? What is an example of a showcase-grid ?
  *   - as of 01-dec-2023, the my skills section on the portfolio page is a showcase grid.
@@ -28,7 +28,7 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Showcase-Grid ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 div.showcase-grid {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: red;
@@ -36,7 +36,7 @@ div.showcase-grid {
     // width 
         width: var(--content-width);
         max-width: var(--max-content-width);
-    // heigth
+    // height
         height: 100vh;
     // padding
     // margin
@@ -53,13 +53,14 @@ div.showcase-grid > * {display: none;}
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Showcase-Grid item's ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 div.showcase-grid > div.showcase-grid-item {
-    // font weigth, alignment, size, family, color
+    // font weight, alignment, size, family, color
     // Color
     // Background Color, and image
         background-color: green;
     // border
+        border: solid 1px black;
     // width 
-    // heigth
+    // height
     // padding
     // margin
     // other
@@ -69,19 +70,61 @@ div.showcase-grid > div.showcase-grid-item {
 // hides all the content within this container by default
 div.showcase-grid > div.showcase-grid-item > * {display: none;} 
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Showcase-Grid Image-Containers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+div.showcase-grid > div.showcase-grid-item > div.showcase-grid-item-image-container {
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+        background-color: yellow;
+    // border
+    // width 
+    // height
+    // padding
+    // margin
+    // other
+        display: block;
+}
+
+div.showcase-grid > div.showcase-grid-item > div.showcase-grid-item-image-container > * {
+    display: none;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Showcase-Grid Images ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+div.showcase-grid > div.showcase-grid-item > div.showcase-grid-item-image-container
+            > img.showcase-grid-item-image {
+
+    // font weight, alignment, size, family, color
+    // Color
+    // Background Color, and image
+        background-color: cyan;
+    // border
+    // width 
+        width: 10em;
+    // height
+    // padding
+    // margin
+    // other
+        display: block;
+}
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Showcase-Grid Titles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 div.showcase-grid > div.showcase-grid-item > h3.showcase-grid-item-title {
-    //     font weigth, alignment, size, family, color
+    //     font weight, alignment, size, family, color
+        font-size: 19.2px;
     //     Color
     //     Background Color, and image
         background-color: blue;
     //     border
     //     width 
-    //     heigth
+    //     height
     //     padding
     //     margin
+        margin-top: 1em;
     //     other
+        display: block;
 }
 
 // hides the line below the title
@@ -89,17 +132,20 @@ div.showcase-grid > div.showcase-grid-item > h3.showcase-grid-item-title::after 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Showcase-Grid Description ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-div.showcase-grid > div.showcase-grid-item > p.showcase-grid-item-title {
-    //     font weigth, alignment, size, family, color
+div.showcase-grid > div.showcase-grid-item > p.showcase-grid-item-description {
+    //     font weight, alignment, size, family, color
     //     Color
     //     Background Color, and image
         background-color: purple;
     //     border
     //     width 
-    //     heigth
+    //     height
     //     padding
     //     margin
     //     other
+        margin-top: ;
+    //     other
+        display: block;
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DEFAULT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//

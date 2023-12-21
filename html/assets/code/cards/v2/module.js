@@ -176,7 +176,7 @@ export function Card(title, text, imagePath, imageAlt) {
                 Officia sapiente, illo nobis deserunt ipsa perspiciatis qui ea, suscipit 
                 ipsum tempore nihil illum velit earum? Quae ducimus totam velit.`,
             imagePath: imagePath || "/assets/images/paterns/Aare.svg",
-            imageAlt: imageAlt || "no discription was provided"
+            imageAlt: imageAlt || "no description was provided"
         };
     }
 }

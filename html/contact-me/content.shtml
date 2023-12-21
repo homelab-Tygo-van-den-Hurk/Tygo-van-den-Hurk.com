@@ -1,5 +1,5 @@
 <script type="module">    
-    import { contactMeSectionID } from '/assets/code/base-kit/body-contents/contact-form/module.js';
+    import { contactMeSectionID } from '/assets/code/base-kit/body-contents/document-backbone/contact-form-section/module.js';
     
     const contactMeSection = document.getElementById(contactMeSectionID);
     const mainElement = document.querySelector('main');
@@ -7,4 +7,6 @@
     mainElement.innerHTML = '';
     mainElement.innerHTML = contactMeSection.innerHTML;
     contactMeSection.innerHTML = '';
+
+    // contactMeSection.classList.remove('hidden');
 </script>

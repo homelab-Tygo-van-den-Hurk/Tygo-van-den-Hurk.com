@@ -16,6 +16,15 @@ main {
   max-width: none !important;
 }
 
+h1#social-media-links-h1,
+section#social-media-links-section {
+  margin-top: 0;
+}
+
+section#social-media-links-section {
+  padding-top: 2em;
+}
+
 div#social-media-links-phone-body {
   background-image: url("/assets/images/wavey/(gray)/iPhone-variant.png");
   border: solid;
@@ -48,6 +57,7 @@ div#social-media-links-phone-body * {
 @media only screen and (max-width: 480px) {
   section#social-media-links-section {
     margin-top: 0 !important;
+    padding-top: 0;
   }
   div#social-media-links-text-container {
     display: none !important;

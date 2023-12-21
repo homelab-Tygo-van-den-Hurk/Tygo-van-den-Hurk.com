@@ -13,9 +13,9 @@
     <!--#set var="keywords" value='<meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk">'-->
 <!--#endif -->
 
-<!--#if expr='-n v("discription")' -->
+<!--#if expr='-n v("description")' -->
 <!--#else -->
-    <!--#set var="discription" value='<meta name="description" content="Hey! Tygo here! I&rsquo;m a student at the TU&#47;e. Studying Computer Science. This is my personal website. Feel free to take a look around.">'--> 
+    <!--#set var="description" value='<meta name="description" content="Hey! Tygo here! I&rsquo;m a student at the TU&#47;e. Studying Computer Science. This is my personal website. Feel free to take a look around.">'--> 
 <!--#endif -->
 
 <!DOCTYPE html>
@@ -24,11 +24,11 @@
         <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
     </head>
     <body>
-        <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
+        <!--#include virtual="/assets/code/base-kit/body-contents/document-backbone/content.shtml" -->
         <main>
-            <!--#include virtual="/assets/code/base-kit/body-contents/top-part/content.shtml" -->
+            <!--#include virtual="/assets/code/base-kit/body-contents/document-start/content.shtml" -->
             <!--#include virtual="./content.shtml" -->
-            <!--#include virtual="/assets/code/base-kit/body-contents/bottom-part/content.shtml" -->
+            <!--#include virtual="/assets/code/base-kit/body-contents/document-end/content.shtml" -->
         </main>
     </body>
 </html>

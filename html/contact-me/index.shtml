@@ -1,7 +1,7 @@
 <!--#set var="titleText" value="Contact me"-->
 <!--#set var="titleSubText" value="Hey using this page you can contace me."-->
 <!--#set var="keywords" value='<meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk, contact">'-->
-<!--#set var="discription" value='<meta name="description" content="Hey! Tygo here! Using this page you can get in touch!">'--> 
+<!--#set var="description" value='<meta name="description" content="Hey! Tygo here! Using this page you can get in touch!">'--> 
 
 
 <!--#if expr='-n v("titleText")' -->
@@ -19,9 +19,9 @@
     <!--#set var="keywords" value='<meta name="keywords" content="Tygo, van den Hurk, Tygo van den Hurk">'-->
 <!--#endif -->
 
-<!--#if expr='-n v("discription")' -->
+<!--#if expr='-n v("description")' -->
 <!--#else -->
-    <!--#set var="discription" value='<meta name="description" content="Hey! Tygo here! I&rsquo;m a student at the TU&#47;e. Studying Computer Science. This is my personal website. Feel free to take a look around.">'--> 
+    <!--#set var="description" value='<meta name="description" content="Hey! Tygo here! I&rsquo;m a student at the TU&#47;e. Studying Computer Science. This is my personal website. Feel free to take a look around.">'--> 
 <!--#endif -->
 
 <!DOCTYPE html>
@@ -33,13 +33,9 @@
         <link rel="icon" href="/assets/images/me/head-shot (small&rounded).png">
     </head>
     <body>
-        <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
+        <!--#include virtual="/assets/code/base-kit/body-contents/document-backbone/content.shtml" -->
         <main class="full-screen horizontally-centered vertically-centered">
-            <!-- #include virtual="/assets/code/base-kit/body-contents/top-part/content.shtml" -->
             <!--#include virtual="./content.shtml" -->
-            <!-- #include virtual="/assets/code/base-kit/body-contents/bottom-part/content.shtml" -->
         </main>
     </body>
 </html>
-
-<!-- #include virtual="/assets/code/base-kit/default.shtml" -->

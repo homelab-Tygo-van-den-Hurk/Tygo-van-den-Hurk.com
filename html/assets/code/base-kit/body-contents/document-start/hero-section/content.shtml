@@ -1,5 +1,5 @@
 <style id="top-import-style" type="text/css" scoped>
-    @import url(/assets/code/base-kit/body-contents/top-part/content.css);
+    @import url("/assets/code/base-kit/body-contents/document-start/hero-section/content.css");
 </style>
 <section id="top-section">
     <div id="top-container">
@@ -11,11 +11,12 @@
     </div>
     <script 
         id="top-load-contact-form-java-script-module" 
-        type="module" src="/assets/code/base-kit/body-contents/contact-form/module.js">
-    </script>
-    <script id="top-use-contact-form-java-script-module" type="module">
+        type="module" src="/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js">
+    </script><script id="top-use-contact-form-java-script-module" type="module">
         const BUTTON_ID = "top-button"
-        import { toggleContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
+        import {
+            toggleContactMeForm 
+        } from "/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js";
         const BUTTON = document.getElementById(BUTTON_ID);
         BUTTON.addEventListener('click', toggleContactMeForm);
     </script>

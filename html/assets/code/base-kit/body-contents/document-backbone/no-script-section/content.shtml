@@ -30,9 +30,11 @@
             You don't have javascript enabled! <br>
             <br>
             Without javascript this site does <b>not</b> work. 
-            This site needs JavaScript to add functionality, responsiveness, and to load some of it's content.<br>
+            This site needs JavaScript to add functionality, responsiveness, 
+            and to load some of it's content.<br>
             <br>
-            Try disabling extentions on this site that could be problematic or some a setting in your browser. 
+            Try disabling extensions on this site that could be 
+            problematic or some a setting in your browser. 
             Then reload the page!
         </p>
     </div>
