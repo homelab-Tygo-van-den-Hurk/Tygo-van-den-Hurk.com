@@ -1,0 +1,16 @@
+<!--#set var="titleText" value='About me'-->
+<!--#set var="titleSubText" value='On this page I'll show you everything about me!'-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
+    </head>
+    <body>
+        <!--#include virtual="/assets/code/base-kit/body-contents/document-backbone/content.shtml" -->
+        <main>
+            <!--#include virtual="/assets/code/base-kit/body-contents/document-start/content.shtml" -->
+            <!--#include virtual="./content.shtml" -->
+            <!--#include virtual="/assets/code/base-kit/body-contents/document-end/content.shtml" -->
+        </main>
+    </body>
+</html>
