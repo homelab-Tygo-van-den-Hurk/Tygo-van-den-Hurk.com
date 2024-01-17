@@ -6,13 +6,14 @@
         <meta name="author" content="Tygo van den Hurk">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- ! HERE IS A THING TO CHANGE. The link must point to my account. ! -->
-        <meta http-equiv="refresh" content="0; URL=https://www.behance.net/6301702c"/>
+        <meta http-equiv="refresh" content="0; URL=https://blog.tygo.van.den.hurk.dev/"/>
         <!-- ! HERE IS A THING TO CHANGE. The description must be the name of the social platform. ! -->
-        <meta name="description" content="This page would redirect you to my behance.">
+        <meta name="description" content="This page would redirect you to my blog.">
         <!-- ! HERE IS A THING TO CHANGE. The keyword must be the name of the social platform. ! -->
-        <meta name="keywords" content="Tygo, van den Hurk, behance">
-            <!-- ! HERE IS A THING TO CHANGE. This link must point to the icon for this social media platform. ! -->
-            <link rel="icon" href="assets/images/icons/socials/behance/black.svg">
+        <meta name="keywords" content="Tygo, van den Hurk, blog">
+        <!-- ! HERE IS A THING TO CHANGE. This link must point to the icon for this social media platform. ! -->
+        <!-- <link rel="icon" href="assets/images/icons/socials/behance/black.svg">  -->
+        <!-- TODO: add this icon to the page -->
         <link rel="stylesheet" href="style.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,7 @@
                 <p id="redirect-p">
                     If you are not redirected automatically, click 
                     <!-- ! HERE IS A THING TO CHANGE. The link must be the same as the redirect meta tag. ! -->
-                    <a id="redirect-a" href="https://www.behance.net/6301702c">here</a>.
+                    <a id="redirect-a" href="https://blog.tygo.van.den.hurk.dev/">here</a>.
                 </p>
             </section>
         </main>

@@ -11,8 +11,8 @@
         <meta name="description" content="This page would redirect you to my behance.">
         <!-- ! HERE IS A THING TO CHANGE. The keyword must be the name of the social platform. ! -->
         <meta name="keywords" content="Tygo, van den Hurk, behance">
-            <!-- ! HERE IS A THING TO CHANGE. This link must point to the icon for this social media platform. ! -->
-            <link rel="icon" href="assets/images/icons/socials/behance/black.svg">
+        <!-- ! HERE IS A THING TO CHANGE. This link must point to the icon for this social media platform. ! -->
+        <link rel="icon" href="assets/images/icons/socials/behance/black.svg">
         <link rel="stylesheet" href="style.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,3 +44,4 @@
         </main>
     </body>
 </html>
+
