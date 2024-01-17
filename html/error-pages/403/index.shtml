@@ -8,7 +8,6 @@
         <link rel="icon" href="/error-pages/403/tab-icon.svg">
     </head>
     <body>
-        <!--#include virtual="/assets/code/base-kit/body-contents/contact-form/content.shtml" -->
         <main class="full-screen horizontally-centered vertically-centered">
             <!--#include virtual="content.shtml" -->
         </main>

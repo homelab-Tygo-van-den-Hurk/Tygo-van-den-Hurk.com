@@ -9,15 +9,9 @@
             Let&rsquo;s talk!
         </button>
     </div>
-    <script 
-        id="top-load-contact-form-java-script-module" 
-        type="module" src="/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js">
-    </script><script id="top-use-contact-form-java-script-module" type="module">
-        const BUTTON_ID = "top-button"
-        import {
-            toggleContactMeForm 
-        } from "/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js";
-        const BUTTON = document.getElementById(BUTTON_ID);
-        BUTTON.addEventListener('click', toggleContactMeForm);
+    <script id="top-use-contact-form-java-script-module">
+        const TOP_BUTTON_ID = "top-button"
+        const TOP_BUTTON = document.getElementById(TOP_BUTTON_ID);
+        TOP_BUTTON.addEventListener('click', toggleContactMeForm);
     </script>
 </section>

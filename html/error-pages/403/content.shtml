@@ -16,11 +16,4 @@
             Contact me
         </button>
     </a>
-    <!-- <script src="/assets/code/base-kit/body-contents/contact-form/module.js" type="module"></script>
-    <script type="module">
-        const id = "error-pages-403-contact-me-button"
-        import { toggleContactMeForm } from "/assets/code/base-kit/body-contents/contact-form/module.js";
-        const button = document.getElementById(id);
-        button.addEventListener('click', toggleContactMeForm);
-    </script> -->
 </section>

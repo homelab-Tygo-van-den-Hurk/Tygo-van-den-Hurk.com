@@ -43,13 +43,9 @@
             <!--? add some more in the future! ?-->
         </div>
     </div>
-    <script type="module" src="/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js">
-    </script><script id="bottom-use-contact-form-java-script-module" type="module">
-        const id = "bottom-button";
-        import {
-            toggleContactMeForm 
-        } from "/assets/code/base-kit/body-contents/document-start/contact-form-section/module.js";
-        const button = document.getElementById(id);
-        button.addEventListener('click', toggleContactMeForm);
+    <script id="bottom-use-contact-form-java-script-module">
+        const BOTTOM_BUTTON_ID = "bottom-button";
+        const BOTTOM_BUTTON = document.getElementById(BOTTOM_BUTTON_ID);
+        BOTTOM_BUTTON.addEventListener('click', toggleContactMeForm);
     </script>
 </section>
