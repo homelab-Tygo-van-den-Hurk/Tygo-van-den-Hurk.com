@@ -18,6 +18,7 @@
         <meta name="keywords" content="Tygo, van den Hurk, socials, social media">
         <!-- ! HERE IS A THING TO CHANGE. This link must point to the icon for this social media platform. ! -->
         <link rel="icon" href="/assets/images/me/head-shot (small&rounded).png">
+        <link rel="canonical" href="https://tygo.van.den.hurk.dev/socials/"/>
         <link rel="stylesheet" href="./style.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

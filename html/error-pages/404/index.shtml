@@ -6,6 +6,7 @@
         <!--#include virtual="/assets/code/base-kit/header-contents/default-header.shtml" -->
         <link rel="stylesheet" href="/error-pages/404/style.css"> 
         <link rel="icon" href="/error-pages/404/tab-icon.svg">
+        <link rel="canonical" href="https://tygo.van.den.hurk.dev/error-pages/404/"/>
     </head>
     <body>
         <main>

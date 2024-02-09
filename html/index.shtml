@@ -7,12 +7,14 @@
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="darkreader-lock">
+        <meta name="theme-color" content="">
         <meta name="keywords"content="Tygo, van den Hurk, Tygo van den Hurk, home">
         <meta name="description" content="Hi! I&rsquo;m Tygo van den Hurk, I am a student at the TU&#47;e. This is my personal-site, please take a look around and don&rsquo;t be affraid to contact me!">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
         <!-- links -->
         <link rel="icon" href="assets/images/me/head-shot (Small).jpg">
         <link rel="stylesheet" href="style.css"> 
+        <link rel="canonical" href="https://tygo.van.den.hurk.dev/"/>
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
