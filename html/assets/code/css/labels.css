@@ -10,10 +10,12 @@
 }
 .labels *:nth-child(3n+1) {
   text-align: right;
+  margin-left: auto;
 }
 .labels *:nth-child(3n+2) {
   text-align: center;
 }
 .labels *:nth-child(3n) {
   text-align: left;
-}/*# sourceMappingURL=labels.css.map */
+  margin-right: auto;
+}
