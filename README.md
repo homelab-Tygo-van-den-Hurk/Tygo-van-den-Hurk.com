@@ -2,7 +2,7 @@
 > This repository is archived as I decided to move to other technologies, and wanted to start fresh. All the pages should remain the same, both looks, and content wise.
 
 # Tygo-van-den-Hurk.com
-> This reposositry holds the source code for [my website (tygo-van-den-hurk.com)](https://tygo-van-den-hurk.com/). 
+> This reposositry holds the source code for [my website (`tygo-van-den-hurk.com`)](https://tygo-van-den-hurk.com/). 
 
 > [!WARNING]
 > Though a word of warning, I am going to let this domain expire. From the third of August 2024, this domain will no longer be associated with me. Everything will be going through [`tygo.van.den.hurk.dev`](https://tygo.van.den.hurk.dev) and it's subdomains.
