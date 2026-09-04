@@ -58,27 +58,36 @@ career:
       resume: false
   
   education:
-    
-    - name: Technical University Eindhoven
-      description: Bachelor in Computer Science
-      start_date:  2021-09-01
+
+    - name:        Masters in Embedded Systems
+      description: Technical University Eindhoven
       location:    Eindhoven, the Netherlands
+      start_date:  2026-09-01
+
+    - name:        Masters in Computer Science
+      description: Technical University Eindhoven
+      location:    Eindhoven, the Netherlands
+      start_date:  2026-09-01
+      
+    - name:        Bachelor in Computer Science
+      description: Technical University Eindhoven
+      location:    Eindhoven, the Netherlands
+      start_date:  2021-09-01
+      end_date:    2026-09-01
     
-    - name: Titus Brandsma Lyceum
-      description: High School
+    - name:        High School (VWO)
+      description: Titus Brandsma Lyceum
+      location:    Oss, the Netherlands
       start_date:  2015-09-01
       end_date:    2021-06-30
-      location:    Oss, the Netherlands
     
-    - name: Emmaus
-      description: Primary School
-      start_date:  2007-02-14
-      end_date:    2015-06-30
-      location:    Heesch, the Netherlands
-      
+    # - name:        Primary School
+    #   description: Emmaus
+    #   location:    Heesch, the Netherlands
+    #   start_date:  2007-02-14
+    #   end_date:    2015-06-30
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Skills ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
-
 
 # skills:
 
